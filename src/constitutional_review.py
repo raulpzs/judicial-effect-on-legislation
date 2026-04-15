@@ -14,14 +14,14 @@ load_dotenv()
 
 MODEL = "gpt-5.1"
 
-INPUT_CSV = Path("judicial_decisions_matched.csv")
-WORKDIR = Path("constitutional_review_work")
+INPUT_CSV = Path("data/raw/judicial_decisions_matched.csv")
+WORKDIR = Path("outputs/constitutional_review_work_2")
 WORKDIR.mkdir(parents=True, exist_ok=True)
 
-BATCH_INPUT_JSONL = WORKDIR / "constitutional_review_batch.jsonl"
-BATCH_OUTPUT_JSONL = WORKDIR / "constitutional_review_output.jsonl"
-BATCH_ERROR_JSONL = WORKDIR / "constitutional_review_errors.jsonl"
-MERGED_OUTPUT_CSV = Path("judicial_decisions_with_constitutional_review.csv")
+BATCH_INPUT_JSONL = WORKDIR / "constitutional_review_batch_2.jsonl"
+BATCH_OUTPUT_JSONL = WORKDIR / "constitutional_review_output_2.jsonl"
+BATCH_ERROR_JSONL = WORKDIR / "constitutional_review_errors_2.jsonl"
+MERGED_OUTPUT_CSV = Path("outputs/judicial_decisions_with_constitutional_review_2.csv")
 
 LIMIT_ROWS: Optional[int] = None
 POLL_INTERVAL_SECONDS = 30
@@ -41,19 +41,25 @@ regulation, or legal provision.
 Definitions:
 - invalidated: The court explicitly struck down, nullified, or declared a law unconstitutional.
 - upheld: The court explicitly confirmed that a law is valid or constitutional.
-- interpreted: The court explicitly interpreted, limited, or clarified the meaning or scope of a law without invalidating it.
+- interpreted: The court explicitly clarified, limited, or defined the meaning or scope of a law or provision, beyond routine application, without invalidating it.
+
+You must return:
+- constitutional_review:
+    - a list containing one or more of "invalidated", "upheld", "interpreted" if status is "found"
+    - null if status is "not_found" or "unclear"
+- constitutional_review_status: one of "found", "not_found", "unclear"
+- constitutional_review_evidence: a short verbatim snippet copied exactly from the text. If no exact supporting phrase exists, leave empty.
+- constitutional_review_explanation: a brief explanation
 
 Rules:
-1. Only classify as invalidated, upheld, or interpreted if the text explicitly states an action taken on a law, regulation, or provision.
-2. Do NOT infer constitutional review from general reasoning or outcomes.
-3. Do NOT classify cases that only apply a law or resolve a dispute without reviewing the law itself.
-4. Do NOT classify violations of rights unless tied to an explicit action on a law.
-5. If no explicit constitutional or legal review of a law is present, return "not_found".
-6. If multiple actions are present or the outcome is ambiguous, return "unclear".
-7. Be conservative. Do not guess.
-8. constitutional_review_evidence must be a short verbatim snippet copied exactly from the text.
-9. constitutional_review_explanation must briefly explain why the result is chosen.
-10. If no exact supporting phrase exists, leave constitutional_review_evidence as an empty string.
+- Only classify actions that are explicitly stated in the text.
+- Do not infer constitutional review from general reasoning or outcomes.
+- Do not classify cases that only apply a law without reviewing it.
+- If multiple actions are clearly present (e.g., part of a law invalidated and part upheld), include all applicable labels.
+
+Ambiguous cases:
+If no explicit constitutional or legal review of a law is present, return "not_found".
+If the text is ambiguous or contradictory, return "unclear".
 
 Output must follow the JSON schema exactly.
 """.strip()
@@ -62,8 +68,13 @@ SCHEMA: Dict[str, Any] = {
     "type": "object",
     "properties": {
         "constitutional_review": {
-            "type": ["string", "null"],
-            "enum": ["invalidated", "upheld", "interpreted", None],
+            "type": ["array", "null"],
+            "items": {
+                "type": "string",
+                "enum": ["invalidated", "upheld", "interpreted"]
+            },
+            "minItems": 1,
+            "uniqueItems": True
         },
         "constitutional_review_status": {
             "type": "string",
@@ -100,13 +111,9 @@ def clean_text(value: Any) -> str:
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
-
-def shorten(text: str, max_chars: int = 8000) -> str:
-    return text
-
 def build_prompt(row: pd.Series) -> str:
-    summary = shorten(clean_text(row.get("summary_outcome")))
-    decision = shorten(clean_text(row.get("decision_overview")))
+    summary = clean_text(row.get("summary_outcome"))
+    decision = clean_text(row.get("decision_overview"))
 
     return f"""
 Identify the constitutional review outcome from this case.
@@ -265,7 +272,11 @@ def merge_results_back(
         r = results_by_index.get(idx)
 
         if r:
-            col_val.append(r.get("constitutional_review"))
+            value = r.get("constitutional_review")
+            if isinstance(value, list):
+                col_val.append(json.dumps(value, ensure_ascii=False))
+            else:
+                col_val.append(value)
             col_status.append(r.get("constitutional_review_status", "unclear"))
             col_ev.append(r.get("constitutional_review_evidence", ""))
             col_exp.append(r.get("constitutional_review_explanation", ""))
