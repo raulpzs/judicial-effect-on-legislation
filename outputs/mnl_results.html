@@ -1,0 +1,410 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th>outcome</th>
+      <th colspan="8" halign="left">Contracts Expression</th>
+      <th colspan="8" halign="left">Expands Expression</th>
+    </tr>
+    <tr>
+      <th>spec</th>
+      <th>spec_base_1</th>
+      <th>spec_base_2</th>
+      <th>spec_base_3</th>
+      <th>spec_extended_1</th>
+      <th>spec_extended_2</th>
+      <th>spec_extended_3</th>
+      <th>spec_spline_1</th>
+      <th>spec_spline_interact_1</th>
+      <th>spec_base_1</th>
+      <th>spec_base_2</th>
+      <th>spec_base_3</th>
+      <th>spec_extended_1</th>
+      <th>spec_extended_2</th>
+      <th>spec_extended_3</th>
+      <th>spec_spline_1</th>
+      <th>spec_spline_interact_1</th>
+    </tr>
+    <tr>
+      <th>variable</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Intercept</th>
+      <td>0.898*** (0.222)</td>
+      <td>0.956*** (0.249)</td>
+      <td>0.866*** (0.299)</td>
+      <td>-2.159*** (0.653)</td>
+      <td>-2.121*** (0.648)</td>
+      <td>-2.353*** (0.653)</td>
+      <td>-5.77*** (1.333)</td>
+      <td>72.52 (53.852)</td>
+      <td>-0.119 (0.233)</td>
+      <td>-0.138 (0.273)</td>
+      <td>-0.36 (0.35)</td>
+      <td>-3.725*** (0.808)</td>
+      <td>-3.804*** (0.762)</td>
+      <td>-4.513*** (0.94)</td>
+      <td>-2.68*** (0.976)</td>
+      <td>98.189 (88.724)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[0]</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.323** (3.175)</td>
+      <td>-39.77 (57.124)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-5.099** (2.452)</td>
+      <td>-127.875 (89.672)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[0]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>130.744 (114.331)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>231.133 (185.127)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[1]</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.26*** (0.787)</td>
+      <td>-85.848 (54.941)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.005 (1.211)</td>
+      <td>-93.28 (89.345)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[1]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>170.245* (101.668)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>173.702 (162.638)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[2]</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.546** (1.546)</td>
+      <td>-72.953 (53.63)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-1.146 (0.87)</td>
+      <td>-103.394 (88.856)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[2]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>155.493 (103.292)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>188.524 (167.952)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[3]</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.079*** (2.026)</td>
+      <td>-70.803 (53.765)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.175 (1.862)</td>
+      <td>-92.697 (89.494)</td>
+    </tr>
+    <tr>
+      <th>bs(year, df=4)[3]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>154.622 (102.666)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>177.448 (167.529)</td>
+    </tr>
+    <tr>
+      <th>high_court</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.418 (0.279)</td>
+      <td>0.513* (0.282)</td>
+      <td>0.421 (0.285)</td>
+      <td>0.269 (0.316)</td>
+      <td>0.221 (0.319)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.456* (0.275)</td>
+      <td>0.537** (0.273)</td>
+      <td>0.402 (0.266)</td>
+      <td>0.481* (0.278)</td>
+      <td>0.431 (0.281)</td>
+    </tr>
+    <tr>
+      <th>j_ind_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.248 (0.265)</td>
+      <td>0.181 (0.268)</td>
+      <td>0.162 (0.28)</td>
+      <td>0.321 (0.268)</td>
+      <td>0.35 (0.272)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.138 (0.267)</td>
+      <td>-0.178 (0.253)</td>
+      <td>-0.196 (0.264)</td>
+      <td>-0.04 (0.281)</td>
+      <td>-0.052 (0.279)</td>
+    </tr>
+    <tr>
+      <th>legal_civil</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.671* (0.368)</td>
+      <td>-0.352 (0.328)</td>
+      <td>-0.423 (0.34)</td>
+      <td>-0.695* (0.361)</td>
+      <td>-0.724** (0.364)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.349 (0.486)</td>
+      <td>-0.199 (0.426)</td>
+      <td>-0.383 (0.425)</td>
+      <td>-0.286 (0.45)</td>
+      <td>-0.332 (0.442)</td>
+    </tr>
+    <tr>
+      <th>legal_common</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-2.19*** (0.349)</td>
+      <td>-1.712*** (0.325)</td>
+      <td>-1.788*** (0.34)</td>
+      <td>-2.201*** (0.375)</td>
+      <td>-2.288*** (0.388)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.853 (0.54)</td>
+      <td>-0.53 (0.477)</td>
+      <td>-0.622 (0.48)</td>
+      <td>-0.636 (0.514)</td>
+      <td>-0.612 (0.49)</td>
+    </tr>
+    <tr>
+      <th>v2jupack_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.032 (0.161)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.256 (0.157)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.256 (0.193)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.569** (0.24)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>v2jupoatck_lag1</th>
+      <td>NaN</td>
+      <td>-0.119 (0.121)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.193* (0.102)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.022 (0.142)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.233* (0.128)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>v2jureform_lag1</th>
+      <td>-0.212 (0.153)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.335*** (0.124)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.365*** (0.119)</td>
+      <td>-0.407*** (0.128)</td>
+      <td>-0.028 (0.18)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.184 (0.25)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.156 (0.238)</td>
+      <td>-0.205 (0.233)</td>
+    </tr>
+    <tr>
+      <th>v2jureview_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.83** (0.323)</td>
+      <td>0.773** (0.322)</td>
+      <td>0.903*** (0.323)</td>
+      <td>0.784** (0.329)</td>
+      <td>0.822*** (0.315)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.382 (0.373)</td>
+      <td>0.284 (0.364)</td>
+      <td>0.473 (0.382)</td>
+      <td>0.369 (0.361)</td>
+      <td>0.274 (0.363)</td>
+    </tr>
+    <tr>
+      <th>v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.487*** (1.215)</td>
+      <td>3.392*** (1.109)</td>
+      <td>3.83*** (1.207)</td>
+      <td>3.173** (1.233)</td>
+      <td>-154.371 (102.988)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5.182*** (1.44)</td>
+      <td>5.515*** (1.298)</td>
+      <td>7.051*** (1.773)</td>
+      <td>4.428*** (1.533)</td>
+      <td>-181.404 (166.633)</td>
+    </tr>
+    <tr>
+      <th>wdj_expression_lag1</th>
+      <td>0.105 (0.281)</td>
+      <td>0.042 (0.309)</td>
+      <td>0.074 (0.287)</td>
+      <td>-0.081 (0.196)</td>
+      <td>-0.279 (0.212)</td>
+      <td>-0.137 (0.21)</td>
+      <td>-0.155 (0.267)</td>
+      <td>-0.126 (0.367)</td>
+      <td>0.173 (0.289)</td>
+      <td>0.183 (0.323)</td>
+      <td>0.07 (0.287)</td>
+      <td>-0.093 (0.241)</td>
+      <td>-0.317 (0.264)</td>
+      <td>-0.173 (0.214)</td>
+      <td>-0.38 (0.42)</td>
+      <td>-0.517 (0.507)</td>
+    </tr>
+  </tbody>
+</table>
