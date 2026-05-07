@@ -16,4 +16,5 @@ env/
 z/
 
 *.log
-*.tmp
+*.tmpoutputs/predictions_all_specs.csv
+outputs/predictions_all_specs.csv

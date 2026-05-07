@@ -1,5 +1,3 @@
-# this is the script for running the multinomial logit models of de jure+executive factors affecting judicial decisions
-
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
@@ -25,6 +23,10 @@ OUTPUT_PARAM_PATH = OUTPUT_DIR / "param_table_all_specs.csv"
 OUTPUT_LATEX_PATH = OUTPUT_DIR / "mnl_results.tex"
 OUTPUT_HTML_PATH = OUTPUT_DIR / "mnl_results.html"
 
+OUTPUT_VIF_PATH = OUTPUT_DIR / "vif_table_all_specs.csv"
+OUTPUT_VIF_LATEX_PATH = OUTPUT_DIR / "vif_table_all_specs.tex"
+OUTPUT_VIF_HTML_PATH = OUTPUT_DIR / "vif_table_all_specs.html"
+
 # =========================
 # Config
 # =========================
@@ -33,7 +35,7 @@ DATA_PATH = DATA_DIR / "processed" / "cases_v4_short_merged.csv"
 
 Y_VAR = "decision_direction"
 
-CLUSTER_VAR = "country"  # IMPORTANT: must be set
+CLUSTER_VAR = "country"
 
 BASE_CATEGORY = "Mixed Outcome"
 
@@ -42,63 +44,95 @@ BASE_CATEGORY = "Mixed Outcome"
 # =========================
 
 CONTROLS = [
-    "v2x_polyarchy_lag1", 
-#    "v2juhcind_lag_1", 
-#    "v2juncind_lag_1", 
+    "v2x_polyarchy_lag1",
     "v2jureview_lag1",
     "legal_common",
-    "legal_civil", # court-specific independence
+    "legal_civil",
     "high_court",
     "j_ind_lag1",
 ]
-# need to add high and low court dummies + court-specific independence 
 
 SPECIFICATIONS = {
     "spec_base_1": {
         "vars": ["wdj_expression_lag1", "v2jureform_lag1"],
         "spline": False,
-        "interaction": False
+        "interaction": False,
     },
     "spec_base_2": {
         "vars": ["wdj_expression_lag1", "v2jupoatck_lag1"],
         "spline": False,
-        "interaction": False
+        "interaction": False,
     },
     "spec_base_3": {
         "vars": ["wdj_expression_lag1", "v2jupack_lag1"],
         "spline": False,
-        "interaction": False
+        "interaction": False,
     },
-
     "spec_extended_1": {
         "vars": ["wdj_expression_lag1", "v2jureform_lag1"] + CONTROLS,
         "spline": False,
-        "interaction": False
+        "interaction": False,
+    },
+    "spec_extended_1_spline": {
+        "vars": ["wdj_expression_lag1", "v2jureform_lag1"] + CONTROLS,
+        "spline": True,
+        "interaction": False,
+    },
+    "spec_extended_1_spline_interact": {
+        "vars": ["wdj_expression_lag1", "v2jureform_lag1"] + CONTROLS,
+        "spline": True,
+        "interaction": True,
     },
     "spec_extended_2": {
         "vars": ["wdj_expression_lag1", "v2jupoatck_lag1"] + CONTROLS,
         "spline": False,
-        "interaction": False
+        "interaction": False,
+    },
+    "spec_extended_2_spline": {
+        "vars": ["wdj_expression_lag1", "v2jupoatck_lag1"] + CONTROLS,
+        "spline": True,
+        "interaction": False,
+    },
+    "spec_extended_2_spline_interact": {
+        "vars": ["wdj_expression_lag1", "v2jupoatck_lag1"] + CONTROLS,
+        "spline": True,
+        "interaction": True,
     },
     "spec_extended_3": {
         "vars": ["wdj_expression_lag1", "v2jupack_lag1"] + CONTROLS,
         "spline": False,
-        "interaction": False
+        "interaction": False,
     },
-
-    # spline specs (global time trend)
-    "spec_spline_1": {
-        "vars": ["wdj_expression_lag1", "v2jureform_lag1"] + CONTROLS,
+    "spec_extended_3_spline": {
+        "vars": ["wdj_expression_lag1", "v2jupack_lag1"] + CONTROLS,
         "spline": True,
-        "interaction": False
+        "interaction": False,
     },
-
-    # spline × democracy interaction version
-    "spec_spline_interact_1": {
-        "vars": ["wdj_expression_lag1", "v2jureform_lag1"] + CONTROLS,
+    "spec_extended_3_spline_interact": {
+        "vars": ["wdj_expression_lag1", "v2jupack_lag1"] + CONTROLS,
         "spline": True,
-        "interaction": True
-    }
+        "interaction": True,
+    },
+    "spec_extended_4": {
+        "vars": ["wdj_citizen_lag1", "v2jupack_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_extended_5": {
+        "vars": ["wdj_intermediaries_lag1", "v2jupack_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_extended_6": {
+        "vars": ["wdj_press_lag1", "v2jupack_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_extended_7": {
+        "vars": ["wdj_govprot_lag1", "v2jupack_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
 }
 
 # =========================
@@ -112,7 +146,6 @@ df = df.dropna(subset=[Y_VAR])
 # Feature engineering
 # =========================
 
-# legal system
 df["legal_common"] = (df["legal_system"] == "Common").astype(int)
 df["legal_civil"] = (df["legal_system"] == "Civil").astype(int)
 
@@ -123,7 +156,7 @@ df["legal_civil"] = (df["legal_system"] == "Civil").astype(int)
 y_map = {
     "Contracts Expression": 0,
     "Expands Expression": 1,
-    "Mixed Outcome": 2
+    "Mixed Outcome": 2,
 }
 
 y_reverse_map = {v: k for k, v in y_map.items()}
@@ -135,6 +168,7 @@ y_reverse_map = {v: k for k, v in y_map.items()}
 all_preds = []
 model_summary_rows = []
 all_params = []
+all_vifs = []
 
 # =========================
 # Helper: stars
@@ -206,7 +240,7 @@ for spec_name, spec in SPECIFICATIONS.items():
 
     if spec["interaction"]:
         required_vars += ["v2x_polyarchy_lag1"]
-    
+
     data = df.dropna(subset=required_vars).copy()
 
     # outcome
@@ -217,18 +251,26 @@ for spec_name, spec in SPECIFICATIONS.items():
 
     # design matrix
     X = build_X(data, spec)
-    
+
     rank = np.linalg.matrix_rank(X)
     if rank < X.shape[1]:
         print(f"\nRank deficient X in {spec_name}")
         print(f"Rank: {rank}, Columns: {X.shape[1]}")
         print(X.columns.tolist())
         continue
-    
+
+    # =========================
+    # VIF table
+    # =========================
+
     vif_table = compute_vif(X)
+    vif_table["spec"] = spec_name
+    vif_table = vif_table[["spec", "variable", "VIF"]]
+
+    all_vifs.append(vif_table)
 
     high_vif = vif_table[vif_table["VIF"] > 10]
-    
+
     if len(high_vif) > 0:
         print(f"\nHigh multicollinearity in {spec_name}")
         print(high_vif)
@@ -236,13 +278,12 @@ for spec_name, spec in SPECIFICATIONS.items():
     # model
     model = sm.MNLogit(y, X)
 
-    # cluster robust SE
     result = model.fit(
         method="newton",
         maxiter=200,
         disp=False,
         cov_type="cluster",
-        cov_kwds={"groups": data[CLUSTER_VAR]}
+        cov_kwds={"groups": data[CLUSTER_VAR]},
     )
 
     # =========================
@@ -256,52 +297,47 @@ for spec_name, spec in SPECIFICATIONS.items():
         "aic": result.aic,
         "bic": result.bic,
         "pseudo_r2": 1 - result.llf / result.llnull,
-        "base_category": BASE_CATEGORY
+        "base_category": BASE_CATEGORY,
     })
 
     # =========================
     # Parameter table
     # =========================
-    
+
     params = result.params
     bse = result.bse
     pvalues = result.pvalues
-    
+
     param_table = (
         params.stack()
         .reset_index()
         .rename(columns={
             "level_0": "variable",
             "level_1": "class_id",
-            0: "coef"
+            0: "coef",
         })
     )
-    
+
     param_table["class_id"] = param_table["class_id"].astype(int)
-    
-    # MNLogit estimates equations for non-base outcome categories.
-    # Here class_id 0 and 1 correspond to the non-base alternatives.
-    # Adjust this if your actual output order differs.
+
     mnl_class_map = {
         0: "Contracts Expression",
-        1: "Expands Expression"
+        1: "Expands Expression",
     }
-    
-    param_table["class_label"] = param_table["class_id"].map(mnl_class_map)
 
+    param_table["class_label"] = param_table["class_id"].map(mnl_class_map)
     param_table["outcome"] = param_table["class_id"].map(mnl_class_map)
 
-    # dropping this since we'll use the labels instead
     param_table = param_table.drop(columns=["class_id"])
-    
+
     param_table["std_err"] = bse.stack().values
     param_table["p_value"] = pvalues.stack().values
-    
+
     param_table["spec"] = spec_name
     param_table["base_category"] = BASE_CATEGORY
-    
+
     param_table["stars"] = param_table["p_value"].apply(stars)
-    
+
     param_table["coef_se"] = (
         param_table["coef"].round(3).astype(str)
         + param_table["stars"]
@@ -309,7 +345,7 @@ for spec_name, spec in SPECIFICATIONS.items():
         + param_table["std_err"].round(3).astype(str)
         + ")"
     )
-    
+
     all_params.append(param_table)
 
     # =========================
@@ -338,6 +374,22 @@ pred_df = pd.concat(all_preds, ignore_index=True)
 model_df = pd.DataFrame(model_summary_rows)
 param_df = pd.concat(all_params, ignore_index=True)
 
+vif_long_df = pd.concat(all_vifs, ignore_index=True)
+
+vif_df = (
+    vif_long_df
+    .pivot_table(
+        index="spec",
+        columns="variable",
+        values="VIF",
+        aggfunc="first",
+    )
+    .reset_index()
+)
+
+vif_df.columns.name = None
+vif_df = vif_df.round(3)
+
 # =========================
 # Save outputs
 # =========================
@@ -346,21 +398,23 @@ pred_df.to_csv(OUTPUT_PRED_PATH, index=False)
 model_df.to_csv(OUTPUT_MODEL_PATH, index=False)
 param_df.to_csv(OUTPUT_PARAM_PATH, index=False)
 
+vif_df.to_csv(OUTPUT_VIF_PATH, index=False)
+
 # =========================
-# Publication table
+# Publication coefficient table
 # =========================
 
 table = param_df.pivot_table(
     index="variable",
     columns=["outcome", "spec"],
     values="coef_se",
-    aggfunc="first"
+    aggfunc="first",
 )
 
 latex_str = table.to_latex(
     multicolumn=True,
     multicolumn_format="c",
-    escape=False
+    escape=False,
 )
 
 with open(OUTPUT_LATEX_PATH, "w") as f:
@@ -372,6 +426,28 @@ with open(OUTPUT_HTML_PATH, "w") as f:
     f.write(html_str)
 
 # =========================
+# VIF publication table
+# =========================
+
+vif_latex_str = vif_df.to_latex(
+    index=False,
+    float_format="%.3f",
+    escape=False,
+)
+
+with open(OUTPUT_VIF_LATEX_PATH, "w") as f:
+    f.write(vif_latex_str)
+
+vif_html_str = vif_df.to_html(
+    index=False,
+    float_format="{:.3f}".format,
+    escape=False,
+)
+
+with open(OUTPUT_VIF_HTML_PATH, "w") as f:
+    f.write(vif_html_str)
+
+# =========================
 # Done
 # =========================
 
@@ -381,3 +457,127 @@ print(f"- {OUTPUT_MODEL_PATH.name}")
 print(f"- {OUTPUT_PARAM_PATH.name}")
 print(f"- {OUTPUT_LATEX_PATH.name}")
 print(f"- {OUTPUT_HTML_PATH.name}")
+print(f"- {OUTPUT_VIF_PATH.name}")
+print(f"- {OUTPUT_VIF_LATEX_PATH.name}")
+print(f"- {OUTPUT_VIF_HTML_PATH.name}")
+
+# =========================
+# Separate split-sample model: spec_extended_4 by high_court
+# =========================
+
+split_params = []
+split_model_rows = []
+
+split_spec = SPECIFICATIONS["spec_extended_4"].copy()
+split_spec["vars"] = [v for v in split_spec["vars"] if v != "high_court"]
+
+for high_court_value, sample_label in [
+    (1, "high_court_1"),
+    (0, "high_court_0"),
+]:
+
+    print(f"\nRunning spec_extended_4 split sample: {sample_label}")
+
+    data_split = df[df["high_court"] == high_court_value].copy()
+
+    required_vars = [Y_VAR] + split_spec["vars"] + [CLUSTER_VAR]
+    data_split = data_split.dropna(subset=required_vars).copy()
+
+    y = data_split[Y_VAR].map(y_map)
+
+    if y.isna().any():
+        raise ValueError("Unmapped categories found in Y")
+
+    X = build_X(data_split, split_spec)
+
+    rank = np.linalg.matrix_rank(X)
+    if rank < X.shape[1]:
+        print(f"\nRank deficient X in spec_extended_4_{sample_label}")
+        print(f"Rank: {rank}, Columns: {X.shape[1]}")
+        print(X.columns.tolist())
+        continue
+
+    model = sm.MNLogit(y, X)
+
+    result = model.fit(
+        method="newton",
+        maxiter=200,
+        disp=False,
+        cov_type="cluster",
+        cov_kwds={"groups": data_split[CLUSTER_VAR]},
+    )
+
+    split_model_rows.append({
+        "spec": "spec_extended_4",
+        "sample": sample_label,
+        "high_court_value": high_court_value,
+        "n_obs": int(result.nobs),
+        "log_likelihood": result.llf,
+        "aic": result.aic,
+        "bic": result.bic,
+        "pseudo_r2": 1 - result.llf / result.llnull,
+        "base_category": BASE_CATEGORY,
+    })
+
+    params = result.params
+    bse = result.bse
+    pvalues = result.pvalues
+
+    param_table = (
+        params.stack()
+        .reset_index()
+        .rename(columns={
+            "level_0": "variable",
+            "level_1": "class_id",
+            0: "coef",
+        })
+    )
+
+    param_table["class_id"] = param_table["class_id"].astype(int)
+
+    mnl_class_map = {
+        0: "Contracts Expression",
+        1: "Expands Expression",
+    }
+
+    param_table["class_label"] = param_table["class_id"].map(mnl_class_map)
+    param_table["outcome"] = param_table["class_id"].map(mnl_class_map)
+    param_table = param_table.drop(columns=["class_id"])
+
+    param_table["std_err"] = bse.stack().values
+    param_table["p_value"] = pvalues.stack().values
+
+    param_table["spec"] = "spec_extended_4"
+    param_table["sample"] = sample_label
+    param_table["high_court_value"] = high_court_value
+    param_table["base_category"] = BASE_CATEGORY
+    param_table["stars"] = param_table["p_value"].apply(stars)
+
+    param_table["coef_se"] = (
+        param_table["coef"].round(3).astype(str)
+        + param_table["stars"]
+        + " ("
+        + param_table["std_err"].round(3).astype(str)
+        + ")"
+    )
+
+    split_params.append(param_table)
+
+# save split-sample outputs
+if split_params:
+    split_param_df = pd.concat(split_params, ignore_index=True)
+    split_model_df = pd.DataFrame(split_model_rows)
+
+    split_param_df.to_csv(
+        OUTPUT_DIR / "param_table_spec_extended_4_high_court_split.csv",
+        index=False,
+    )
+
+    split_model_df.to_csv(
+        OUTPUT_DIR / "model_comparison_spec_extended_4_high_court_split.csv",
+        index=False,
+    )
+
+    print("\nSaved split-sample outputs:")
+    print("- param_table_spec_extended_4_high_court_split.csv")
+    print("- model_comparison_spec_extended_4_high_court_split.csv")
