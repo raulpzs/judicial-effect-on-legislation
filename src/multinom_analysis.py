@@ -113,23 +113,63 @@ SPECIFICATIONS = {
         "spline": True,
         "interaction": True,
     },
-    "spec_extended_4": {
+    "spec_c_pack": {
         "vars": ["wdj_citizen_lag1", "v2jupack_lag1"] + CONTROLS,
         "spline": False,
         "interaction": False,
     },
-    "spec_extended_5": {
+    "spec_im_pack": {
         "vars": ["wdj_intermediaries_lag1", "v2jupack_lag1"] + CONTROLS,
         "spline": False,
         "interaction": False,
     },
-    "spec_extended_6": {
+    "spec_p_pack": {
         "vars": ["wdj_press_lag1", "v2jupack_lag1"] + CONTROLS,
         "spline": False,
         "interaction": False,
     },
-    "spec_extended_7": {
+    "spec_govprot_pack": {
         "vars": ["wdj_govprot_lag1", "v2jupack_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_c_reform": {
+        "vars": ["wdj_citizen_lag1", "v2jureform_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_im_reform": {
+        "vars": ["wdj_intermediaries_lag1", "v2jureform_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_p_reform": {
+        "vars": ["wdj_press_lag1", "v2jureform_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_govprot_reform": {
+        "vars": ["wdj_govprot_lag1", "v2jureform_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_c_attack": {
+        "vars": ["wdj_citizen_lag1", "v2jupoatck_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_im_attack": {
+        "vars": ["wdj_intermediaries_lag1", "v2jupoatck_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_p_attack": {
+        "vars": ["wdj_press_lag1", "v2jupoatck_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_govprot_attack": {
+        "vars": ["wdj_govprot_lag1", "v2jupoatck_lag1"] + CONTROLS,
         "spline": False,
         "interaction": False,
     },
@@ -468,7 +508,7 @@ print(f"- {OUTPUT_VIF_HTML_PATH.name}")
 split_params = []
 split_model_rows = []
 
-split_spec = SPECIFICATIONS["spec_extended_4"].copy()
+split_spec = SPECIFICATIONS["spec_c_pack"].copy()
 split_spec["vars"] = [v for v in split_spec["vars"] if v != "high_court"]
 
 for high_court_value, sample_label in [

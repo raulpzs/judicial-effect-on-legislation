@@ -17,10 +17,18 @@ MAIN_SPECS = [
     "spec_extended_1",
     "spec_extended_2",
     "spec_extended_3",
-    "spec_extended_4",
-    "spec_extended_5",
-    "spec_extended_6",
-    "spec_extended_7",
+    "spec_c_pack",
+    "spec_im_pack",
+    "spec_p_pack",
+    "spec_govprot_pack",
+    "spec_c_reform",
+    "spec_im_reform",
+    "spec_p_reform",
+    "spec_govprot_reform",
+    "spec_c_attack",
+    "spec_im_attack",
+    "spec_p_attack",
+    "spec_govprot_attack",
 ]
 
 MAIN_VARIABLES = [

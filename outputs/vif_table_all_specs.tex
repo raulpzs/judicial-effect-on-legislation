@@ -5,6 +5,9 @@ spec & Intercept & bs(year, df=4)[0] & bs(year, df=4)[0]:v2x_polyarchy_lag1 & bs
 spec_base_1 & 1.716 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.002 & NaN & NaN & NaN & 1.002 & NaN & NaN & NaN \\
 spec_base_2 & 1.921 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.020 & NaN & NaN & NaN & NaN & 1.020 & NaN & NaN & NaN \\
 spec_base_3 & 2.190 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.031 & NaN & NaN & NaN & NaN & NaN & 1.031 & NaN & NaN & NaN \\
+spec_c_attack & 24.027 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.044 & 6.363 & 1.494 & 2.708 & NaN & 1.323 & NaN & 2.152 & 6.066 & 1.258 & NaN & NaN & NaN & NaN \\
+spec_c_pack & 29.327 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.072 & 6.363 & 1.547 & 2.677 & 3.513 & NaN & NaN & 2.028 & 7.857 & 1.293 & NaN & NaN & NaN & NaN \\
+spec_c_reform & 23.457 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.064 & 6.440 & 1.702 & 2.993 & NaN & NaN & 1.452 & 2.140 & 5.825 & 1.258 & NaN & NaN & NaN & NaN \\
 spec_extended_1 & 23.761 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.102 & 6.538 & 1.697 & 2.956 & NaN & NaN & 1.452 & 2.135 & 5.827 & NaN & 1.133 & NaN & NaN & NaN \\
 spec_extended_1_spline & 426.703 & 10.330 & NaN & 5.642 & NaN & 19.084 & NaN & 10.677 & NaN & 1.240 & 6.807 & 1.707 & 3.180 & NaN & NaN & 1.489 & 2.158 & 6.282 & NaN & 1.913 & NaN & NaN & NaN \\
 spec_extended_1_spline_interact & 260030.850 & 2230.527 & 4639.845 & 3643.269 & 8582.132 & 10753.246 & 44159.808 & 6173.254 & 12264.629 & 1.261 & 7.193 & 1.729 & 3.230 & NaN & NaN & 1.527 & 2.273 & 46333.688 & NaN & 2.304 & NaN & NaN & NaN \\
@@ -14,9 +17,14 @@ spec_extended_2_spline_interact & 259797.307 & 2226.926 & 4633.656 & 3642.854 & 
 spec_extended_3 & 28.960 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.116 & 6.470 & 1.517 & 2.615 & 3.423 & NaN & NaN & 2.019 & 7.864 & NaN & 1.135 & NaN & NaN & NaN \\
 spec_extended_3_spline & 430.136 & 10.328 & NaN & 5.629 & NaN & 19.082 & NaN & 10.680 & NaN & 1.243 & 6.714 & 1.529 & 2.773 & 3.438 & NaN & NaN & 2.054 & 8.466 & NaN & 1.888 & NaN & NaN & NaN \\
 spec_extended_3_spline_interact & 260220.164 & 2229.457 & 4639.054 & 3655.887 & 8607.923 & 10761.571 & 44192.238 & 6178.995 & 12273.935 & 1.270 & 7.018 & 1.539 & 2.814 & 3.595 & NaN & NaN & 2.132 & 46340.607 & NaN & 2.255 & NaN & NaN & NaN \\
-spec_extended_4 & 29.327 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.072 & 6.363 & 1.547 & 2.677 & 3.513 & NaN & NaN & 2.028 & 7.857 & 1.293 & NaN & NaN & NaN & NaN \\
-spec_extended_5 & 29.019 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.073 & 6.359 & 1.563 & 2.711 & 3.483 & NaN & NaN & 2.027 & 7.853 & NaN & NaN & NaN & 1.330 & NaN \\
-spec_extended_6 & 28.807 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.073 & 6.353 & 1.568 & 2.812 & 3.506 & NaN & NaN & 2.028 & 7.885 & NaN & NaN & NaN & NaN & 1.331 \\
-spec_extended_7 & 28.990 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.107 & 6.599 & 1.484 & 2.594 & 3.416 & NaN & NaN & 2.021 & 7.897 & NaN & NaN & 1.149 & NaN & NaN \\
+spec_govprot_attack & 23.996 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.069 & 6.554 & 1.450 & 2.664 & NaN & 1.496 & NaN & 2.152 & 6.024 & NaN & NaN & 1.299 & NaN & NaN \\
+spec_govprot_pack & 28.990 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.107 & 6.599 & 1.484 & 2.594 & 3.416 & NaN & NaN & 2.021 & 7.897 & NaN & NaN & 1.149 & NaN & NaN \\
+spec_govprot_reform & 23.675 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.098 & 6.669 & 1.653 & 2.932 & NaN & NaN & 1.451 & 2.136 & 5.840 & NaN & NaN & 1.149 & NaN & NaN \\
+spec_im_attack & 23.931 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.046 & 6.356 & 1.513 & 2.744 & NaN & 1.323 & NaN & 2.150 & 6.074 & NaN & NaN & NaN & 1.304 & NaN \\
+spec_im_pack & 29.019 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.073 & 6.359 & 1.563 & 2.711 & 3.483 & NaN & NaN & 2.027 & 7.853 & NaN & NaN & NaN & 1.330 & NaN \\
+spec_im_reform & 23.357 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.068 & 6.428 & 1.702 & 3.053 & NaN & NaN & 1.454 & 2.143 & 5.853 & NaN & NaN & NaN & 1.307 & NaN \\
+spec_p_attack & 24.489 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.043 & 6.346 & 1.516 & 2.846 & NaN & 1.325 & NaN & 2.161 & 6.176 & NaN & NaN & NaN & NaN & 1.300 \\
+spec_p_pack & 28.807 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.073 & 6.353 & 1.568 & 2.812 & 3.506 & NaN & NaN & 2.028 & 7.885 & NaN & NaN & NaN & NaN & 1.331 \\
+spec_p_reform & 23.962 & NaN & NaN & NaN & NaN & NaN & NaN & NaN & NaN & 1.064 & 6.423 & 1.713 & 3.129 & NaN & NaN & 1.451 & 2.146 & 5.975 & NaN & NaN & NaN & NaN & 1.297 \\
 \bottomrule
 \end{tabular}
