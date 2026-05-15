@@ -1,0 +1,26 @@
+DEFENDANT EXTRACTION SUMMARY
+
+Input:
+C:\Users\egada\OneDrive - The Carter Center\Documents\judicial-effect-on-legislation\outputs\defendant_pipeline\cases_v5_with_defendant_full.csv
+
+Total rows: 1075
+
+Rows with errors: 17 (1.58%)
+Defendant not_found/unclear/error/blank: 70 (6.51%)
+Classification unclear/blank: 68 (6.33%)
+Missing defendant evidence: 69 (6.42%)
+Missing classification evidence: 56 (5.21%)
+
+Classification counts:
+defendant_classification_correct   n  percent
+                      government 391    36.37
+                         citizen 259    24.09
+                           press 163    15.16
+                           other 100     9.30
+                    intermediary  94     8.74
+                         unclear  68     6.33
+
+Files written:
+- C:\Users\egada\OneDrive - The Carter Center\Documents\judicial-effect-on-legislation\outputs\defendant_pipeline\summary\defendant_classification_counts.csv
+- C:\Users\egada\OneDrive - The Carter Center\Documents\judicial-effect-on-legislation\outputs\defendant_pipeline\summary\defendant_problem_rows.csv
+- C:\Users\egada\OneDrive - The Carter Center\Documents\judicial-effect-on-legislation\outputs\defendant_pipeline\summary\defendant_random_sample_50.csv
