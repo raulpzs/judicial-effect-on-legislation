@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import statsmodels.api as sm
 from pathlib import Path
+import pickle
 from patsy import dmatrix
 
 from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -27,11 +28,17 @@ OUTPUT_VIF_PATH = OUTPUT_DIR / "vif_table_all_specs.csv"
 OUTPUT_VIF_LATEX_PATH = OUTPUT_DIR / "vif_table_all_specs.tex"
 OUTPUT_VIF_HTML_PATH = OUTPUT_DIR / "vif_table_all_specs.html"
 
+MODEL_DIR = OUTPUT_DIR / "fitted_models"
+MATRIX_DIR = OUTPUT_DIR / "model_matrices"
+
+MODEL_DIR.mkdir(parents=True, exist_ok=True)
+MATRIX_DIR.mkdir(parents=True, exist_ok=True)
+
 # =========================
 # Config
 # =========================
 
-DATA_PATH = DATA_DIR / "processed" / "cases_v4_short_merged.csv"
+DATA_PATH = DATA_DIR / "processed" / "cases_v6_short.csv"
 
 Y_VAR = "decision_direction"
 
@@ -50,6 +57,23 @@ CONTROLS = [
     "legal_civil",
     "high_court",
     "j_ind_lag1",
+]
+
+DECISION_CONTROLS = [
+#    "mode_electronic_internet", # base
+    "mode_press_newspapers",
+    "mode_public_speech",
+    "mode_public_documents",
+    "mode_audio_visual_broadcasting",
+    "mode_public_assembly",
+    "mode_written_speech",
+    "mode_non_verbal_expression",
+    "defendant_citizen",
+    "defendant_press",
+#    "defendant_government", # base
+    "defendant_intermediary",
+    "defendant_other",
+    "defendant_unclear",
 ]
 
 SPECIFICATIONS = {
@@ -170,6 +194,26 @@ SPECIFICATIONS = {
     },
     "spec_govprot_attack": {
         "vars": ["wdj_govprot_lag1", "v2jupoatck_lag1"] + CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_c_reform_decision": {
+        "vars": ["wdj_citizen_lag1", "v2jureform_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_p_reform_decision": {
+        "vars": ["wdj_press_lag1", "v2jureform_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_c_pack_decision": {
+        "vars": ["wdj_citizen_lag1", "v2jupack_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_p_pack_decision": {
+        "vars": ["wdj_press_lag1", "v2jupack_lag1"] + CONTROLS + DECISION_CONTROLS,
         "spline": False,
         "interaction": False,
     },
@@ -325,6 +369,16 @@ for spec_name, spec in SPECIFICATIONS.items():
         cov_type="cluster",
         cov_kwds={"groups": data[CLUSTER_VAR]},
     )
+
+    # Save fitted model object
+    with open(MODEL_DIR / f"{spec_name}.pkl", "wb") as f:
+        pickle.dump(result, f)
+    
+    # Save the model matrix used for estimation
+    X.to_csv(MATRIX_DIR / f"{spec_name}_X.csv")
+    
+    # Save outcome vector, useful for debugging / replication
+    pd.Series(y, name="outcome").to_csv(MATRIX_DIR / f"{spec_name}_y.csv")
 
     # =========================
     # Model-level stats

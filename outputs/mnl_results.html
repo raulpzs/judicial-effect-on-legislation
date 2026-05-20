@@ -2,8 +2,8 @@
   <thead>
     <tr>
       <th>outcome</th>
-      <th colspan="24" halign="left">Contracts Expression</th>
-      <th colspan="24" halign="left">Expands Expression</th>
+      <th colspan="28" halign="left">Contracts Expression</th>
+      <th colspan="28" halign="left">Expands Expression</th>
     </tr>
     <tr>
       <th>spec</th>
@@ -12,7 +12,9 @@
       <th>spec_base_3</th>
       <th>spec_c_attack</th>
       <th>spec_c_pack</th>
+      <th>spec_c_pack_decision</th>
       <th>spec_c_reform</th>
+      <th>spec_c_reform_decision</th>
       <th>spec_extended_1</th>
       <th>spec_extended_1_spline</th>
       <th>spec_extended_1_spline_interact</th>
@@ -30,13 +32,17 @@
       <th>spec_im_reform</th>
       <th>spec_p_attack</th>
       <th>spec_p_pack</th>
+      <th>spec_p_pack_decision</th>
       <th>spec_p_reform</th>
+      <th>spec_p_reform_decision</th>
       <th>spec_base_1</th>
       <th>spec_base_2</th>
       <th>spec_base_3</th>
       <th>spec_c_attack</th>
       <th>spec_c_pack</th>
+      <th>spec_c_pack_decision</th>
       <th>spec_c_reform</th>
+      <th>spec_c_reform_decision</th>
       <th>spec_extended_1</th>
       <th>spec_extended_1_spline</th>
       <th>spec_extended_1_spline_interact</th>
@@ -54,10 +60,20 @@
       <th>spec_im_reform</th>
       <th>spec_p_attack</th>
       <th>spec_p_pack</th>
+      <th>spec_p_pack_decision</th>
       <th>spec_p_reform</th>
+      <th>spec_p_reform_decision</th>
     </tr>
     <tr>
       <th>variable</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -116,7 +132,9 @@
       <td>0.866*** (0.299)</td>
       <td>-2.097*** (0.632)</td>
       <td>-2.304*** (0.622)</td>
+      <td>-2.177** (0.863)</td>
       <td>-2.099*** (0.611)</td>
+      <td>-1.966** (0.915)</td>
       <td>-2.159*** (0.653)</td>
       <td>-5.77*** (1.333)</td>
       <td>72.52 (53.852)</td>
@@ -134,13 +152,17 @@
       <td>-2.106*** (0.615)</td>
       <td>-2.261*** (0.661)</td>
       <td>-2.453*** (0.65)</td>
+      <td>-2.308*** (0.883)</td>
       <td>-2.251*** (0.64)</td>
+      <td>-2.108** (0.933)</td>
       <td>-0.119 (0.233)</td>
       <td>-0.138 (0.273)</td>
       <td>-0.36 (0.35)</td>
       <td>-3.746*** (0.741)</td>
       <td>-4.335*** (0.914)</td>
+      <td>-4.308*** (1.149)</td>
       <td>-3.601*** (0.74)</td>
+      <td>-3.608*** (1.117)</td>
       <td>-3.725*** (0.808)</td>
       <td>-2.68*** (0.976)</td>
       <td>98.189 (88.724)</td>
@@ -158,10 +180,14 @@
       <td>-3.714*** (0.782)</td>
       <td>-4.12*** (0.796)</td>
       <td>-4.667*** (0.925)</td>
+      <td>-4.534*** (1.128)</td>
       <td>-3.992*** (0.798)</td>
+      <td>-3.87*** (1.124)</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[0]</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -177,6 +203,10 @@
       <td>NaN</td>
       <td>6.471* (3.593)</td>
       <td>-53.026 (58.364)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -210,9 +240,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[0]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -228,6 +262,10 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>160.774 (118.126)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -261,9 +299,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[1]</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -279,6 +321,10 @@
       <td>NaN</td>
       <td>3.994*** (0.753)</td>
       <td>-102.387* (56.994)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -312,9 +358,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[1]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -330,6 +380,10 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>200.336* (105.685)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -363,9 +417,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[2]</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -381,6 +439,10 @@
       <td>NaN</td>
       <td>3.715** (1.757)</td>
       <td>-87.763 (55.796)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -414,9 +476,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[2]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -432,6 +498,10 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>184.701* (107.803)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -465,9 +535,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[3]</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -483,6 +557,10 @@
       <td>NaN</td>
       <td>6.109*** (2.036)</td>
       <td>-87.478 (55.926)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -516,9 +594,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>bs(year, df=4)[3]:v2x_polyarchy_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -534,6 +616,10 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>186.073* (107.174)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -567,6 +653,303 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>defendant_citizen</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.837** (0.413)</td>
+      <td>NaN</td>
+      <td>-0.822* (0.422)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.853** (0.415)</td>
+      <td>NaN</td>
+      <td>-0.843** (0.424)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.719 (0.444)</td>
+      <td>NaN</td>
+      <td>-0.713 (0.452)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.775* (0.448)</td>
+      <td>NaN</td>
+      <td>-0.777* (0.457)</td>
+    </tr>
+    <tr>
+      <th>defendant_government</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.1 (0.525)</td>
+      <td>NaN</td>
+      <td>0.102 (0.54)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.099 (0.535)</td>
+      <td>NaN</td>
+      <td>0.099 (0.549)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.412 (0.52)</td>
+      <td>NaN</td>
+      <td>-0.385 (0.547)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.406 (0.538)</td>
+      <td>NaN</td>
+      <td>-0.386 (0.562)</td>
+    </tr>
+    <tr>
+      <th>defendant_intermediary</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-1.382*** (0.268)</td>
+      <td>NaN</td>
+      <td>-1.344*** (0.267)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-1.381*** (0.27)</td>
+      <td>NaN</td>
+      <td>-1.344*** (0.27)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-1.055* (0.577)</td>
+      <td>NaN</td>
+      <td>-1.045* (0.581)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-1.036* (0.583)</td>
+      <td>NaN</td>
+      <td>-1.026* (0.587)</td>
+    </tr>
+    <tr>
+      <th>defendant_press</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.753 (0.459)</td>
+      <td>NaN</td>
+      <td>-0.727 (0.464)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.75 (0.463)</td>
+      <td>NaN</td>
+      <td>-0.724 (0.468)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.772 (0.637)</td>
+      <td>NaN</td>
+      <td>-0.744 (0.644)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.767 (0.644)</td>
+      <td>NaN</td>
+      <td>-0.744 (0.653)</td>
+    </tr>
+    <tr>
+      <th>defendant_unclear</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.494 (0.532)</td>
+      <td>NaN</td>
+      <td>-0.477 (0.531)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.5 (0.536)</td>
+      <td>NaN</td>
+      <td>-0.478 (0.536)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-1.761*** (0.539)</td>
+      <td>NaN</td>
+      <td>-1.81*** (0.548)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-1.789*** (0.545)</td>
+      <td>NaN</td>
+      <td>-1.827*** (0.555)</td>
     </tr>
     <tr>
       <th>high_court</th>
@@ -575,7 +958,9 @@
       <td>NaN</td>
       <td>0.553** (0.275)</td>
       <td>0.449* (0.259)</td>
+      <td>0.42* (0.244)</td>
       <td>0.431* (0.262)</td>
+      <td>0.398 (0.243)</td>
       <td>0.418 (0.279)</td>
       <td>0.269 (0.316)</td>
       <td>0.221 (0.319)</td>
@@ -593,13 +978,17 @@
       <td>0.42 (0.263)</td>
       <td>0.562** (0.277)</td>
       <td>0.458* (0.26)</td>
+      <td>0.43* (0.246)</td>
       <td>0.437* (0.262)</td>
+      <td>0.404* (0.243)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>0.589** (0.279)</td>
       <td>0.447* (0.266)</td>
+      <td>0.483 (0.305)</td>
       <td>0.479* (0.286)</td>
+      <td>0.515 (0.32)</td>
       <td>0.456* (0.275)</td>
       <td>0.481* (0.278)</td>
       <td>0.431 (0.281)</td>
@@ -617,7 +1006,9 @@
       <td>0.469 (0.289)</td>
       <td>0.6** (0.284)</td>
       <td>0.463* (0.271)</td>
+      <td>0.497 (0.308)</td>
       <td>0.488* (0.286)</td>
+      <td>0.522 (0.319)</td>
     </tr>
     <tr>
       <th>j_ind_lag1</th>
@@ -626,7 +1017,9 @@
       <td>NaN</td>
       <td>0.148 (0.271)</td>
       <td>0.144 (0.274)</td>
+      <td>0.147 (0.256)</td>
       <td>0.233 (0.257)</td>
+      <td>0.233 (0.248)</td>
       <td>0.248 (0.265)</td>
       <td>0.321 (0.268)</td>
       <td>0.35 (0.272)</td>
@@ -644,13 +1037,17 @@
       <td>0.215 (0.252)</td>
       <td>0.143 (0.274)</td>
       <td>0.137 (0.276)</td>
+      <td>0.14 (0.252)</td>
       <td>0.225 (0.256)</td>
+      <td>0.222 (0.24)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>-0.244 (0.243)</td>
       <td>-0.248 (0.248)</td>
+      <td>-0.247 (0.231)</td>
       <td>-0.179 (0.24)</td>
+      <td>-0.189 (0.233)</td>
       <td>-0.138 (0.267)</td>
       <td>-0.04 (0.281)</td>
       <td>-0.052 (0.279)</td>
@@ -668,7 +1065,9 @@
       <td>-0.175 (0.255)</td>
       <td>-0.23 (0.242)</td>
       <td>-0.24 (0.246)</td>
+      <td>-0.245 (0.225)</td>
       <td>-0.164 (0.237)</td>
+      <td>-0.183 (0.228)</td>
     </tr>
     <tr>
       <th>legal_civil</th>
@@ -677,7 +1076,9 @@
       <td>NaN</td>
       <td>-0.38 (0.347)</td>
       <td>-0.418 (0.344)</td>
+      <td>-0.101 (0.317)</td>
       <td>-0.659* (0.359)</td>
+      <td>-0.344 (0.336)</td>
       <td>-0.671* (0.368)</td>
       <td>-0.695* (0.361)</td>
       <td>-0.724** (0.364)</td>
@@ -695,13 +1096,17 @@
       <td>-0.564 (0.348)</td>
       <td>-0.378 (0.355)</td>
       <td>-0.41 (0.353)</td>
+      <td>-0.069 (0.313)</td>
       <td>-0.649* (0.359)</td>
+      <td>-0.317 (0.326)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>-0.061 (0.405)</td>
       <td>-0.213 (0.425)</td>
+      <td>-0.002 (0.406)</td>
       <td>-0.15 (0.444)</td>
+      <td>0.095 (0.441)</td>
       <td>-0.349 (0.486)</td>
       <td>-0.286 (0.45)</td>
       <td>-0.332 (0.442)</td>
@@ -719,7 +1124,9 @@
       <td>-0.374 (0.498)</td>
       <td>-0.076 (0.412)</td>
       <td>-0.227 (0.421)</td>
+      <td>-0.018 (0.406)</td>
       <td>-0.186 (0.449)</td>
+      <td>0.056 (0.44)</td>
     </tr>
     <tr>
       <th>legal_common</th>
@@ -728,7 +1135,9 @@
       <td>NaN</td>
       <td>-1.835*** (0.345)</td>
       <td>-1.865*** (0.361)</td>
+      <td>-1.459*** (0.383)</td>
       <td>-2.239*** (0.36)</td>
+      <td>-1.822*** (0.388)</td>
       <td>-2.19*** (0.349)</td>
       <td>-2.201*** (0.375)</td>
       <td>-2.288*** (0.388)</td>
@@ -746,13 +1155,17 @@
       <td>-2.286*** (0.367)</td>
       <td>-1.893*** (0.347)</td>
       <td>-1.912*** (0.361)</td>
+      <td>-1.53*** (0.359)</td>
       <td>-2.301*** (0.379)</td>
+      <td>-1.901*** (0.385)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>-0.713 (0.489)</td>
       <td>-0.739 (0.489)</td>
+      <td>-0.602 (0.499)</td>
       <td>-0.952* (0.522)</td>
+      <td>-0.788 (0.508)</td>
       <td>-0.853 (0.54)</td>
       <td>-0.636 (0.514)</td>
       <td>-0.612 (0.49)</td>
@@ -770,7 +1183,422 @@
       <td>-0.916* (0.555)</td>
       <td>-0.849* (0.465)</td>
       <td>-0.861* (0.462)</td>
+      <td>-0.697 (0.459)</td>
       <td>-1.112** (0.53)</td>
+      <td>-0.903* (0.5)</td>
+    </tr>
+    <tr>
+      <th>mode_audio_visual_broadcasting</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.721* (0.376)</td>
+      <td>NaN</td>
+      <td>0.714* (0.395)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.735** (0.374)</td>
+      <td>NaN</td>
+      <td>0.732* (0.395)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.922** (0.41)</td>
+      <td>NaN</td>
+      <td>0.891** (0.421)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.932** (0.417)</td>
+      <td>NaN</td>
+      <td>0.91** (0.431)</td>
+    </tr>
+    <tr>
+      <th>mode_electronic_internet</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.386 (0.412)</td>
+      <td>NaN</td>
+      <td>0.373 (0.405)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.37 (0.408)</td>
+      <td>NaN</td>
+      <td>0.356 (0.402)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.502 (0.457)</td>
+      <td>NaN</td>
+      <td>0.502 (0.444)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.452 (0.44)</td>
+      <td>NaN</td>
+      <td>0.448 (0.428)</td>
+    </tr>
+    <tr>
+      <th>mode_non_verbal_expression</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.325 (0.454)</td>
+      <td>NaN</td>
+      <td>0.316 (0.453)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.301 (0.43)</td>
+      <td>NaN</td>
+      <td>0.291 (0.428)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.733 (0.549)</td>
+      <td>NaN</td>
+      <td>0.696 (0.551)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.685 (0.517)</td>
+      <td>NaN</td>
+      <td>0.647 (0.519)</td>
+    </tr>
+    <tr>
+      <th>mode_press_newspapers</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.102** (0.548)</td>
+      <td>NaN</td>
+      <td>1.078** (0.537)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.103** (0.553)</td>
+      <td>NaN</td>
+      <td>1.076** (0.542)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.863 (0.665)</td>
+      <td>NaN</td>
+      <td>0.851 (0.65)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.862 (0.666)</td>
+      <td>NaN</td>
+      <td>0.851 (0.65)</td>
+    </tr>
+    <tr>
+      <th>mode_public_assembly</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.328 (0.821)</td>
+      <td>NaN</td>
+      <td>0.273 (0.783)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.339 (0.823)</td>
+      <td>NaN</td>
+      <td>0.283 (0.785)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.663 (0.409)</td>
+      <td>NaN</td>
+      <td>0.591 (0.381)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.673* (0.404)</td>
+      <td>NaN</td>
+      <td>0.605 (0.377)</td>
+    </tr>
+    <tr>
+      <th>mode_public_documents</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.603 (0.634)</td>
+      <td>NaN</td>
+      <td>0.66 (0.646)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.644 (0.647)</td>
+      <td>NaN</td>
+      <td>0.704 (0.659)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.08 (0.339)</td>
+      <td>NaN</td>
+      <td>0.052 (0.349)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.108 (0.349)</td>
+      <td>NaN</td>
+      <td>0.093 (0.36)</td>
+    </tr>
+    <tr>
+      <th>mode_public_speech</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.123 (0.463)</td>
+      <td>NaN</td>
+      <td>-0.128 (0.454)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.141 (0.449)</td>
+      <td>NaN</td>
+      <td>-0.146 (0.44)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.004 (0.346)</td>
+      <td>NaN</td>
+      <td>-0.006 (0.352)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.05 (0.322)</td>
+      <td>NaN</td>
+      <td>-0.05 (0.327)</td>
     </tr>
     <tr>
       <th>v2jupack_lag1</th>
@@ -779,6 +1607,8 @@
       <td>0.032 (0.161)</td>
       <td>NaN</td>
       <td>-0.235 (0.162)</td>
+      <td>-0.232 (0.168)</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -797,12 +1627,16 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>-0.238 (0.158)</td>
+      <td>-0.223 (0.165)</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>0.256 (0.193)</td>
       <td>NaN</td>
       <td>-0.488* (0.249)</td>
+      <td>-0.471* (0.25)</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -821,6 +1655,8 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>-0.486** (0.239)</td>
+      <td>-0.467* (0.242)</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -829,6 +1665,8 @@
       <td>-0.119 (0.121)</td>
       <td>NaN</td>
       <td>-0.15 (0.122)</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -850,9 +1688,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>0.022 (0.142)</td>
       <td>NaN</td>
       <td>-0.181* (0.103)</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -873,6 +1715,8 @@
       <td>-0.169* (0.102)</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>v2jureform_lag1</th>
@@ -881,7 +1725,9 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
       <td>-0.328*** (0.123)</td>
+      <td>-0.325*** (0.123)</td>
       <td>-0.335*** (0.124)</td>
       <td>-0.365*** (0.119)</td>
       <td>-0.407*** (0.128)</td>
@@ -899,13 +1745,17 @@
       <td>-0.324*** (0.12)</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
       <td>-0.331*** (0.12)</td>
+      <td>-0.327*** (0.118)</td>
       <td>-0.028 (0.18)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
       <td>-0.173 (0.233)</td>
+      <td>-0.132 (0.246)</td>
       <td>-0.184 (0.25)</td>
       <td>-0.156 (0.238)</td>
       <td>-0.205 (0.233)</td>
@@ -923,7 +1773,9 @@
       <td>-0.177 (0.25)</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
       <td>-0.199 (0.235)</td>
+      <td>-0.149 (0.247)</td>
     </tr>
     <tr>
       <th>v2jureview_lag1</th>
@@ -932,7 +1784,9 @@
       <td>NaN</td>
       <td>0.759** (0.303)</td>
       <td>0.868*** (0.301)</td>
+      <td>0.688** (0.293)</td>
       <td>0.79*** (0.3)</td>
+      <td>0.605** (0.296)</td>
       <td>0.83** (0.323)</td>
       <td>0.784** (0.329)</td>
       <td>0.822*** (0.315)</td>
@@ -950,13 +1804,17 @@
       <td>0.8*** (0.305)</td>
       <td>0.82** (0.336)</td>
       <td>0.918*** (0.326)</td>
+      <td>0.731** (0.315)</td>
       <td>0.842*** (0.323)</td>
+      <td>0.649** (0.316)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>0.263 (0.336)</td>
       <td>0.417 (0.356)</td>
+      <td>0.394 (0.345)</td>
       <td>0.331 (0.341)</td>
+      <td>0.334 (0.334)</td>
       <td>0.382 (0.373)</td>
       <td>0.369 (0.361)</td>
       <td>0.274 (0.363)</td>
@@ -974,7 +1832,9 @@
       <td>0.353 (0.36)</td>
       <td>0.358 (0.388)</td>
       <td>0.491 (0.388)</td>
+      <td>0.444 (0.374)</td>
       <td>0.414 (0.377)</td>
+      <td>0.388 (0.363)</td>
     </tr>
     <tr>
       <th>v2x_polyarchy_lag1</th>
@@ -983,7 +1843,9 @@
       <td>NaN</td>
       <td>3.444*** (1.166)</td>
       <td>3.882*** (1.203)</td>
+      <td>3.627*** (1.102)</td>
       <td>3.574*** (1.23)</td>
+      <td>3.328*** (1.176)</td>
       <td>3.487*** (1.215)</td>
       <td>3.173** (1.233)</td>
       <td>-154.371 (102.988)</td>
@@ -1001,13 +1863,17 @@
       <td>3.66*** (1.195)</td>
       <td>3.561*** (1.174)</td>
       <td>4.012*** (1.21)</td>
+      <td>3.778*** (1.072)</td>
       <td>3.719*** (1.202)</td>
+      <td>3.528*** (1.104)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>5.697*** (1.316)</td>
       <td>7.001*** (1.775)</td>
+      <td>6.908*** (1.737)</td>
       <td>5.36*** (1.341)</td>
+      <td>5.267*** (1.307)</td>
       <td>5.182*** (1.44)</td>
       <td>4.428*** (1.533)</td>
       <td>-181.404 (166.633)</td>
@@ -1025,7 +1891,9 @@
       <td>5.366*** (1.38)</td>
       <td>5.995*** (1.324)</td>
       <td>7.314*** (1.692)</td>
+      <td>7.179*** (1.613)</td>
       <td>5.755*** (1.289)</td>
+      <td>5.603*** (1.217)</td>
     </tr>
     <tr>
       <th>wdj_citizen_lag1</th>
@@ -1034,7 +1902,11 @@
       <td>NaN</td>
       <td>-0.334 (0.405)</td>
       <td>-0.272 (0.428)</td>
+      <td>-0.271 (0.401)</td>
       <td>-0.265 (0.415)</td>
+      <td>-0.26 (0.393)</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1058,7 +1930,11 @@
       <td>NaN</td>
       <td>-0.994 (0.642)</td>
       <td>-0.855 (0.635)</td>
+      <td>-0.787 (0.609)</td>
       <td>-0.945 (0.643)</td>
+      <td>-0.858 (0.622)</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1086,6 +1962,8 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>-0.081 (0.196)</td>
       <td>-0.155 (0.267)</td>
       <td>-0.126 (0.367)</td>
@@ -1104,9 +1982,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>0.173 (0.289)</td>
       <td>0.183 (0.323)</td>
       <td>0.07 (0.287)</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1128,9 +2010,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>wdj_govprot_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1170,6 +2056,10 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>-0.425 (0.322)</td>
       <td>-0.248 (0.265)</td>
       <td>-0.213 (0.318)</td>
@@ -1179,9 +2069,13 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>wdj_intermediaries_lag1</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1224,9 +2118,15 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>-0.396 (0.955)</td>
       <td>-0.138 (0.961)</td>
       <td>-0.378 (0.95)</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1254,9 +2154,15 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>-0.575 (0.596)</td>
       <td>-0.509 (0.61)</td>
+      <td>-0.77* (0.46)</td>
       <td>-0.577 (0.527)</td>
+      <td>-0.841** (0.406)</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1280,7 +2186,9 @@
       <td>NaN</td>
       <td>-1.612** (0.637)</td>
       <td>-1.44** (0.674)</td>
+      <td>-1.417** (0.568)</td>
       <td>-1.617*** (0.56)</td>
+      <td>-1.573*** (0.457)</td>
     </tr>
   </tbody>
 </table>

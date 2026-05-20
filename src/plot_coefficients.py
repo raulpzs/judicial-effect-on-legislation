@@ -29,6 +29,10 @@ MAIN_SPECS = [
     "spec_im_attack",
     "spec_p_attack",
     "spec_govprot_attack",
+    "spec_c_reform_decision",
+    "spec_p_reform_decision",
+    "spec_c_pack_decision",
+    "spec_p_pack_decision",
 ]
 
 MAIN_VARIABLES = [
