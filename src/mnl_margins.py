@@ -5,7 +5,8 @@ This script:
 1. Loads fitted statsmodels MNLogit result objects.
 2. Loads the matching model matrix for each spec.
 3. Computes average predicted-probability changes for selected variables.
-4. Optionally generates a margins plot.
+4. Uses coefficient simulation to add confidence intervals.
+5. Generates a margins plot with confidence intervals.
 
 Interpretation alternatives:
 - Continuous variables: mean -> mean + 1 SD, p25 -> p75, or p10 -> p90.
@@ -15,6 +16,7 @@ Interpretation alternatives:
 
 from pathlib import Path
 import pickle
+import warnings
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -28,15 +30,13 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-MODEL_DIR = OUTPUT_DIR "fitted_models"
-MATRIX_DIR = OUTPUT_DIR / "outputs/model_matrices"
+MODEL_DIR = OUTPUT_DIR / "fitted_models"
+MATRIX_DIR = OUTPUT_DIR / "model_matrices"
 POSTEST_DIR = OUTPUT_DIR / "postestimation"
-PLOT_DIR = OUTPUT_DIR / "plots"
+PLOT_DIR = POSTEST_DIR / "plots"
 
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-PLOT_DIR.mkdir(parents=True, exist_ok=True)
+for path in [OUTPUT_DIR, MODEL_DIR, MATRIX_DIR, POSTEST_DIR, PLOT_DIR]:
+    path.mkdir(parents=True, exist_ok=True)
 
 
 # ---------------------------------------------------------------------
@@ -50,22 +50,25 @@ OUTCOME_LABELS = {
 }
 
 
-# Edit this block as needed.
-# Keys are model/spec names. Values are variable: contrast pairs.
 SELECTED_EFFECTS = {
-    "spec_extended_4": {
-        "weighted_de_jure_expression": "sd",
-        "judicial_action_index": "sd",
+    "spec_p_reform": {
+        "wdj_press_lag1": "sd",
+        "v2jureform_lag1": "sd",
     },
-    "spec_extended_4_high_court_1": {
-        "weighted_de_jure_expression": "sd",
-        "judicial_action_index": "sd",
+    "spec_p_attack": {
+        "wdj_press_lag1": "sd",
+        "v2jupoatck_lag1": "sd",
     },
-    "spec_extended_4_high_court_0": {
-        "weighted_de_jure_expression": "sd",
-        "judicial_action_index": "sd",
+    "spec_p_reform_decision": {
+        "wdj_press_lag1": "sd",
+        "v2jureform_lag1": "sd",
     },
 }
+
+
+N_SIM = 1000
+CI_LEVEL = 0.95
+RANDOM_SEED = 12345
 
 
 # ---------------------------------------------------------------------
@@ -99,24 +102,34 @@ def load_X(spec_name: str) -> pd.DataFrame:
 
 def _predict_probs(result, X: pd.DataFrame, outcome_labels=None) -> pd.DataFrame:
     """
-    Return predicted probabilities as a DataFrame.
-
-    Parameters
-    ----------
-    result:
-        Fitted statsmodels MNLogit result.
-    X:
-        Design matrix with the same columns used in estimation.
-    outcome_labels:
-        Optional mapping from outcome codes to readable labels.
-
-    Returns
-    -------
-    pd.DataFrame
-        Predicted probabilities, one column per outcome.
+    Return predicted probabilities from the fitted model.
     """
 
     probs = pd.DataFrame(result.predict(X), index=X.index)
+
+    if outcome_labels is not None:
+        probs = probs.rename(columns=outcome_labels)
+
+    return probs
+
+
+def _predict_probs_from_params(
+    result,
+    X: pd.DataFrame,
+    params_2d: np.ndarray,
+    outcome_labels=None,
+) -> pd.DataFrame:
+    """
+    Return predicted probabilities using supplied parameter values.
+
+    This is used for simulated confidence intervals. The params_2d array
+    should have the same shape as result.params.
+    """
+
+    probs = pd.DataFrame(
+        result.model.predict(params_2d, exog=X),
+        index=X.index,
+    )
 
     if outcome_labels is not None:
         probs = probs.rename(columns=outcome_labels)
@@ -187,6 +200,103 @@ def _make_contrast_matrices(
     return X0, X1, contrast_info
 
 
+# ---------------------------------------------------------------------
+# Parameter simulation helpers
+# ---------------------------------------------------------------------
+
+def _get_param_vector_and_cov(result):
+    """
+    Extract parameter vector, covariance matrix, and original parameter shape.
+
+    This uses row-major flattening and reshaping consistently. For standard
+    statsmodels MNLogit results, this should align with result.cov_params().
+    """
+
+    params = np.asarray(result.params)
+    param_shape = params.shape
+
+    beta_hat = params.ravel(order="C")
+    cov = np.asarray(result.cov_params())
+
+    if cov.shape != (beta_hat.size, beta_hat.size):
+        raise ValueError(
+            "Covariance matrix shape does not match flattened parameter vector. "
+            f"params size={beta_hat.size}, cov shape={cov.shape}. "
+            "Check statsmodels parameter ordering for this result object."
+        )
+
+    return beta_hat, cov, param_shape
+
+
+def _draw_parameter_matrices(
+    result,
+    n_sim: int = 1000,
+    random_seed: int = 12345,
+):
+    """
+    Draw simulated coefficient matrices from the estimated sampling distribution.
+    """
+
+    beta_hat, cov, param_shape = _get_param_vector_and_cov(result)
+
+    rng = np.random.default_rng(random_seed)
+
+    # Small numerical issues can make covariance matrices appear non-PSD.
+    # This is common enough that we warn instead of failing immediately.
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        draws = rng.multivariate_normal(
+            mean=beta_hat,
+            cov=cov,
+            size=n_sim,
+            check_valid="warn",
+        )
+
+    param_draws = [
+        draw.reshape(param_shape, order="C")
+        for draw in draws
+    ]
+
+    return param_draws
+
+
+def _summarize_simulated_effects(
+    sim_effects: pd.DataFrame,
+    ci_level: float = 0.95,
+) -> pd.DataFrame:
+    """
+    Summarize simulated effects into lower and upper confidence bounds.
+    """
+
+    alpha = 1 - ci_level
+    low_q = alpha / 2
+    high_q = 1 - alpha / 2
+
+    summary = (
+        sim_effects
+        .groupby("outcome")["estimate"]
+        .quantile([low_q, high_q])
+        .unstack()
+        .reset_index()
+    )
+
+    summary = summary.rename(
+        columns={
+            low_q: "ci_low",
+            high_q: "ci_high",
+        }
+    )
+
+    summary["ci_low_pp"] = summary["ci_low"] * 100
+    summary["ci_high_pp"] = summary["ci_high"] * 100
+
+    return summary
+
+
+# ---------------------------------------------------------------------
+# Main contrast functions
+# ---------------------------------------------------------------------
+
 def predicted_probability_contrast(
     result,
     X: pd.DataFrame,
@@ -197,14 +307,8 @@ def predicted_probability_contrast(
     """
     Estimate average predicted-probability change for one variable.
 
-    The function changes the focal variable from a low value to a high value,
-    predicts probabilities under both scenarios, and averages the difference
-    over the observed sample.
-
-    Returns
-    -------
-    pd.DataFrame
-        One row per outcome.
+    Returns point estimates only. For confidence intervals, use
+    predicted_probability_contrast_with_ci().
     """
 
     X0, X1, contrast_info = _make_contrast_matrices(
@@ -240,6 +344,101 @@ def predicted_probability_contrast(
     ]
 
 
+def predicted_probability_contrast_with_ci(
+    result,
+    X: pd.DataFrame,
+    variable: str,
+    contrast: str = "sd",
+    outcome_labels=None,
+    n_sim: int = 1000,
+    ci_level: float = 0.95,
+    random_seed: int = 12345,
+) -> pd.DataFrame:
+    """
+    Estimate average predicted-probability change with simulation-based CIs.
+
+    The point estimate uses the fitted model. Confidence intervals come from
+    repeated draws from the estimated coefficient distribution.
+    """
+
+    X0, X1, contrast_info = _make_contrast_matrices(
+        X=X,
+        variable=variable,
+        contrast=contrast,
+    )
+
+    # Point estimate from fitted model
+    point = predicted_probability_contrast(
+        result=result,
+        X=X,
+        variable=variable,
+        contrast=contrast,
+        outcome_labels=outcome_labels,
+    )
+
+    # Simulated effects
+    param_draws = _draw_parameter_matrices(
+        result=result,
+        n_sim=n_sim,
+        random_seed=random_seed,
+    )
+
+    sim_rows = []
+
+    for sim_id, params_2d in enumerate(param_draws):
+        p0 = _predict_probs_from_params(
+            result=result,
+            X=X0,
+            params_2d=params_2d,
+            outcome_labels=outcome_labels,
+        )
+
+        p1 = _predict_probs_from_params(
+            result=result,
+            X=X1,
+            params_2d=params_2d,
+            outcome_labels=outcome_labels,
+        )
+
+        diff = p1 - p0
+
+        sim_effect = diff.mean().reset_index()
+        sim_effect.columns = ["outcome", "estimate"]
+        sim_effect["sim_id"] = sim_id
+
+        sim_rows.append(sim_effect)
+
+    sim_effects = pd.concat(sim_rows, ignore_index=True)
+
+    ci = _summarize_simulated_effects(
+        sim_effects=sim_effects,
+        ci_level=ci_level,
+    )
+
+    out = point.merge(ci, on="outcome", how="left")
+
+    out["n_sim"] = n_sim
+    out["ci_level"] = ci_level
+
+    return out[
+        [
+            "variable",
+            "contrast",
+            "low_value",
+            "high_value",
+            "outcome",
+            "estimate",
+            "estimate_pp",
+            "ci_low",
+            "ci_high",
+            "ci_low_pp",
+            "ci_high_pp",
+            "n_sim",
+            "ci_level",
+        ]
+    ]
+
+
 def predicted_probabilities_long(
     result,
     X: pd.DataFrame,
@@ -248,9 +447,6 @@ def predicted_probabilities_long(
 ) -> pd.DataFrame:
     """
     Return observation-level predicted probabilities in long format.
-
-    Useful for diagnostics, descriptive summaries, or plotting predicted
-    probabilities directly.
     """
 
     probs = _predict_probs(result, X, outcome_labels=outcome_labels)
@@ -284,8 +480,6 @@ def statsmodels_marginal_effects(result, spec_name: str) -> pd.DataFrame:
     the finite-difference predicted-probability contrasts are usually clearer.
     """
 
-    # statsmodels supports get_margeff for discrete models; at="overall"
-    # averages marginal effects over observations.
     mfx = result.get_margeff(at="overall", method="dydx", dummy=True)
     df = mfx.summary_frame().reset_index()
     df.insert(0, "model", spec_name)
@@ -303,14 +497,30 @@ def plot_margins(
     title: str = "Predicted probability changes",
 ):
     """
-    Generate a margins plot from the selected predicted-probability contrasts.
+    Generate a margins plot with confidence intervals.
 
     Assumes effects_df contains:
     - model
     - variable
     - outcome
     - estimate_pp
+    - ci_low_pp
+    - ci_high_pp
     """
+
+    required = {
+        "model",
+        "variable",
+        "outcome",
+        "estimate_pp",
+        "ci_low_pp",
+        "ci_high_pp",
+    }
+
+    missing = required - set(effects_df.columns)
+
+    if missing:
+        raise ValueError(f"effects_df is missing required columns: {missing}")
 
     plot_df = effects_df.copy()
 
@@ -325,22 +535,32 @@ def plot_margins(
     y_labels = list(plot_df["label"].drop_duplicates())
     y_pos = np.arange(len(y_labels))
 
-    fig, ax = plt.subplots(figsize=(10, max(5, 0.45 * len(y_labels))))
+    fig, ax = plt.subplots(figsize=(10, max(5, 0.55 * len(y_labels))))
 
-    # Offset points by outcome so they do not overlap
     if len(outcomes) == 1:
         offsets = [0]
     else:
-        offsets = np.linspace(-0.18, 0.18, len(outcomes))
+        offsets = np.linspace(-0.22, 0.22, len(outcomes))
+
+    label_to_y = {label: i for i, label in enumerate(y_labels)}
 
     for outcome, offset in zip(outcomes, offsets):
         sub = plot_df[plot_df["outcome"] == outcome].copy()
 
-        sub["y"] = sub["label"].map({label: i for i, label in enumerate(y_labels)})
+        sub["y"] = sub["label"].map(label_to_y) + offset
 
-        ax.scatter(
-            sub["estimate_pp"],
-            sub["y"] + offset,
+        x = sub["estimate_pp"].to_numpy()
+        y = sub["y"].to_numpy()
+
+        xerr_low = x - sub["ci_low_pp"].to_numpy()
+        xerr_high = sub["ci_high_pp"].to_numpy() - x
+
+        ax.errorbar(
+            x=x,
+            y=y,
+            xerr=np.vstack([xerr_low, xerr_high]),
+            fmt="o",
+            capsize=3,
             label=outcome,
         )
 
@@ -367,7 +587,7 @@ def main():
     all_probs = []
     all_mfx = []
 
-    for spec_name, variable_map in SELECTED_EFFECTS.items():
+    for spec_i, (spec_name, variable_map) in enumerate(SELECTED_EFFECTS.items()):
         print(f"Processing {spec_name}")
 
         result = load_result(spec_name)
@@ -382,16 +602,23 @@ def main():
         )
         all_probs.append(probs_long)
 
-        # Selected finite-difference predicted-probability contrasts
-        for variable, contrast in variable_map.items():
+        # Selected finite-difference predicted-probability contrasts with CIs
+        for var_i, (variable, contrast) in enumerate(variable_map.items()):
             print(f"  - {variable}: {contrast}")
 
-            effect_df = predicted_probability_contrast(
+            # Offset seed so each model-variable pair gets reproducible,
+            # but distinct, simulation draws.
+            seed = RANDOM_SEED + (1000 * spec_i) + var_i
+
+            effect_df = predicted_probability_contrast_with_ci(
                 result=result,
                 X=X,
                 variable=variable,
                 contrast=contrast,
                 outcome_labels=OUTCOME_LABELS,
+                n_sim=N_SIM,
+                ci_level=CI_LEVEL,
+                random_seed=seed,
             )
 
             effect_df.insert(0, "model", spec_name)
@@ -404,11 +631,11 @@ def main():
         except Exception as e:
             print(f"Could not compute statsmodels get_margeff for {spec_name}: {e}")
 
-    # Save selected contrasts
+    # Save selected contrasts with confidence intervals
     effects_all = pd.concat(all_effects, ignore_index=True)
 
     effects_all.to_csv(
-        POSTEST_DIR / "selected_predicted_probability_contrasts.csv",
+        POSTEST_DIR / "selected_predicted_probability_contrasts_with_ci.csv",
         index=False,
     )
 
@@ -428,11 +655,11 @@ def main():
             index=False,
         )
 
-    # Plot selected contrasts
+    # Plot selected contrasts with CIs
     plot_margins(
         effects_df=effects_all,
-        output_path=PLOT_DIR / "selected_predicted_probability_contrasts.png",
-        title="Selected predicted probability contrasts",
+        output_path=PLOT_DIR / "selected_predicted_probability_contrasts_with_ci.png",
+        title="Selected predicted probability contrasts with 95% CIs",
     )
 
     print("Done.")
