@@ -18,3 +18,8 @@ z/
 *.log
 *.tmpoutputs/predictions_all_specs.csv
 outputs/predictions_all_specs.csv
+
+*.png
+outputs/old/predictions_all_specs.csv
+outputs/predictions_all_specs.csv
+outputs/old/predictions_all_specs_*.csv

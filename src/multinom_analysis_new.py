@@ -7,6 +7,35 @@ from patsy import dmatrix
 
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
+
+
+
+OUTCOME_LEVELS = [
+    "Contracts Expression",
+    "Expands Expression",
+    "Mixed Outcome",
+]
+
+BASE_CATEGORY_MAP = {
+    "mixed": "Mixed Outcome",
+    "contract": "Contracts Expression",
+    "expand": "Expands Expression",
+}
+
+def get_mnl_class_map(base_key):
+    BASE_CATEGORY = BASE_CATEGORY_MAP[base_key]
+    non_base_categories = [x for x in OUTCOME_LEVELS if x != BASE_CATEGORY]
+
+    return {
+        i: category
+        for i, category in enumerate(non_base_categories)
+    }
+
+BASE = "mixed"  # or "contract" or "expand"
+mnl_class_map = get_mnl_class_map(BASE)
+
+BASE_CATEGORY = BASE_CATEGORY_MAP[BASE]
+
 # =========================
 # Directories
 # =========================
@@ -18,18 +47,18 @@ DATA_DIR = PROJECT_ROOT / "data"
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-OUTPUT_PRED_PATH = OUTPUT_DIR / "predictions_all_specs.csv"
-OUTPUT_MODEL_PATH = OUTPUT_DIR / "model_comparison.csv"
-OUTPUT_PARAM_PATH = OUTPUT_DIR / "param_table_all_specs.csv"
-OUTPUT_LATEX_PATH = OUTPUT_DIR / "mnl_results.tex"
-OUTPUT_HTML_PATH = OUTPUT_DIR / "mnl_results.html"
+OUTPUT_PRED_PATH = OUTPUT_DIR / f"predictions_all_specs_{BASE}.csv"
+OUTPUT_MODEL_PATH = OUTPUT_DIR / f"model_comparison_{BASE}.csv"
+OUTPUT_PARAM_PATH = OUTPUT_DIR / f"param_table_all_specs_{BASE}.csv"
+OUTPUT_LATEX_PATH = OUTPUT_DIR / f"mnl_results_{BASE}.tex"
+OUTPUT_HTML_PATH = OUTPUT_DIR / f"mnl_results_{BASE}.html"
 
-OUTPUT_VIF_PATH = OUTPUT_DIR / "vif_table_all_specs.csv"
-OUTPUT_VIF_LATEX_PATH = OUTPUT_DIR / "vif_table_all_specs.tex"
-OUTPUT_VIF_HTML_PATH = OUTPUT_DIR / "vif_table_all_specs.html"
+OUTPUT_VIF_PATH = OUTPUT_DIR / f"vif_table_all_specs_{BASE}.csv"
+OUTPUT_VIF_LATEX_PATH = OUTPUT_DIR / f"vif_table_all_specs_{BASE}.tex"
+OUTPUT_VIF_HTML_PATH = OUTPUT_DIR / f"vif_table_all_specs_{BASE}.html"
 
-MODEL_DIR = OUTPUT_DIR / "fitted_models"
-MATRIX_DIR = OUTPUT_DIR / "model_matrices"
+MODEL_DIR = OUTPUT_DIR / f"fitted_models_{BASE}"
+MATRIX_DIR = OUTPUT_DIR / f"model_matrices_{BASE}"
 
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 MATRIX_DIR.mkdir(parents=True, exist_ok=True)
@@ -44,7 +73,8 @@ Y_VAR = "decision_direction"
 
 CLUSTER_VAR = "country"
 
-BASE_CATEGORY = "Mixed Outcome"
+#BASE_CATEGORY = "Contracts Expression"
+
 
 # =========================
 # Model specifications
@@ -202,8 +232,18 @@ SPECIFICATIONS = {
         "spline": False,
         "interaction": False,
     },
+    "spec_im_reform_decision": {
+        "vars": ["wdj_intermediaries_lag1", "v2jureform_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
     "spec_p_reform_decision": {
         "vars": ["wdj_press_lag1", "v2jureform_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_govprot_reform_decision": {
+        "vars": ["wdj_govprot_lag1", "v2jureform_lag1"] + CONTROLS + DECISION_CONTROLS,
         "spline": False,
         "interaction": False,
     },
@@ -212,8 +252,38 @@ SPECIFICATIONS = {
         "spline": False,
         "interaction": False,
     },
+        "spec_im_pack_decision": {
+        "vars": ["wdj_intermediaries_lag1", "v2jupack_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
     "spec_p_pack_decision": {
         "vars": ["wdj_press_lag1", "v2jupack_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_govprot_pack_decision": {
+        "vars": ["wdj_govprot_lag1", "v2jupack_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+        "spec_c_attack_decision": {
+        "vars": ["wdj_citizen_lag1", "v2jupoatck_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_im_attack_decision": {
+        "vars": ["wdj_intermediaries_lag1", "v2jupoatck_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_p_attack_decision": {
+        "vars": ["wdj_press_lag1", "v2jupoatck_lag1"] + CONTROLS + DECISION_CONTROLS,
+        "spline": False,
+        "interaction": False,
+    },
+    "spec_govprot_attack_decision": {
+        "vars": ["wdj_govprot_lag1", "v2jupoatck_lag1"] + CONTROLS + DECISION_CONTROLS,
         "spline": False,
         "interaction": False,
     },
@@ -237,13 +307,23 @@ df["legal_civil"] = (df["legal_system"] == "Civil").astype(int)
 # Encoding Y
 # =========================
 
-y_map = {
-    "Contracts Expression": 0,
-    "Expands Expression": 1,
-    "Mixed Outcome": 2,
-}
+def get_y_map(base_key):
+    base_category = BASE_CATEGORY_MAP[base_key]
+    ordered_categories = [base_category] + [
+        x for x in OUTCOME_LEVELS if x != base_category
+    ]
+    return {category: i for i, category in enumerate(ordered_categories)}
 
+y_map = get_y_map(BASE)
 y_reverse_map = {v: k for k, v in y_map.items()}
+
+# y_map = {
+#     "Contracts Expression": 0,
+#     "Expands Expression": 1,
+#     "Mixed Outcome": 2,
+# }
+
+# y_reverse_map = {v: k for k, v in y_map.items()}
 
 # =========================
 # Storage
@@ -414,15 +494,19 @@ for spec_name, spec in SPECIFICATIONS.items():
 
     param_table["class_id"] = param_table["class_id"].astype(int)
 
-    mnl_class_map = {
-        0: "Contracts Expression",
-        1: "Expands Expression",
-    }
+    # In statsmodels MNLogit, params columns 0..J-2 correspond to
+    # non-base outcome codes 1..J-1 when the base category is coded as 0.
+    param_table["outcome_code"] = param_table["class_id"] + 1
 
-    param_table["class_label"] = param_table["class_id"].map(mnl_class_map)
-    param_table["outcome"] = param_table["class_id"].map(mnl_class_map)
+    param_table["class_label"] = param_table["outcome_code"].map(y_reverse_map)
+    param_table["outcome"] = param_table["outcome_code"].map(y_reverse_map)
 
-    param_table = param_table.drop(columns=["class_id"])
+    if param_table["outcome"].isna().any():
+        raise ValueError(
+            "Some MNLogit coefficient columns could not be mapped back to outcome labels."
+        )
+
+    param_table = param_table.drop(columns=["class_id", "outcome_code"])
 
     param_table["std_err"] = bse.stack().values
     param_table["p_value"] = pvalues.stack().values
@@ -601,6 +685,49 @@ for high_court_value, sample_label in [
         cov_kwds={"groups": data_split[CLUSTER_VAR]},
     )
 
+    if spec_name == "spec_base_1":
+        print("\n" + "=" * 80)
+        print("MNLOGIT OUTCOME CODING CHECK")
+        print("=" * 80)
+
+        print("\nBASE setting:")
+        print(BASE)
+
+        print("\nBase category label:")
+        print(BASE_CATEGORY)
+
+        print("\ny_map used for model:")
+        print(y_map)
+
+        print("\ny_reverse_map:")
+        print(y_reverse_map)
+
+        print("\nCounts of encoded outcome y:")
+        print(y.value_counts().sort_index())
+
+        print("\nModel internal y names map:")
+        if hasattr(result.model, "_ynames_map"):
+            print(result.model._ynames_map)
+        else:
+            print("No _ynames_map available.")
+
+        print("\nRaw result.params columns:")
+        print(result.params.columns)
+
+        print("\nInterpreting coefficient columns as:")
+        for col in result.params.columns:
+            outcome_code = int(col) + 1
+            print(f"params column {col} = {y_reverse_map[outcome_code]} vs. {BASE_CATEGORY}")
+
+        print("=" * 80)
+
+        response = input(
+            "\nType YES if this outcome coding is correct and you want to continue: "
+        )
+
+        if response.strip() != "YES":
+            raise RuntimeError("Stopped before exporting model results.")
+
     split_model_rows.append({
         "spec": "spec_extended_4",
         "sample": sample_label,
@@ -629,10 +756,10 @@ for high_court_value, sample_label in [
 
     param_table["class_id"] = param_table["class_id"].astype(int)
 
-    mnl_class_map = {
-        0: "Contracts Expression",
-        1: "Expands Expression",
-    }
+    #mnl_class_map = {
+     #   0: "Mixed Outcome",
+      #  1: "Expands Expression",
+    #}
 
     param_table["class_label"] = param_table["class_id"].map(mnl_class_map)
     param_table["outcome"] = param_table["class_id"].map(mnl_class_map)

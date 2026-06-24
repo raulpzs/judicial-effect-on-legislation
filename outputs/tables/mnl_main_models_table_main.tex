@@ -1,0 +1,86 @@
+\begin{table}[htbp]
+\centering
+
+\caption{Multinomial Logit Models Predicting Judicial Decisions that Contract or Expand Freedom of Expression}
+\label{tab:mnl_expression_main}
+
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lcccccccccccccccc}
+\toprule
+
+ & \multicolumn{8}{c}{\textbf{Contracts Expression}} & \multicolumn{8}{c}{\textbf{Expands Expression}} \\
+\cmidrule(lr){2-9}
+\cmidrule(lr){10-17}
+
+ & \multicolumn{3}{c}{Base} & \multicolumn{3}{c}{Extended} & \multicolumn{2}{c}{Spline} & \multicolumn{3}{c}{Base} & \multicolumn{3}{c}{Extended} & \multicolumn{2}{c}{Spline} \\
+\cmidrule(lr){2-4}
+\cmidrule(lr){5-7}
+\cmidrule(lr){8-9}
+\cmidrule(lr){10-12}
+\cmidrule(lr){13-15}
+\cmidrule(lr){16-17}
+
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) \\
+
+\midrule
+
+De Jure Expression, lag & -0.173 & -0.183 & -0.070 & 0.093 & 0.317 & 0.173 & 0.380 & 0.517 & -0.068 & -0.141 & 0.005 & 0.012 & 0.038 & 0.036 & 0.225 & 0.391 \\
+\vspace{0.5cm}
+ & (0.289) & (0.323) & (0.287) & (0.241) & (0.264) & (0.214) & (0.420) & (0.507) & (0.188) & (0.237) & (0.214) & (0.222) & (0.236) & (0.193) & (0.292) & (0.305) \\
+
+Judicial Reform, lag & 0.028 &  &  & 0.184 &  &  & 0.156 & 0.205 & -0.184 &  &  & -0.151 &  &  & -0.209 & -0.202 \\
+\vspace{0.1cm}
+ & (0.180) &  &  & (0.250) &  &  & (0.238) & (0.233) & (0.122) &  &  & (0.183) &  &  & (0.180) & (0.180) \\
+
+Judicial Political Attacks, lag &  & -0.022 &  &  & 0.233* &  &  &  &  & -0.141 &  &  & 0.040 &  &  &  \\
+\vspace{0.1cm}
+ &  & (0.142) &  &  & (0.128) &  &  &  &  & (0.105) &  &  & (0.112) &  &  &  \\
+
+Judicial Packing, lag &  &  & -0.256 &  &  & 0.569** &  &  &  &  & -0.224** &  &  & 0.313 &  &  \\
+\vspace{0.5cm}
+ &  &  & (0.193) &  &  & (0.240) &  &  &  &  & (0.088) &  &  & (0.208) &  &  \\
+
+High Court &  &  &  & -0.456* & -0.537** & -0.402 & -0.481* & -0.431 &  &  &  & -0.038 & -0.024 & 0.020 & -0.212 & -0.210 \\
+\vspace{0.1cm}
+ &  &  &  & (0.275) & (0.273) & (0.266) & (0.278) & (0.281) &  &  &  & (0.146) & (0.157) & (0.140) & (0.175) & (0.172) \\
+
+Judicial Independence, lag &  &  &  & 0.138 & 0.178 & 0.196 & 0.040 & 0.052 &  &  &  & 0.387* & 0.359* & 0.357* & 0.361* & 0.402* \\
+\vspace{0.5cm}
+ &  &  &  & (0.267) & (0.253) & (0.264) & (0.281) & (0.279) &  &  &  & (0.204) & (0.200) & (0.202) & (0.198) & (0.208) \\
+
+Polyarchy, lag &  &  &  & -5.182*** & -5.515*** & -7.051*** & -4.428*** & 181.404 &  &  &  & -1.695* & -2.123** & -3.221** & -1.255 & 27.033 \\
+\vspace{0.1cm}
+ &  &  &  & (1.440) & (1.298) & (1.773) & (1.533) & (166.633) &  &  &  & (0.873) & (0.913) & (1.262) & (0.973) & (95.068) \\
+
+Legal System: Civil &  &  &  & 0.349 & 0.199 & 0.383 & 0.286 & 0.332 &  &  &  & -0.322 & -0.153 & -0.040 & -0.409 & -0.392 \\
+\vspace{0.1cm}
+ &  &  &  & (0.486) & (0.426) & (0.425) & (0.450) & (0.442) &  &  &  & (0.375) & (0.361) & (0.376) & (0.345) & (0.384) \\
+
+Legal System: Common &  &  &  & 0.853 & 0.530 & 0.622 & 0.636 & 0.612 &  &  &  & -1.337*** & -1.182*** & -1.166*** & -1.565*** & -1.676*** \\
+\vspace{0.5cm}
+ &  &  &  & (0.540) & (0.477) & (0.480) & (0.514) & (0.490) &  &  &  & (0.459) & (0.390) & (0.392) & (0.427) & (0.434) \\
+
+Spline Terms Included & No & No & No & No & No & No & Yes & Yes & No & No & No & No & No & No & Yes & Yes \\
+
+Spline \$\textbackslash{}times\$ Polyarchy Interaction & No & No & No & No & No & No & No & Yes & No & No & No & No & No & No & No & Yes \\
+\addlinespace
+\midrule
+Observations & 1,074 & 1,074 & 1,074 & 825 & 825 & 825 & 825 & 825 & 1,074 & 1,074 & 1,074 & 825 & 825 & 825 & 825 & 825 \\
+Log Likelihood & -1055.08 & -1056.13 & -1053.46 & -764.79 & -765.35 & -764.01 & -752.29 & -742.70 & -1055.08 & -1056.13 & -1053.46 & -764.79 & -765.35 & -764.01 & -752.29 & -742.70 \\
+AIC & 2122.16 & 2124.26 & 2118.92 & 1565.58 & 1566.69 & 1564.03 & 1556.58 & 1553.40 & 2122.16 & 2124.26 & 2118.92 & 1565.58 & 1566.69 & 1564.03 & 1556.58 & 1553.40 \\
+BIC & 2152.03 & 2154.13 & 2148.80 & 1650.45 & 1651.57 & 1648.90 & 1679.18 & 1713.72 & 2152.03 & 2154.13 & 2148.80 & 1650.45 & 1651.57 & 1648.90 & 1679.18 & 1713.72 \\
+Pseudo-\$R\textasciicircum{}2\$ & 0.004 & 0.003 & 0.006 & 0.097 & 0.096 & 0.098 & 0.112 & 0.123 & 0.004 & 0.003 & 0.006 & 0.097 & 0.096 & 0.098 & 0.112 & 0.123 \\
+
+\bottomrule
+
+\end{tabular}
+
+\vspace{0.4em}
+
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\textit{Notes:} Table reports multinomial logistic regression coefficients predicting whether judicial decisions contract or expand freedom of expression relative to the omitted baseline category. Robust standard errors are reported in parentheses. All substantive predictors are lagged one year. Extended models include institutional and regime-level controls. Spline specifications model non-linear temporal dynamics using cubic B-splines over year; interaction specifications additionally interact spline terms with lagged polyarchy scores. Legal system indicators are relative to the omitted reference category of mixed or other legal systems. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+
+\end{table}
