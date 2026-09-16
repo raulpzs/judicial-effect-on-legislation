@@ -23,3 +23,5 @@ outputs/predictions_all_specs.csv
 outputs/old/predictions_all_specs.csv
 outputs/predictions_all_specs.csv
 outputs/old/predictions_all_specs_*.csv
+outputs/predictions_all_specs_mixed.csv
+outputs/jind_interactions/predictions_all_specs_mixed.csv

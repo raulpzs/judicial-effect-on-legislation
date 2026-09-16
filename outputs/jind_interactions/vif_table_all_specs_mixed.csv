@@ -1,0 +1,13 @@
+spec,Intercept,high_court,j_ind_lag1,legal_civil,legal_common,v2jupack_lag1,v2jupoatck_lag1,v2jupurge_lag1,v2jureform_lag1,v2jureview_lag1,v2x_polyarchy_lag1,wdj_citizen_lag1,wdj_citizen_lag1:j_ind_lag1,wdj_expression_lag1,wdj_expression_lag1:j_ind_lag1,wdj_press_lag1,wdj_press_lag1:j_ind_lag1
+spec_citizen_jind_attack,24.179,1.044,7.501,1.497,2.947,,1.347,,,2.191,6.205,1.991,2.031,,,,
+spec_citizen_jind_pack,29.486,1.073,7.442,1.549,2.886,3.518,,,,2.049,7.968,1.997,1.998,,,,
+spec_citizen_jind_purge,23.731,1.041,7.549,1.835,2.843,,,2.257,,2.037,6.903,1.991,2.005,,,,
+spec_citizen_jind_reform,23.693,1.064,7.523,1.702,3.21,,,,1.453,2.159,5.894,1.975,1.996,,,,
+spec_expression_jind_attack,24.05,1.085,8.877,1.494,2.711,,1.563,,,2.162,6.492,,,5.079,6.925,,
+spec_expression_jind_pack,28.98,1.133,8.849,1.525,2.615,3.486,,,,2.034,8.196,,,5.112,6.891,,
+spec_expression_jind_purge,23.835,1.092,8.978,1.826,2.594,,,2.249,,2.021,7.388,,,5.087,6.78,,
+spec_expression_jind_reform,23.788,1.113,8.968,1.702,2.958,,,,1.452,2.146,6.419,,,5.066,6.769,,
+spec_press_jind_attack,24.495,1.051,6.692,1.654,2.91,,1.341,,,2.17,6.24,,,,,4.769,5.285
+spec_press_jind_pack,28.816,1.077,6.703,1.721,2.873,3.552,,,,2.03,8.007,,,,,4.747,5.292
+spec_press_jind_purge,24.047,1.045,6.762,2.039,2.814,,,2.251,,2.025,6.956,,,,,4.77,5.26
+spec_press_jind_reform,23.985,1.071,6.756,1.833,3.189,,,,1.453,2.148,6.0,,,,,4.75,5.231
