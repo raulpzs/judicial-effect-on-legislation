@@ -46,7 +46,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 
 OUTPUT_DIR = PROJECT_ROOT / "outputs" / "jind_interactions"
 # Refuse to overwrite outputs from an earlier run.
-OUTPUT_DIR.mkdir(parents=True, exist_ok=False)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 OUTPUT_PRED_PATH = OUTPUT_DIR / f"predictions_all_specs_{BASE}.csv"
 OUTPUT_MODEL_PATH = OUTPUT_DIR / f"model_comparison_{BASE}.csv"
