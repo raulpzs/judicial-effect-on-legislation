@@ -1,0 +1,13 @@
+spec,n_obs,wdj_variable,wdj_p25,wdj_p50,wdj_p75,j_ind_p5,j_ind_p95
+spec_expression_jind_reform,825,wdj_expression_lag1,0.0,0.0,0.920634921,-0.844,2.645
+spec_expression_jind_attack,825,wdj_expression_lag1,0.0,0.0,0.920634921,-0.844,2.645
+spec_expression_jind_pack,825,wdj_expression_lag1,0.0,0.0,0.920634921,-0.844,2.645
+spec_expression_jind_purge,825,wdj_expression_lag1,0.0,0.0,0.920634921,-0.844,2.645
+spec_citizen_jind_reform,825,wdj_citizen_lag1,0.0,0.0,0.0,-0.844,2.645
+spec_citizen_jind_attack,825,wdj_citizen_lag1,0.0,0.0,0.0,-0.844,2.645
+spec_citizen_jind_pack,825,wdj_citizen_lag1,0.0,0.0,0.0,-0.844,2.645
+spec_citizen_jind_purge,825,wdj_citizen_lag1,0.0,0.0,0.0,-0.844,2.645
+spec_press_jind_reform,825,wdj_press_lag1,0.0,0.0,0.0,-0.844,2.645
+spec_press_jind_attack,825,wdj_press_lag1,0.0,0.0,0.0,-0.844,2.645
+spec_press_jind_pack,825,wdj_press_lag1,0.0,0.0,0.0,-0.844,2.645
+spec_press_jind_purge,825,wdj_press_lag1,0.0,0.0,0.0,-0.844,2.645
