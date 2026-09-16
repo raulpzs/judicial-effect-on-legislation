@@ -50,7 +50,7 @@ SELECTED_EFFECTS = {
     for measure in WDJ_LABELS
     for context in CONTEXT_LABELS
 }
-WDJ_LEVELS = ["Low (p25)", "Median (p50)", "High (p75)"]
+WDJ_LEVELS = ["Zero", "Lower nonzero", "Typical nonzero"]
 N_SIM = 1000
 CI_LEVEL = 0.95
 RANDOM_SEED = 12345
@@ -364,9 +364,9 @@ def main():
     warnings.simplefilter("always")
     if {p.stem for p in MODEL_DIR.glob("*.pkl")} != set(SELECTED_EFFECTS):
         raise ValueError("Expected exactly the 12 judicial-independence fitted models")
-    # Refuse to overwrite any prior post-estimation outputs.
-    POSTEST_DIR.mkdir(parents=True, exist_ok=False)
-    PLOT_DIR.mkdir()
+    # Reruns overwrite only this script's two CSVs and named plot files.
+    POSTEST_DIR.mkdir(parents=True, exist_ok=True)
+    PLOT_DIR.mkdir(parents=True, exist_ok=True)
     source = pd.read_csv(PROJECT_ROOT / "data" / "processed" / "cases_v6_short.csv")
     y_map = _estimator_outcome_map()
     all_probs = []
@@ -376,17 +376,41 @@ def main():
         result = load_result(spec_name)
         X = load_X(spec_name)
         _validate_model(result, X, spec_name, source, y_map)
-        wdj_values = X[variable].quantile([0.25, 0.50, 0.75]).to_numpy()
+        x = X[variable]
+        nonzero = x[x != 0]
+        if nonzero.empty:
+            raise ValueError(f"{spec_name}: no nonzero WDJ observations for quantiles")
+        wdj_values = np.array([0.0, nonzero.quantile(0.25), nonzero.quantile(0.50)])
         j_low, j_high = X["j_ind_lag1"].quantile([0.05, 0.95]).to_numpy()
-        print(f"  {variable}: p25={wdj_values[0]:.12g}, p50={wdj_values[1]:.12g}, "
-              f"p75={wdj_values[2]:.12g}; j_ind_lag1: p5={j_low:.12g}, p95={j_high:.12g}")
+        print(f"  {variable}: zero={wdj_values[0]:.12g}, nonzero p25={wdj_values[1]:.12g}, "
+              f"nonzero p50={wdj_values[2]:.12g}; j_ind_lag1: p5={j_low:.12g}, p95={j_high:.12g}")
         if len(np.unique(wdj_values)) != 3:
-            warnings.warn(f"{spec_name}: duplicate WDJ quantiles: {dict(zip(WDJ_LEVELS, wdj_values))}")
+            warnings.warn(f"{spec_name}: duplicate selected WDJ values: {dict(zip(WDJ_LEVELS, wdj_values))}")
         j_ind_grid = np.linspace(j_low, j_high, 50)
         assert ((j_ind_grid >= j_low) & (j_ind_grid <= j_high)).all()
-        support_rows.append(dict(spec=spec_name, n_obs=len(X), wdj_variable=variable,
-                                 wdj_p25=wdj_values[0], wdj_p50=wdj_values[1],
-                                 wdj_p75=wdj_values[2], j_ind_p5=j_low, j_ind_p95=j_high))
+        support_row = dict(spec=spec_name, n_obs=len(X), wdj_variable=variable,
+                           wdj_zero=wdj_values[0], wdj_nonzero_p25=wdj_values[1],
+                           wdj_nonzero_p50=wdj_values[2], j_ind_p5=j_low, j_ind_p95=j_high)
+        for sign, mask in [("negative", x < 0), ("zero", x == 0), ("positive", x > 0)]:
+            count = int(mask.sum())
+            percent = 100 * count / len(X)
+            support_row[f"wdj_n_{sign}"] = count
+            support_row[f"wdj_pct_{sign}"] = percent
+            print(f"  WDJ {sign}: {count} ({percent:.3f}%)")
+        # Exact-value empirical support is diagnostic only; retain the full grid.
+        for level, key, value in zip(WDJ_LEVELS, ["zero", "nonzero_p25", "nonzero_p50"], wdj_values):
+            matched = X.loc[x == value, "j_ind_lag1"]
+            support_row[f"wdj_{key}_match_n"] = len(matched)
+            support_row[f"wdj_{key}_j_ind_min"] = matched.min()
+            support_row[f"wdj_{key}_j_ind_max"] = matched.max()
+            if matched.empty:
+                print(f"  Support for {level} ({value:.12g}): no exact WDJ matches")
+            else:
+                print(f"  Support for {level} ({value:.12g}): n={len(matched)}, "
+                      f"j_ind_lag1 range [{matched.min():.12g}, {matched.max():.12g}]")
+                if matched.min() > j_low or matched.max() < j_high:
+                    print("    Exact-match range does not cover the full p5-p95 prediction grid")
+        support_rows.append(support_row)
         # Preserve the template's reproducible, distinct model seed offsets.
         probs = predicted_probabilities_with_ci(
             result, X, variable, wdj_values, j_ind_grid,
