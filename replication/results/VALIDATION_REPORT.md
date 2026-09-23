@@ -4,7 +4,7 @@ All 17 models have the logged N, country-cluster count, outcome mapping, and par
 
 **All printed comparisons pass:** indep1, indep2, attack5, dejure2, dejure6, full1, full2, full3.
 
-**Printed-precision failures remain:** attack1, attack2, attack3, attack4, dejure1, dejure3, dejure4, dejure5, full4. 43 of 1515 numerical comparisons fail. These are flagged, not treated as exact matches. Affected figures explicitly refer to this report.
+**Printed-precision failures remain:** attack1, attack2, attack3, attack4, dejure1, dejure3, dejure4, dejure5, full4. 43 of 1515 numerical comparisons fail. These are flagged, not treated as exact matches. Validation status is retained in the figure index; presentation figures omit model names, sample sizes, and method/validation notes by request.
 
 ## Per-model checks
 
@@ -64,7 +64,7 @@ Rounded logged coefficients are unsuitable for reconstructing exact predictions:
 
 ## Prediction checks
 
-All 24 model/predictor grids pass. Each has 51 equally spaced values including the observed sample minimum and maximum, three outcome probabilities and pointwise 95% logit-delta intervals. Every model uses its own complete-case sample. Every nonfocal value, including the year spline and other focal predictors, remains observed. Histograms and rugs display that sampleâ€™s predictor support.
+All 24 model/predictor grids pass. Each has 51 equally spaced values including the observed sample minimum and maximum, three outcome probabilities and pointwise 95% logit-delta intervals. Every model uses its own complete-case sample. Every nonfocal value, including the year spline and other focal predictors, remains observed. Each grid has two PNG versions: one with histograms and rugs displaying predictor support, and one without that support panel.
 
 - Largest manual-versus-MNLogit.predict difference: 3.94e-15 (limit 1e-11).
 - Largest probability-sum error: 2.22e-16 (limit 1e-12).
@@ -81,4 +81,4 @@ Central finite differences check every parameter and every outcome at each gridâ
 - `storage_diagnostics.csv`, `optimizer_diagnostics.csv`: reproducible precision and refit diagnostics.
 - `models/*.npz`: design, centering/scaling transform, coefficients, and full clustered covariance.
 - `prediction_validation.csv`, `prediction_grids.csv`, `observed_support.csv`: all prediction checks and support.
-- `figure_index.csv`: all 24 PNG figures.
+- `figure_index.csv`: all 48 PNG figures (24 grids, each with and without histograms).

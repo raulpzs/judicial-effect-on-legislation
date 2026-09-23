@@ -23,7 +23,8 @@ def main():
         '**All printed comparisons pass:** '+', '.join(passed)+'.', '',
         '**Printed-precision failures remain:** '+', '.join(failed)+'. '
         f'{int((~c.passed).sum())} of {len(c)} numerical comparisons fail. '
-        'These are flagged, not treated as exact matches. Affected figures explicitly refer to this report.', '',
+        'These are flagged, not treated as exact matches. Validation status is retained in the figure index; '
+        'presentation figures omit model names, sample sizes, and method/validation notes by request.', '',
         '## Per-model checks', '',
         '| Model | N | Clusters | Rank / columns | Parameters | Converged | Failed numerical cells | Max coefficient difference | Max SE difference | Max CI-endpoint difference |',
         '|---|---:|---:|---:|---:|---|---:|---:|---:|---:|']
@@ -81,7 +82,8 @@ def main():
         'All 24 model/predictor grids pass. Each has 51 equally spaced values including the observed sample minimum '
         'and maximum, three outcome probabilities and pointwise 95% logit-delta intervals. '
         'Every model uses its own complete-case sample. Every nonfocal value, including the year spline and other '
-        'focal predictors, remains observed. Histograms and rugs display that sample’s predictor support.', '',
+        'focal predictors, remains observed. Each grid has two PNG versions: one with histograms and rugs '
+        'displaying predictor support, and one without that support panel.', '',
         f'- Largest manual-versus-MNLogit.predict difference: {p.max_manual_predict_difference.max():.3g} (limit 1e-11).',
         f'- Largest probability-sum error: {p.max_probability_sum_error.max():.3g} (limit 1e-12).',
         f'- Observation probabilities range from {p.min_probability.min():.6g} to {p.max_probability.max():.6g}, all within [0,1].',
@@ -98,7 +100,7 @@ def main():
         '- `storage_diagnostics.csv`, `optimizer_diagnostics.csv`: reproducible precision and refit diagnostics.',
         '- `models/*.npz`: design, centering/scaling transform, coefficients, and full clustered covariance.',
         '- `prediction_validation.csv`, `prediction_grids.csv`, `observed_support.csv`: all prediction checks and support.',
-        '- `figure_index.csv`: all 24 PNG figures.','']
+        '- `figure_index.csv`: all 48 PNG figures (24 grids, each with and without histograms).','']
     (out/'VALIDATION_REPORT.md').write_text('\n'.join(lines))
     c.loc[~c.passed].to_csv(out/'validation_failures.csv',index=False)
 
