@@ -1,17 +1,6 @@
-# Python replication of Analysis_20260920.log
+# Python replication for predicted probabilities
 
-This directory is independent of existing repository analyses. Inputs are the root Stata log and `data/processed/cases_v6_short.csv`. Nothing is committed or pushed. Read [the validation report](results/VALIDATION_REPORT.md) before using the figures: all 17 models match sample sizes, cluster counts, parameter counts, likelihoods and information criteria, but nine retain small printed-precision discrepancies.
-
-From the repository root, using the existing environment:
-
-```sh
-.venv/bin/python replication/scripts/replicate.py
-.venv/bin/python replication/scripts/diagnose.py
-.venv/bin/python replication/scripts/report.py
-.venv/bin/python replication/scripts/plot_predictions.py
-```
-
-These commands overwrite only this new directory’s results. Dependencies and the versions used are in [requirements.txt](requirements.txt) and the model manifest. No Stata installation is required. `replicate.py --fit-only` validates without predicting; `--output PATH` directs replication artifacts elsewhere. Plotting, diagnostics, and reporting default to this directory’s `results`.
+Read [the validation report](results/VALIDATION_REPORT.md) before using the figures: all 17 models match sample sizes, cluster counts, parameter counts, likelihoods and information criteria, but nine retain small printed-precision discrepancies.
 
 The manifest derives all 17 model commands from the entire log, expands only the invoked macros, and records the exact controls and reference categories. Judicial independence is initialized missing, assigned the high-court value, then overwritten by the low-court value where applicable. Other/unclear defendants are combined. Complete-case deletion includes outcome, predictors, and country ID separately for every model. The unused expression-mode macro is not applied.
 
@@ -25,6 +14,4 @@ Predictions are average adjusted probabilities over each model’s actual estima
 
 Validation uses half the last printed token unit plus `1e-10`, with zero relative tolerance. All failures remain flagged; tolerances were not changed to achieve agreement. Probability agreement, normalization, and central finite-difference gradient checks have separate explicit limits in the report. The full Stata covariance is not printed, so only its logged diagonal SEs and coefficient confidence limits can be compared directly.
 
-Outputs include [predictions.csv](results/predictions.csv) (3,672 rows), [model_manifest.json](results/model_manifest.json), [validation report](results/VALIDATION_REPORT.md), coefficient and covariance exports, and [24 PNG figures](results/figures) indexed in [figure_index.csv](results/figure_index.csv). Figures display all three outcomes, confidence bands, histogram/rug support, N, and validation status. No plots are selected by significance or pattern.
-
-The plotting script exports PNG only. Previously generated PDFs are preserved in `results/archive_pdf/`.
+Outputs include [predictions.csv](results/predictions.csv) (3,672 rows), [model_manifest.json](results/model_manifest.json), [validation report](results/VALIDATION_REPORT.md), coefficient and covariance exports, and [24 PNG figures](results/figures) indexed in [figure_index.csv](results/figure_index.csv). Figures display all three outcomes, confidence bands, histogram/rug support, N, and validation status.
