@@ -45,7 +45,6 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 
 OUTPUT_DIR = PROJECT_ROOT / "outputs" / "jind_interactions"
-# Refuse to overwrite outputs from an earlier run.
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 OUTPUT_PRED_PATH = OUTPUT_DIR / f"predictions_all_specs_{BASE}.csv"
@@ -81,6 +80,7 @@ CLUSTER_VAR = "country"
 # Model specifications
 # =========================
 
+#Removed j_ind from controls, now entered as an interaction term
 CONTROLS_NO_JIND = [
     "v2x_polyarchy_lag1",
     "v2jureview_lag1",
@@ -171,8 +171,6 @@ print(f"Number of specifications: {len(SPECIFICATIONS)}")
 # =========================
 
 df = pd.read_csv(DATA_PATH)
-if "v2jupurge_lag1" not in df.columns:
-    raise ValueError("Required variable v2jupurge_lag1 is missing from cases_v6_short.csv")
 df = df.dropna(subset=[Y_VAR])
 
 # =========================
