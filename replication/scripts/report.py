@@ -98,7 +98,7 @@ def main():
         '- `storage_diagnostics.csv`, `optimizer_diagnostics.csv`: reproducible precision and refit diagnostics.',
         '- `models/*.npz`: design, centering/scaling transform, coefficients, and full clustered covariance.',
         '- `prediction_validation.csv`, `prediction_grids.csv`, `observed_support.csv`: all prediction checks and support.',
-        '- `figure_index.csv`: all 24 PNG/PDF figure pairs.','']
+        '- `figure_index.csv`: all 24 PNG figures.','']
     (out/'VALIDATION_REPORT.md').write_text('\n'.join(lines))
     c.loc[~c.passed].to_csv(out/'validation_failures.csv',index=False)
 

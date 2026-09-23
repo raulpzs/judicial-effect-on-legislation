@@ -23,7 +23,7 @@ def main():
     checks=pd.read_csv(out/'prediction_validation.csv')
     assert checks.passed.all()
     plt.rcParams.update({'font.size':10, 'axes.spines.top':False, 'axes.spines.right':False,
-                         'pdf.fonttype':42, 'savefig.facecolor':'white'})
+                         'savefig.facecolor':'white'})
     index=[]
     for (model,predictor), group in data.groupby(['model','predictor'],sort=False):
         fig=plt.figure(figsize=(12,5.3))
@@ -53,14 +53,13 @@ def main():
         fig.text(.5,.025,f'{predictor}  |  Observed support: histogram and rug  |  {status}',ha='center',fontsize=9)
         fig.subplots_adjust(top=.84,bottom=.14,left=.07,right=.98)
         stem=f'{model}__{predictor}'
-        for ext in ['png','pdf']:
-            fig.savefig(figures/f'{stem}.{ext}',dpi=180)
+        fig.savefig(figures/f'{stem}.png',dpi=180)
         plt.close(fig)
-        index.append(dict(model=model,predictor=predictor,N=N,png=f'figures/{stem}.png',pdf=f'figures/{stem}.pdf',
+        index.append(dict(model=model,predictor=predictor,N=N,png=f'figures/{stem}.png',
                           printed_comparisons_pass=strict))
     assert len(index)==24
     pd.DataFrame(index).to_csv(out/'figure_index.csv',index=False)
-    print(f'Created {len(index)} PNG and {len(index)} vector PDF figures.')
+    print(f'Created {len(index)} PNG figures.')
 
 
 if __name__=='__main__':

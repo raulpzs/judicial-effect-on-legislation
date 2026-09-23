@@ -5,10 +5,10 @@ This directory is independent of existing repository analyses. Inputs are the ro
 From the repository root, using the existing environment:
 
 ```sh
-.venv/bin/python replication_20260920/scripts/replicate.py
-.venv/bin/python replication_20260920/scripts/diagnose.py
-.venv/bin/python replication_20260920/scripts/report.py
-.venv/bin/python replication_20260920/scripts/plot_predictions.py
+.venv/bin/python replication/scripts/replicate.py
+.venv/bin/python replication/scripts/diagnose.py
+.venv/bin/python replication/scripts/report.py
+.venv/bin/python replication/scripts/plot_predictions.py
 ```
 
 These commands overwrite only this new directory’s results. Dependencies and the versions used are in [requirements.txt](requirements.txt) and the model manifest. No Stata installation is required. `replicate.py --fit-only` validates without predicting; `--output PATH` directs replication artifacts elsewhere. Plotting, diagnostics, and reporting default to this directory’s `results`.
@@ -25,4 +25,6 @@ Predictions are average adjusted probabilities over each model’s actual estima
 
 Validation uses half the last printed token unit plus `1e-10`, with zero relative tolerance. All failures remain flagged; tolerances were not changed to achieve agreement. Probability agreement, normalization, and central finite-difference gradient checks have separate explicit limits in the report. The full Stata covariance is not printed, so only its logged diagonal SEs and coefficient confidence limits can be compared directly.
 
-Outputs include [predictions.csv](results/predictions.csv) (3,672 rows), [model_manifest.json](results/model_manifest.json), [validation report](results/VALIDATION_REPORT.md), coefficient and covariance exports, and [24 figure pairs](results/figures) indexed in [figure_index.csv](results/figure_index.csv). Figures display all three outcomes, confidence bands, histogram/rug support, N, and validation status. No plots are selected by significance or pattern.
+Outputs include [predictions.csv](results/predictions.csv) (3,672 rows), [model_manifest.json](results/model_manifest.json), [validation report](results/VALIDATION_REPORT.md), coefficient and covariance exports, and [24 PNG figures](results/figures) indexed in [figure_index.csv](results/figure_index.csv). Figures display all three outcomes, confidence bands, histogram/rug support, N, and validation status. No plots are selected by significance or pattern.
+
+The plotting script exports PNG only. Previously generated PDFs are preserved in `results/archive_pdf/`.

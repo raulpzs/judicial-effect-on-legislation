@@ -20,7 +20,7 @@ from statsmodels.discrete.discrete_model import MNLogit
 from statsmodels.stats.sandwich_covariance import cov_cluster
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = ROOT / 'replication_20260920'
+BASE = ROOT / 'replication'
 FOCAL = ['court_independence_lag1', 'v2jupoatck_lag1', 'v2jupack_lag1',
          'v2jureform_lag1', 'v2jupurge_lag1', 'wdj_expression_lag1',
          'wdj_press_lag1', 'wdj_citizen_lag1']

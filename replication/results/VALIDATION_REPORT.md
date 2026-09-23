@@ -81,4 +81,4 @@ Central finite differences check every parameter and every outcome at each gridâ
 - `storage_diagnostics.csv`, `optimizer_diagnostics.csv`: reproducible precision and refit diagnostics.
 - `models/*.npz`: design, centering/scaling transform, coefficients, and full clustered covariance.
 - `prediction_validation.csv`, `prediction_grids.csv`, `observed_support.csv`: all prediction checks and support.
-- `figure_index.csv`: all 24 PNG/PDF figure pairs.
+- `figure_index.csv`: all 24 PNG figures.
