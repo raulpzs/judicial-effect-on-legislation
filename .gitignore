@@ -27,4 +27,6 @@ outputs/predictions_all_specs_mixed.csv
 outputs/jind_interactions/predictions_all_specs_mixed.csv
 
 replication/results/archive_pdf/
-replication/results/archive_png_with_notes/
+replication/results/archive_png_with_notes/data/raw/V-Dem-CY-Full+Others-v16.csv
+
+data/raw/V-Dem-CY-Full+Others-v16.csv
