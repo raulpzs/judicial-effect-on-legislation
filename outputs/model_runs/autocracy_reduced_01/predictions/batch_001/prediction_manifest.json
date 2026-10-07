@@ -1,0 +1,29 @@
+{
+  "run_name": "autocracy_reduced_01",
+  "status": "completed",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/plot_probabilities.py --run autocracy_reduced_01 --models full2_reduced",
+  "fit_manifest_sha256": "a3f796ea8b3d9f9ac23f8b869383bb8d98932142c32dee189961e15b36cec32a",
+  "skipped_fits": [],
+  "consumed_states": [
+    {
+      "model": "full2_reduced",
+      "sample": "autocracy",
+      "sha256": "cf70dfaffe816d937922caa40c169dbde3db796b3199ed065b39777165bb35ac"
+    }
+  ],
+  "prediction_rows": 459,
+  "figures": 6,
+  "file_sha256": {
+    "predictions.csv": "cdb76013e27e4a240fc6f4f0c01ad37f8f2bd8852d9190325e84868aae7555bc",
+    "prediction_grids.csv": "99ae51ca68b169564643a5909692a5a344abd7a72e72e05f22e19697a2c376c9",
+    "prediction_validation.csv": "5c103ef87e863eecd7294788c34106fafc7f401b76c48956c265418d46e7737e",
+    "observed_support.csv": "8fadf580b3aff558d85e11a4faa5098bdf1d16e673a725ac24b01255196728a3",
+    "figure_index.csv": "6bcdc4b19b92ca21ec1d4fb45e6ebf88a0cb65d04e8dd0ebcac99aac3595e41d",
+    "figures/full2_reduced__autocracy__court_independence_lag1__with_histogram.png": "6f65ef5f1205a07a4f174c288dde2970ea2e7ab4ba45f026feba50ea04fce570",
+    "figures/full2_reduced__autocracy__wdj_expression_lag1__without_histogram.png": "22ef90239f036a5661a732b48628f6d87519f8fcaf462f58acd6b3fb2b6538c3",
+    "figures/full2_reduced__autocracy__v2jupurge_lag1__with_histogram.png": "864a7b4508633d6adf9ddbb85fd19e0ee09a5a31536178e8df436935d3d7bddc",
+    "figures/full2_reduced__autocracy__wdj_expression_lag1__with_histogram.png": "2dee3fb9bfb97f42552b46bedeab59d8149ddc01628877f1a9c92b07cbf0a492",
+    "figures/full2_reduced__autocracy__v2jupurge_lag1__without_histogram.png": "b18e6ee7b7d0c521a16c869742ac333d4e83e4853cb61142fd02ef4dc1d55b6c",
+    "figures/full2_reduced__autocracy__court_independence_lag1__without_histogram.png": "aebde64802b8a916f01d8584031688ca05dd3cd39f579ced6c6c2317635a535e"
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "run_name": "control_removal_comparison_01",
+  "status": "completed",
+  "fits": [
+    {
+      "model": "full2_reduced",
+      "sample": "autocracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "ff3e38922eb327919ffbd1a54d3dd2ff245093ddf13d16193fe3c7edadf80e06",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 103,
+        "Mixed Outcome": 17,
+        "Expands Expression": 73,
+        "cases": 193,
+        "countries": 29
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced__autocracy.npz",
+      "state_sha256": "c10ae330fa0fc832725e2f80cfc971797148f637697ffabdbc10dc2aada2b33f",
+      "membership": "fits/full2_reduced__autocracy__sample.csv",
+      "membership_sha256": "a89299c99c372b408e5cb1f72bfb00c3530b8752462e335858fed39896cdc72a",
+      "diagnostics": "fits/full2_reduced__autocracy__diagnostics.json",
+      "diagnostics_sha256": "f23d04b70d728c9754118614a23d504876faa0b42db816cb1518346b08984f9d"
+    },
+    {
+      "model": "full2_reduced",
+      "sample": "democracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "ff3e38922eb327919ffbd1a54d3dd2ff245093ddf13d16193fe3c7edadf80e06",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 117,
+        "Mixed Outcome": 163,
+        "Expands Expression": 352,
+        "cases": 632,
+        "countries": 22
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced__democracy.npz",
+      "state_sha256": "edeb37436bf36f06d15b8f2ee87a30d20d3fde0b1fd980a6163b433f5634c96a",
+      "membership": "fits/full2_reduced__democracy__sample.csv",
+      "membership_sha256": "d02c9518bbd1ed7d2a683b6e3670d03a040b45292599e11440fe40925a84f0a3",
+      "diagnostics": "fits/full2_reduced__democracy__diagnostics.json",
+      "diagnostics_sha256": "e74789bbbd8559bc0d5a972e2cfe0ee9b9cfacee54401f8cb89138fdae5f5073"
+    },
+    {
+      "model": "full2_reduced_no_public_speech",
+      "sample": "autocracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced_no_public_speech",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "8b4ce27a7249badf784db4ebb42446df8bec28d888e56942ca5acbcd0b9d44a5",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 103,
+        "Mixed Outcome": 17,
+        "Expands Expression": 73,
+        "cases": 193,
+        "countries": 29
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced_no_public_speech__autocracy.npz",
+      "state_sha256": "c207f7636663d31cd6999445520796d38ed56d06c37ce769bcd2ae76ace36ebf",
+      "membership": "fits/full2_reduced_no_public_speech__autocracy__sample.csv",
+      "membership_sha256": "a89299c99c372b408e5cb1f72bfb00c3530b8752462e335858fed39896cdc72a",
+      "diagnostics": "fits/full2_reduced_no_public_speech__autocracy__diagnostics.json",
+      "diagnostics_sha256": "7a74fe15684cc28489dc1edf7c501811dce0816f9d3e44f92c07e8df74aa2b85"
+    },
+    {
+      "model": "full2_reduced_no_public_speech",
+      "sample": "democracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced_no_public_speech",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "8b4ce27a7249badf784db4ebb42446df8bec28d888e56942ca5acbcd0b9d44a5",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 117,
+        "Mixed Outcome": 163,
+        "Expands Expression": 352,
+        "cases": 632,
+        "countries": 22
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced_no_public_speech__democracy.npz",
+      "state_sha256": "ee8740bf9f9e7549ef210d93ec1c8805f071b3e549c838376e386375c3faeb85",
+      "membership": "fits/full2_reduced_no_public_speech__democracy__sample.csv",
+      "membership_sha256": "d02c9518bbd1ed7d2a683b6e3670d03a040b45292599e11440fe40925a84f0a3",
+      "diagnostics": "fits/full2_reduced_no_public_speech__democracy__diagnostics.json",
+      "diagnostics_sha256": "f3b3e6cd94e17644e077af016ff6482822cb38e313bf217d07819e0efc399ecb"
+    },
+    {
+      "model": "full2_reduced_no_non_verbal",
+      "sample": "autocracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced_no_non_verbal",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_speech"
+        ]
+      },
+      "specification_sha256": "38402f5e276b131fa6e738bd4cb2ba582b6353e808b4d83bf6b7523c94edac12",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 103,
+        "Mixed Outcome": 17,
+        "Expands Expression": 73,
+        "cases": 193,
+        "countries": 29
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced_no_non_verbal__autocracy.npz",
+      "state_sha256": "adac4e73fa9f910596c1446d0b0061f2f82b7f4f2fa73f5db9682a1b6c11c6cb",
+      "membership": "fits/full2_reduced_no_non_verbal__autocracy__sample.csv",
+      "membership_sha256": "a89299c99c372b408e5cb1f72bfb00c3530b8752462e335858fed39896cdc72a",
+      "diagnostics": "fits/full2_reduced_no_non_verbal__autocracy__diagnostics.json",
+      "diagnostics_sha256": "88919070f128468322a9824f47da7e2f2e09b7fd9b751b129bfe078a728b716b"
+    },
+    {
+      "model": "full2_reduced_no_non_verbal",
+      "sample": "democracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced_no_non_verbal",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_speech"
+        ]
+      },
+      "specification_sha256": "38402f5e276b131fa6e738bd4cb2ba582b6353e808b4d83bf6b7523c94edac12",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 117,
+        "Mixed Outcome": 163,
+        "Expands Expression": 352,
+        "cases": 632,
+        "countries": 22
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced_no_non_verbal__democracy.npz",
+      "state_sha256": "62fe3ec1a6c04e45eb77a38410d6a005907c864e396b077fee515b2029f99314",
+      "membership": "fits/full2_reduced_no_non_verbal__democracy__sample.csv",
+      "membership_sha256": "d02c9518bbd1ed7d2a683b6e3670d03a040b45292599e11440fe40925a84f0a3",
+      "diagnostics": "fits/full2_reduced_no_non_verbal__democracy__diagnostics.json",
+      "diagnostics_sha256": "1b81f84745fd921efcfc860bd13d61c34da72f067130b22728fb0947dcc0387a"
+    },
+    {
+      "model": "full2_reduced_no_speech_no_non_verbal",
+      "sample": "autocracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced_no_speech_no_non_verbal",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers"
+        ]
+      },
+      "specification_sha256": "0dc50bd1a5035924817d27f483cfa4e2ec9aaea6709257a8d4c7d80902c17e8b",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 103,
+        "Mixed Outcome": 17,
+        "Expands Expression": 73,
+        "cases": 193,
+        "countries": 29
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced_no_speech_no_non_verbal__autocracy.npz",
+      "state_sha256": "056ae99d78a8680cf5e73094685cce127bf0c018a8f2f421ef7ded0b40806056",
+      "membership": "fits/full2_reduced_no_speech_no_non_verbal__autocracy__sample.csv",
+      "membership_sha256": "a89299c99c372b408e5cb1f72bfb00c3530b8752462e335858fed39896cdc72a",
+      "diagnostics": "fits/full2_reduced_no_speech_no_non_verbal__autocracy__diagnostics.json",
+      "diagnostics_sha256": "91e41fdc62ff8f7575d4126d62e8da2a7b4411738ccbe662781f829628240415"
+    },
+    {
+      "model": "full2_reduced_no_speech_no_non_verbal",
+      "sample": "democracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced_no_speech_no_non_verbal",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers"
+        ]
+      },
+      "specification_sha256": "0dc50bd1a5035924817d27f483cfa4e2ec9aaea6709257a8d4c7d80902c17e8b",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 117,
+        "Mixed Outcome": 163,
+        "Expands Expression": 352,
+        "cases": 632,
+        "countries": 22
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced_no_speech_no_non_verbal__democracy.npz",
+      "state_sha256": "d3c4463d31b19114f1766a07f4b76c8a823a7f5c932dbba2b50a8df4a4085fac",
+      "membership": "fits/full2_reduced_no_speech_no_non_verbal__democracy__sample.csv",
+      "membership_sha256": "d02c9518bbd1ed7d2a683b6e3670d03a040b45292599e11440fe40925a84f0a3",
+      "diagnostics": "fits/full2_reduced_no_speech_no_non_verbal__democracy__diagnostics.json",
+      "diagnostics_sha256": "b3324d8654ec09c25ad4450f1734a965c3d0935345deabb8711821e9b983812c"
+    }
+  ],
+  "started_at_utc": "2026-10-07T17:44:12.722541+00:00",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/run_models.py --config analysis/specifications_control_removal.py --sample by_regime --sample-policy fixed --reference-model full2 --run control_removal_comparison_01",
+  "environment": {
+    "python": "3.12.13",
+    "executable": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "platform": "macOS-26.5-arm64-arm-64bit"
+  },
+  "sample_policy": "fixed",
+  "sample_selection": "by_regime",
+  "reference_model": "full2",
+  "input": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/data/processed/cases_v7_short.csv",
+    "sha256": "f638264a63906fae73cec9991128d16f55737a19a552f3d206b820f1ccb78290"
+  },
+  "config": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/specifications_control_removal.py",
+    "sha256": "8ded63171f456a3ff8ab508d26bbdba0c33e3f5c8b286f078f713f5e59e9ee9f"
+  },
+  "estimator": {
+    "method": "newton",
+    "maxiter": 100,
+    "tol": 1e-12,
+    "disp": false
+  },
+  "specifications": [
+    {
+      "name": "full2_reduced",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "full2_reduced_no_public_speech",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "full2_reduced_no_non_verbal",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_speech"
+      ]
+    },
+    {
+      "name": "full2_reduced_no_speech_no_non_verbal",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers"
+      ]
+    }
+  ],
+  "numeric_storage": "float32",
+  "spline_storage": "float32",
+  "outcome_mapping": {
+    "Mixed Outcome": 0,
+    "Contracts Expression": 1,
+    "Expands Expression": 2
+  },
+  "cluster_variable": "country_id",
+  "spline_knots": [
+    2001,
+    2016,
+    2022
+  ],
+  "diagnostic_thresholds": {
+    "score": 1e-07,
+    "lp_feasibility": 1e-09,
+    "separation_margin": 1e-07,
+    "hessian_condition_warning": 10000000000.0,
+    "large_working_coefficient": 20,
+    "large_raw_categorical_coefficient": 20,
+    "large_working_se": 10,
+    "sparse_cell_count": 5,
+    "few_clusters_warning": 30
+  },
+  "numerical_sources": {
+    "replication/scripts/replicate.py": "b8cea1d9b66da46db43472355464066244c1919f8b9add70ca3eba3ef4cd648f",
+    "replication/scripts/regime_subsets.py": "e87d7bc24b9249440179168694f818bb1aaa7f12f4ef96ee67e332c4bb3451f8"
+  },
+  "workflow_sources": {
+    "analysis/run_models.py": "bbac3e69428b4f8ac6db0e0410115b449519777c4ee0810830421fd066d6f04a",
+    "analysis/workflow.py": "3a0b7e44eff7db44dadb7c655fd1871642fc970816fdf1679d47b3476daf7f82"
+  },
+  "configuration_sha256": "cbd4d3f043a9bd5a65fe59fad4e9910a18310e56cafd6b5aa01302d6eef6f6d1",
+  "fixed_reference": {
+    "model": "full2",
+    "manifest_sha256": "dc5406b83df899e1d462c2411cba40df7796ca2ba69800208031040b388e2558",
+    "source_sha256": "ae4b38b130c999f5148b30186246fc2fc704a20d3fa17ec6f8ad1eb993c5b645",
+    "case_identity_validated": true
+  },
+  "finished_at_utc": "2026-10-07T17:44:13.275529+00:00"
+}

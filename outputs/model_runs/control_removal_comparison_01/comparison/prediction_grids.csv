@@ -1,0 +1,25 @@
+model,predictor,minimum,maximum,N,grid_size,definition,sample
+full2_reduced,court_independence_lag1,-2.684999942779541,1.9079999923706055,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced,v2jupurge_lag1,-2.7739999294281006,2.5280001163482666,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced,wdj_expression_lag1,-0.2222222238779068,0.9074074029922485,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced,wdj_expression_lag1,-0.6666666865348816,1.0,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_public_speech,court_independence_lag1,-2.684999942779541,1.9079999923706055,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_public_speech,v2jupurge_lag1,-2.7739999294281006,2.5280001163482666,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_public_speech,wdj_expression_lag1,-0.2222222238779068,0.9074074029922485,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_public_speech,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_public_speech,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_public_speech,wdj_expression_lag1,-0.6666666865348816,1.0,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_non_verbal,court_independence_lag1,-2.684999942779541,1.9079999923706055,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_non_verbal,v2jupurge_lag1,-2.7739999294281006,2.5280001163482666,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_non_verbal,wdj_expression_lag1,-0.2222222238779068,0.9074074029922485,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_non_verbal,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_non_verbal,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_non_verbal,wdj_expression_lag1,-0.6666666865348816,1.0,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_speech_no_non_verbal,court_independence_lag1,-2.684999942779541,1.9079999923706055,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_speech_no_non_verbal,v2jupurge_lag1,-2.7739999294281006,2.5280001163482666,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_speech_no_non_verbal,wdj_expression_lag1,-0.2222222238779068,0.9074074029922485,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy
+full2_reduced_no_speech_no_non_verbal,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_speech_no_non_verbal,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy
+full2_reduced_no_speech_no_non_verbal,wdj_expression_lag1,-0.6666666865348816,1.0,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy

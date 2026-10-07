@@ -1,0 +1,29 @@
+{
+  "run_name": "democracy_reduced_01",
+  "status": "completed",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/plot_probabilities.py --run democracy_reduced_01 --models full2_reduced",
+  "fit_manifest_sha256": "28e6f7d1aa6d8d00b2623a922f1d57b5863efc4bd972edc87ccf54ff9f95458b",
+  "skipped_fits": [],
+  "consumed_states": [
+    {
+      "model": "full2_reduced",
+      "sample": "democracy",
+      "sha256": "5152b8454277a629daff81e5967afdb6247f112d372faa766273056c7b199163"
+    }
+  ],
+  "prediction_rows": 459,
+  "figures": 6,
+  "file_sha256": {
+    "predictions.csv": "adc67fe25ce5427060b0051d427c95c719c8c8acbc51a93063c67f8a1fdd4b08",
+    "prediction_grids.csv": "30f96c8ae06d6e45d122fc6a37a88318a6218dc54bb0c6334072402006a4b02f",
+    "prediction_validation.csv": "2281f1ab7712c3d01d5349acd5856c3af1506e2ae70d2534ba72fac72a733ed7",
+    "observed_support.csv": "37bd0726a23ebb94e136aefe25fd388279299c43b1b520a5d30e39412a04d76b",
+    "figure_index.csv": "a75480365cdbc7dd09d379ca320d09f0e9e4d9c91711abe4c25f24215c5a40f1",
+    "figures/full2_reduced__democracy__v2jupurge_lag1__with_histogram.png": "154909bc75a3273230cc92d300d458c9a0c91b69b708e52dd6e10c136272ca85",
+    "figures/full2_reduced__democracy__v2jupurge_lag1__without_histogram.png": "c6644f396d95f32fe8fdf17c1dcb1b967fcf64255522e321dc3ea122e9cf8bed",
+    "figures/full2_reduced__democracy__wdj_expression_lag1__with_histogram.png": "2414b51df677a6a8b5f0a1196635d09eb965a37eb16a843de5f38e7a709c7ef9",
+    "figures/full2_reduced__democracy__court_independence_lag1__without_histogram.png": "3d2ded916f2c1d6b253673279d9547aef5020420c54f7a77263d95f9e6de98ec",
+    "figures/full2_reduced__democracy__wdj_expression_lag1__without_histogram.png": "0b7006e8e26029aad238e61e11a7d8e32948f7a0cb8a77f7457a8c2c5e3e2988",
+    "figures/full2_reduced__democracy__court_independence_lag1__with_histogram.png": "e80b7be8020302ad2a572dfff817ae24332a981a4f22fe2c1cdad9009db42a00"
+  }
+}

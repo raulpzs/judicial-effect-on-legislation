@@ -1,0 +1,4 @@
+model,predictor,minimum,maximum,N,grid_size,definition,run,sample
+full2_reduced,court_independence_lag1,-2.684999942779541,1.9079999923706055,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy_reduced_01,autocracy
+full2_reduced,v2jupurge_lag1,-2.7739999294281006,2.5280001163482666,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy_reduced_01,autocracy
+full2_reduced,wdj_expression_lag1,-0.2222222238779068,0.9074074029922485,193,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",autocracy_reduced_01,autocracy

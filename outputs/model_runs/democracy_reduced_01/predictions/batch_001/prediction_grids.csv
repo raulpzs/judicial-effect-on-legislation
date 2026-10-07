@@ -1,0 +1,4 @@
+model,predictor,minimum,maximum,N,grid_size,definition,run,sample
+full2_reduced,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy_reduced_01,democracy
+full2_reduced,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy_reduced_01,democracy
+full2_reduced,wdj_expression_lag1,-0.6666666865348816,1.0,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",democracy_reduced_01,democracy

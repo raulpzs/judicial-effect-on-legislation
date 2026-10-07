@@ -1,0 +1,4 @@
+model,predictor,max_manual_predict_difference,max_probability_sum_error,min_probability,max_probability,max_gradient_scaled_error,passed,run,sample
+full2_reduced,court_independence_lag1,2.6645352591003757e-15,2.220446049250313e-16,0.02830850632709589,0.8796212733021708,7.415216537243299e-10,True,democracy_reduced_01,democracy
+full2_reduced,v2jupurge_lag1,2.831068712794149e-15,2.220446049250313e-16,0.009568287625176785,0.8660511289944972,1.1523586983068117e-09,True,democracy_reduced_01,democracy
+full2_reduced,wdj_expression_lag1,2.886579864025407e-15,2.220446049250313e-16,0.02301616512256699,0.8439391679759705,7.656380707818223e-10,True,democracy_reduced_01,democracy
