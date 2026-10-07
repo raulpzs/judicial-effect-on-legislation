@@ -1,0 +1,12 @@
+model,predictor,minimum,maximum,N,grid_size,definition,run,sample
+full1,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full1,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full2,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full2,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full2,wdj_expression_lag1,-0.6666666865348816,1.0,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full3,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full3,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full3,wdj_press_lag1,-0.8888888955116272,0.8888888955116272,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full4,court_independence_lag1,-1.3279999494552612,3.365999937057495,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full4,v2jupurge_lag1,-1.25600004196167,2.9670000076293945,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy
+full4,wdj_citizen_lag1,-0.1527777761220932,1.0,632,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_regimes,democracy

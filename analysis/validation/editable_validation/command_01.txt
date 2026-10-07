@@ -1,0 +1,18 @@
+SAMPLE POLICY: AVAILABLE | sample=all | run=editable_validation_all
+indep1 all successful 
+indep2 all successful 
+attack1 all successful 
+attack2 all successful 
+attack3 all successful 
+attack4 all successful 
+attack5 all successful 
+dejure1 all successful 
+dejure2 all successful 
+dejure3 all successful 
+dejure4 all successful 
+dejure5 all successful 
+dejure6 all successful 
+full1 all successful 
+full2 all successful 
+full3 all successful 
+full4 all successful 

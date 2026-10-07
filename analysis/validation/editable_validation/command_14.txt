@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/plot_probabilities.py", line 152, in <module>
+    main()
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/plot_probabilities.py", line 130, in main
+    prediction, validation, ranges, observed = saved_prediction(directory, manifest, fit, args.predictors)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/plot_probabilities.py", line 30, in saved_prediction
+    state_path = work.verify_artifact(directory, entry, 'state')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/workflow.py", line 223, in verify_artifact
+    raise ValueError(f'Run artifact identity/fingerprint mismatch: {relative}')
+ValueError: Run artifact identity/fingerprint mismatch: fits/full2_no_legal_system__all.npz

@@ -1,0 +1,145 @@
+{
+  "model": "dejure3",
+  "regime": "all",
+  "sample": {
+    "Contracts Expression": 241,
+    "Mixed Outcome": 227,
+    "Expands Expression": 606,
+    "cases": 1074,
+    "countries": 47
+  },
+  "design": {
+    "rows": 1074,
+    "columns": 4,
+    "rank": 4,
+    "working_rank": 4,
+    "condition_raw": 491465.73682288436,
+    "condition_working": 2.3429191143947117,
+    "constant_nonintercept_predictors": [],
+    "absent_categorical_levels": [],
+    "empty_cell_count": 0,
+    "sparse_cell_count": 0,
+    "column_names": [
+      "wdj_press_lag1",
+      "yearspline1",
+      "yearspline2",
+      "_cons"
+    ]
+  },
+  "separation": {
+    "complete_lp_success": true,
+    "complete_lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "recession_lp_success": true,
+    "recession_lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "complete_maximum_minimum_margin": -0.0,
+    "status": "no_separating_direction_detected",
+    "parameter_direction": [],
+    "strict_pairs": [],
+    "minimum_recession_margin": 0.0,
+    "sum_recession_margins": 0.0,
+    "strict_pair_count": 0,
+    "tied_pair_count": 2148,
+    "verified_nonnegative_margins": true
+  },
+  "optimizer": {
+    "method": "newton",
+    "maxiter": 100,
+    "tol": 1e-12,
+    "converged": true,
+    "iterations": 6,
+    "exception": null
+  },
+  "iteration_trace": [
+    {
+      "iteration": 1,
+      "loglik": -1046.5875311863902,
+      "max_abs_working_parameter": 1.058659217230128,
+      "max_abs_score": 19.329990021701327
+    },
+    {
+      "iteration": 2,
+      "loglik": -1044.927332111622,
+      "max_abs_working_parameter": 1.0121818978424733,
+      "max_abs_score": 0.7271427216005697
+    },
+    {
+      "iteration": 3,
+      "loglik": -1044.9245110595086,
+      "max_abs_working_parameter": 1.0138155232402732,
+      "max_abs_score": 0.0029956608308465927
+    },
+    {
+      "iteration": 4,
+      "loglik": -1044.9245110273541,
+      "max_abs_working_parameter": 1.013817397993673,
+      "max_abs_score": 4.904973523217366e-08
+    },
+    {
+      "iteration": 5,
+      "loglik": -1044.9245110273541,
+      "max_abs_working_parameter": 1.0138173979974043,
+      "max_abs_score": 8.210099267103033e-14
+    },
+    {
+      "iteration": 6,
+      "loglik": -1044.9245110273541,
+      "max_abs_working_parameter": 1.013817397997404,
+      "max_abs_score": 2.7652540250941347e-14
+    }
+  ],
+  "warnings": [],
+  "hessian": {
+    "working_rank": 8,
+    "dimensions": [
+      8,
+      8
+    ],
+    "condition_working": 26.47660243128804,
+    "condition_original": 1275162840047.882,
+    "minimum_eigenvalue_working": 22.4483498169574,
+    "maximum_eigenvalue_working": 594.3560333420595,
+    "inverse_computed": true,
+    "inverse_residual_inf": 1.745131816832668e-15,
+    "finite": true
+  },
+  "finiteness": {
+    "coefficients": true,
+    "covariance": true,
+    "clustered_standard_errors": true,
+    "confidence_intervals": true
+  },
+  "omissions": [],
+  "stability_concerns": [],
+  "successful": true,
+  "reliable_unrestricted_fit": true,
+  "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+  "score": {
+    "maximum_absolute_working_score": 2.7652540250941347e-14,
+    "l2_working_score": 4.4539524734243965e-14,
+    "maximum_absolute_score_per_case": 2.5747244181509636e-17,
+    "observation_scores_finite": true
+  },
+  "covariance": {
+    "clusters": 47,
+    "correction": 1.0217391304347827,
+    "rank_working": 8,
+    "maximum_rank_from_cluster_scores": 46,
+    "minimum_diagonal": 1.757213374755004e-05,
+    "minimum_eigenvalue_working": 0.00035670866804237604,
+    "negative_variance_count": 0,
+    "negative_working_variance_count": 0,
+    "statsmodels_crosscheck_pass": true
+  },
+  "estimates": {
+    "terminal_loglik": -1044.9245110273541,
+    "maximum_absolute_raw_coefficient": 18.556488391469763,
+    "maximum_absolute_working_coefficient": 1.013817397997404,
+    "large_working_parameter_indices": [],
+    "large_raw_categorical_coefficients": [],
+    "maximum_raw_clustered_se": 41.74137398220669,
+    "maximum_working_clustered_se": 0.2376085241642997,
+    "linear_predictor_transform_pass": true
+  },
+  "status": "successful",
+  "categorical_cells": []
+}

@@ -1,0 +1,9 @@
+SAMPLE POLICY: AVAILABLE | sample=by_regime | run=editable_validation_regimes
+full1 autocracy unsuccessful 
+full1 democracy successful_with_cautions 
+full2 autocracy unsuccessful 
+full2 democracy successful_with_cautions 
+full3 autocracy unsuccessful 
+full3 democracy successful_with_cautions 
+full4 autocracy unsuccessful 
+full4 democracy successful_with_cautions 

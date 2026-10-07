@@ -1,0 +1,9 @@
+{
+  "run_name": "editable_validation_smoke_fixed",
+  "status": "failed_partial_results_preserved",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/plot_probabilities.py --run editable_validation_smoke_fixed",
+  "fit_manifest_sha256": "6d4992151f512ce694b2667de0c004bb37ad2b7d5ca44eec0673676175767684",
+  "skipped_fits": [],
+  "consumed_states": [],
+  "error": "ValueError: Run artifact identity/fingerprint mismatch: fits/full2_no_legal_system__all.npz"
+}

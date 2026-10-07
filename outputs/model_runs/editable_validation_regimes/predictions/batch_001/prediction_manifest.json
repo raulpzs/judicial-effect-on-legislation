@@ -1,0 +1,81 @@
+{
+  "run_name": "editable_validation_regimes",
+  "status": "completed",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/plot_probabilities.py --run editable_validation_regimes",
+  "fit_manifest_sha256": "c7da21568fe546a92021caa1e880b114252b4bfed0c0a5ddc1cda3be028db040",
+  "skipped_fits": [
+    {
+      "model": "full1",
+      "sample": "autocracy",
+      "reason": "Fit diagnostics prohibit inference: unsuccessful"
+    },
+    {
+      "model": "full2",
+      "sample": "autocracy",
+      "reason": "Fit diagnostics prohibit inference: unsuccessful"
+    },
+    {
+      "model": "full3",
+      "sample": "autocracy",
+      "reason": "Fit diagnostics prohibit inference: unsuccessful"
+    },
+    {
+      "model": "full4",
+      "sample": "autocracy",
+      "reason": "Fit diagnostics prohibit inference: unsuccessful"
+    }
+  ],
+  "consumed_states": [
+    {
+      "model": "full1",
+      "sample": "democracy",
+      "sha256": "647955730d081acd0de0bca68a7a02f507e8180680b5f7405902c27d3aae496d"
+    },
+    {
+      "model": "full2",
+      "sample": "democracy",
+      "sha256": "af176c1585e7d23d2d675289908af24aa2547ac693a32c85d83e3a46aa9d5690"
+    },
+    {
+      "model": "full3",
+      "sample": "democracy",
+      "sha256": "34ec5e5c0a3bf421b4f062a39bcf2035664c27eadb4a0546d70f0a97bfdfa12c"
+    },
+    {
+      "model": "full4",
+      "sample": "democracy",
+      "sha256": "823d0e1b9b7619cf589e6979ca402f173a0445940cc8f02d9f0237a90dc26ab3"
+    }
+  ],
+  "prediction_rows": 1683,
+  "figures": 22,
+  "file_sha256": {
+    "predictions.csv": "e96e1fd7559bb7ba48a8baddd83a0983ea147a8060bc10794ce9f9b9dcf5d9d1",
+    "prediction_grids.csv": "0e1532eb90e83437286b1411603ad6b0e887642f7b68151df30f197370bb4745",
+    "prediction_validation.csv": "ccf99328a0aef6b9a114edbc586c3da3d2927e7e4f8ab82b38cf3318c2ef0956",
+    "observed_support.csv": "b20069c4bc5241cecde29f82a2f2b7980453591111c060bced70aecb44092659",
+    "figure_index.csv": "dcc37c463c377cee5d9b4e5e482afc96dd84718ae23962f2f3b35ca46ceddc75",
+    "figures/full4__democracy__court_independence_lag1__without_histogram.png": "b4a41170f8fd0e84065ce2eb7f29e214b1ac16810f391bc9bb7b3a3265355996",
+    "figures/full2__democracy__v2jupurge_lag1__with_histogram.png": "406fdb5083ceafa5f26df4ce9b79d56a90e53b6fa3eceea481b16b7f7283b04c",
+    "figures/full4__democracy__wdj_citizen_lag1__with_histogram.png": "9a798b5748a3330bbe0c4bb8c67f40f73290c126c34a4f8a0c7c77f7696d49e2",
+    "figures/full2__democracy__court_independence_lag1__without_histogram.png": "ad799ff0c3bac042ab76cb1efd09f52580fa9bd3f02fc2307e62067fe11095cc",
+    "figures/full1__democracy__court_independence_lag1__without_histogram.png": "274968b1911b08d132e35c970eb1196bebefee177e346550d9078e47dd2ad906",
+    "figures/full2__democracy__wdj_expression_lag1__without_histogram.png": "733e8b015352e1fbd4ba3937f5d74cf3de395442fdc2d887e1ac44b4c2524872",
+    "figures/full3__democracy__court_independence_lag1__without_histogram.png": "891838535df3ad93522233949403ebbc66423b66f437a1fd6508de93209a3173",
+    "figures/full1__democracy__court_independence_lag1__with_histogram.png": "7d168852d757a18ce51b6ca7eb693d64cf9bd549ea4fd7b16d3bc8f5ef0d2de6",
+    "figures/full1__democracy__v2jupurge_lag1__without_histogram.png": "b0df270657f745ccf021201a6f76c915fb5bb4107fcb8b39d03d7b331a2e54d9",
+    "figures/full3__democracy__court_independence_lag1__with_histogram.png": "77a61df5e6275682fb614089b8f742571e1c4e0e421a2b24fed4126dbd00d456",
+    "figures/full3__democracy__v2jupurge_lag1__without_histogram.png": "ff0fa23a576ead593bc85e81b72b33fe8821f0fa2cdf7f08223d4accd5ae69b6",
+    "figures/full2__democracy__v2jupurge_lag1__without_histogram.png": "ab06b6ebe162a5fdba4d8f124e3a18bc83ef65e9bfac1689f5aee41b4cf04741",
+    "figures/full1__democracy__v2jupurge_lag1__with_histogram.png": "318f137ab79a9a5c7e985c3264936f55041dd53e9644ac072480b091ba0c3b54",
+    "figures/full4__democracy__wdj_citizen_lag1__without_histogram.png": "7cb1b5d7cd6e0d6e0810aa0b570ce664029109d0fdd0a5347d5c5625f09e3529",
+    "figures/full4__democracy__v2jupurge_lag1__without_histogram.png": "e75cf65509a5729bf21ed2627e61ec489e3e3790e44fccc7c230742e9dfc850e",
+    "figures/full4__democracy__v2jupurge_lag1__with_histogram.png": "ddd112f81393788b02a83ac9f0bafd29ee7a21858ba596ce36941b7c47d1662c",
+    "figures/full3__democracy__wdj_press_lag1__with_histogram.png": "07b29dfbdaf6bc125ce15221c427a1356926bfcd51f12ccc13e87f70c35868e2",
+    "figures/full2__democracy__wdj_expression_lag1__with_histogram.png": "ffb2845d896063571e4de5f47ccc7dfe213e5239fb586ef0f7cc22b2fe784595",
+    "figures/full3__democracy__wdj_press_lag1__without_histogram.png": "02fdb8b40bfd958b81add987f5644473c1b8c98771ac55f74b70b1b7e31557e6",
+    "figures/full2__democracy__court_independence_lag1__with_histogram.png": "f51583d9fba949077a7bda5f2e2e57f1f6330cdf1e2109293dbe0be6ef33a6e2",
+    "figures/full3__democracy__v2jupurge_lag1__with_histogram.png": "7ab26288537eebe3c0b38e7d2fbc0206fe812b0a0542f68f7ed99a55a50b61f8",
+    "figures/full4__democracy__court_independence_lag1__with_histogram.png": "91889f819e048424ed318d81d185df64dd0fe7b6a0d41086527273be67c0a539"
+  }
+}

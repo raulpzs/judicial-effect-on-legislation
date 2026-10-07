@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "run_name": "editable_validation_constant",
+  "status": "completed_with_unsuccessful_fits",
+  "fits": [
+    {
+      "model": "constant_control",
+      "sample": "all",
+      "status": "unsuccessful",
+      "successful": false,
+      "specification": {
+        "name": "constant_control",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression",
+          "new_missing_predictor"
+        ]
+      },
+      "specification_sha256": "11e911ef13ee35d0da3d4d2777ef2e989a3a968d7261ac5ed654451a0a0a73d4",
+      "prediction_allowed": false,
+      "counts": {
+        "Contracts Expression": 219,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 824,
+        "countries": 43
+      },
+      "prediction_readiness": "Not ready: identification/numerical concerns",
+      "state": "fits/constant_control__all.npz",
+      "state_sha256": "8434a25670040563d16e95d094d2c9e1dd5a635daabc1b80a847b507576b1619",
+      "membership": "fits/constant_control__all__sample.csv",
+      "membership_sha256": "048bda9fda79aa914ddcd93c06903d1f0bc35a4fe150c782ef0c19e1f76d38af",
+      "diagnostics": "fits/constant_control__all__diagnostics.json",
+      "diagnostics_sha256": "e2551f9217982c914482876d941abede4e2006f3e347868ece9d0f975d322c1b"
+    },
+    {
+      "model": "full1",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "full1",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "f5f1e8180e40d1ade5666e8f92b6e31f7282924bd4de435b5a885ad3277a5de3",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 220,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 825,
+        "countries": 43
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full1__all.npz",
+      "state_sha256": "0c20d13ff528b8213b7cf1d5ca24fe50f87172c93504e8b067e54d452bc57bfb",
+      "membership": "fits/full1__all__sample.csv",
+      "membership_sha256": "75eeb0524db75030c7ab4b6771723f385a83fe9eeb91ac22d4e36450de7decf1",
+      "diagnostics": "fits/full1__all__diagnostics.json",
+      "diagnostics_sha256": "a6e4ff79e78d013ee2f095dbd71aa4acca862fc23d3f62ec2b9c5cd7590431c1"
+    }
+  ],
+  "started_at_utc": "2026-10-07T03:55:03.869874+00:00",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/run_models.py --models constant_control full1 --config /Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/validation/editable_validation/constant_specifications.py --input /Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/validation/editable_validation/fixed_missing.csv --run editable_validation_constant",
+  "environment": {
+    "python": "3.12.13",
+    "executable": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "platform": "macOS-26.5-arm64-arm-64bit"
+  },
+  "sample_policy": "available",
+  "sample_selection": "all",
+  "reference_model": null,
+  "input": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/validation/editable_validation/fixed_missing.csv",
+    "sha256": "2ecbe25ede0fae0687b871cd14ee5e271657c2c50681e97797ab83243f6aefd2"
+  },
+  "config": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/validation/editable_validation/constant_specifications.py",
+    "sha256": "83b5a756ca6742d4f2354b661d897c89958a8d46b0cca71d53d3a2a3807a641c"
+  },
+  "estimator": {
+    "method": "newton",
+    "maxiter": 100,
+    "tol": 1e-12,
+    "disp": false
+  },
+  "specifications": [
+    {
+      "name": "constant_control",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression",
+        "new_missing_predictor"
+      ]
+    },
+    {
+      "name": "full1",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    }
+  ],
+  "numeric_storage": "float32",
+  "spline_storage": "float32",
+  "outcome_mapping": {
+    "Mixed Outcome": 0,
+    "Contracts Expression": 1,
+    "Expands Expression": 2
+  },
+  "cluster_variable": "country_id",
+  "spline_knots": [
+    2001,
+    2016,
+    2022
+  ],
+  "diagnostic_thresholds": {
+    "score": 1e-07,
+    "lp_feasibility": 1e-09,
+    "separation_margin": 1e-07,
+    "hessian_condition_warning": 10000000000.0,
+    "large_working_coefficient": 20,
+    "large_raw_categorical_coefficient": 20,
+    "large_working_se": 10,
+    "sparse_cell_count": 5,
+    "few_clusters_warning": 30
+  },
+  "numerical_sources": {
+    "replication/scripts/replicate.py": "b8cea1d9b66da46db43472355464066244c1919f8b9add70ca3eba3ef4cd648f",
+    "replication/scripts/regime_subsets.py": "e87d7bc24b9249440179168694f818bb1aaa7f12f4ef96ee67e332c4bb3451f8"
+  },
+  "workflow_sources": {
+    "analysis/run_models.py": "29d52452a0ea548b79505024a6a801d27a45ff6d573246eadbea3437f59085f5",
+    "analysis/workflow.py": "3a0b7e44eff7db44dadb7c655fd1871642fc970816fdf1679d47b3476daf7f82"
+  },
+  "configuration_sha256": "3e106cf3d87ccabb9dc95a2f972560d7b0bfdce239034f55fbe6b91ea64a369a",
+  "finished_at_utc": "2026-10-07T03:55:04.065966+00:00"
+}

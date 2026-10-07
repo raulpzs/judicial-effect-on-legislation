@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/plot_probabilities.py", line 152, in <module>
+    main()
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/plot_probabilities.py", line 96, in main
+    manifest = json.loads((directory/'run_manifest.json').read_text())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/RaulPerez/Documents/Projects/judicial_decisions/outputs/model_runs/editable_validation_never_created/run_manifest.json'

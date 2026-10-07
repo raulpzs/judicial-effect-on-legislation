@@ -1,0 +1,3 @@
+SAMPLE POLICY: FIXED | sample=all | run=editable_validation_missing_fixed
+added_missing all unsuccessful ValueError: Fixed membership retained; cannot fit because required values are missing: {'new_missing_predictor': [1]}
+full1 all successful 

@@ -1,0 +1,2 @@
+SAMPLE POLICY: AVAILABLE | sample=all | run=editable_validation_smoke_available
+full2_no_legal_system all successful 

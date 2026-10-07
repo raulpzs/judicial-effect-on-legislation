@@ -1,0 +1,4 @@
+model,predictor,minimum,maximum,N,grid_size,definition,run,sample
+full2_no_legal_system,court_independence_lag1,-2.684999942779541,3.365999937057495,825,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_smoke_available,all
+full2_no_legal_system,v2jupurge_lag1,-2.7739999294281006,2.9670000076293945,825,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_smoke_available,all
+full2_no_legal_system,wdj_expression_lag1,-0.6666666865348816,1.0,825,51,"numpy.linspace(minimum, maximum, grid_size), endpoints included",editable_validation_smoke_available,all

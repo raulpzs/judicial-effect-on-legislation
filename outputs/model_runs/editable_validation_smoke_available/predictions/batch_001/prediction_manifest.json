@@ -1,0 +1,29 @@
+{
+  "run_name": "editable_validation_smoke_available",
+  "status": "completed",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/plot_probabilities.py --run editable_validation_smoke_available",
+  "fit_manifest_sha256": "bb76393d7f1e7b88afd94cbafbc739512a705983e10b45cee676d3dd3bff003a",
+  "skipped_fits": [],
+  "consumed_states": [
+    {
+      "model": "full2_no_legal_system",
+      "sample": "all",
+      "sha256": "2e3402c5ca902c32a4260a2244f05aaa603d5a7313d9b5c0a70a5502ffe5de6c"
+    }
+  ],
+  "prediction_rows": 459,
+  "figures": 6,
+  "file_sha256": {
+    "predictions.csv": "7bd3d180b79eb6a71084f789eb9ef36b2323ce1083e9d11cb4f69ee7023fad1b",
+    "prediction_grids.csv": "0195b0ffcf5310ad0d5b48d6d0723f0de248f1e2072f2c13e0cab087283d8313",
+    "prediction_validation.csv": "a1a12f10cd8af28f350782be1fd443c4897dca2b86694690b1bb3e5ffbe7c1fd",
+    "observed_support.csv": "f358b925fa80f1a12e825505878a48e294fa8b934d3a96f047a0f3d80d48e4db",
+    "figure_index.csv": "6c333b20b89c08186e2323422c7853f8b0aee460fd5b7a1360493937729e9630",
+    "figures/full2_no_legal_system__all__wdj_expression_lag1__without_histogram.png": "a2ef4a59b2d97f5c76f9f94045a82ef78c77231a4260712b58db544af578f9d4",
+    "figures/full2_no_legal_system__all__v2jupurge_lag1__with_histogram.png": "50dcca29c5ec2a71563b45bbbcfaf3196d2f1666a26e119e1949b3c73b9a6a0a",
+    "figures/full2_no_legal_system__all__court_independence_lag1__without_histogram.png": "081ffc61652236388bb8706b15b47d1c3b40298315f63c680373f7b3b16d2c48",
+    "figures/full2_no_legal_system__all__wdj_expression_lag1__with_histogram.png": "291b95b0ffc005ceda9fd87ecc55cf1fb89b653d6d7a37e0ff42169823d540cf",
+    "figures/full2_no_legal_system__all__v2jupurge_lag1__without_histogram.png": "7cb175702d0fbf3bbdd6b0bf726749fa8c1c0ebfd9b7a05c4de45f01b661d35d",
+    "figures/full2_no_legal_system__all__court_independence_lag1__with_histogram.png": "a0fb657777579eccd852b76519479b93388eb26c51afe0ad3ccbe5e75c4cefdc"
+  }
+}

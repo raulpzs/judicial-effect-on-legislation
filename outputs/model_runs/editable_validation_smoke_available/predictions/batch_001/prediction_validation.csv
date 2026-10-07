@@ -1,0 +1,4 @@
+model,predictor,max_manual_predict_difference,max_probability_sum_error,min_probability,max_probability,max_gradient_scaled_error,passed,run,sample
+full2_no_legal_system,court_independence_lag1,2.9976021664879227e-15,2.220446049250313e-16,0.009640709939157372,0.9619725264165884,6.626988774766916e-10,True,editable_validation_smoke_available,all
+full2_no_legal_system,v2jupurge_lag1,2.6645352591003757e-15,2.220446049250313e-16,0.017804257760631256,0.9297456633034358,7.337873301691668e-10,True,editable_validation_smoke_available,all
+full2_no_legal_system,wdj_expression_lag1,2.6645352591003757e-15,2.220446049250313e-16,0.012372658855775888,0.9261562633727881,6.661650447029523e-10,True,editable_validation_smoke_available,all

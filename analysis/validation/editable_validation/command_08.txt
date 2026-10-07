@@ -1,0 +1,2 @@
+SAMPLE POLICY: FIXED | sample=all | run=editable_validation_smoke_fixed
+full2_no_legal_system all successful 

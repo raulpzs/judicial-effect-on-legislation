@@ -1,0 +1,1528 @@
+{
+  "model": "full2",
+  "regime": "autocracy",
+  "sample": {
+    "Contracts Expression": 103,
+    "Mixed Outcome": 17,
+    "Expands Expression": 73,
+    "cases": 193,
+    "countries": 29
+  },
+  "design": {
+    "rows": 193,
+    "columns": 18,
+    "rank": 18,
+    "working_rank": 18,
+    "condition_raw": 1553226.8240003388,
+    "condition_working": 5.828751698063829,
+    "constant_nonintercept_predictors": [],
+    "absent_categorical_levels": [],
+    "empty_cell_count": 4,
+    "sparse_cell_count": 12,
+    "column_names": [
+      "court_independence_lag1",
+      "v2jupurge_lag1",
+      "wdj_expression_lag1",
+      "Civil",
+      "Mixed",
+      "1.high_court",
+      "Citizen",
+      "Press",
+      "Intermediary",
+      "Other/unclear",
+      "1.mode_electronic_internet",
+      "1.mode_press_newspapers",
+      "1.mode_public_assembly",
+      "1.mode_public_speech",
+      "1.mode_non_verbal_expression",
+      "yearspline1",
+      "yearspline2",
+      "_cons"
+    ]
+  },
+  "separation": {
+    "complete_lp_success": true,
+    "complete_lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "recession_lp_success": true,
+    "recession_lp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "complete_maximum_minimum_margin": -0.0,
+    "status": "quasi",
+    "parameter_direction": [
+      {
+        "equation": "Contracts_Expression",
+        "term": "Intermediary",
+        "working_direction": -1.0
+      },
+      {
+        "equation": "Contracts_Expression",
+        "term": "Other/unclear",
+        "working_direction": 1.0
+      },
+      {
+        "equation": "Contracts_Expression",
+        "term": "1.mode_public_assembly",
+        "working_direction": 1.0000000000000024
+      },
+      {
+        "equation": "Contracts_Expression",
+        "term": "_cons",
+        "working_direction": 0.482306997752297
+      },
+      {
+        "equation": "Expands_Expression",
+        "term": "Intermediary",
+        "working_direction": -1.0
+      },
+      {
+        "equation": "Expands_Expression",
+        "term": "Other/unclear",
+        "working_direction": 0.9999999999999998
+      },
+      {
+        "equation": "Expands_Expression",
+        "term": "1.mode_public_assembly",
+        "working_direction": 1.0
+      },
+      {
+        "equation": "Expands_Expression",
+        "term": "_cons",
+        "working_direction": 0.4823069977522981
+      }
+    ],
+    "strict_pairs": [
+      {
+        "row_id": 40,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.511612218347594
+      },
+      {
+        "row_id": 42,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.511612218347594
+      },
+      {
+        "row_id": 103,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.51161221834757
+      },
+      {
+        "row_id": 153,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065233
+      },
+      {
+        "row_id": 155,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065233
+      },
+      {
+        "row_id": 166,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.438761312606523
+      },
+      {
+        "row_id": 175,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.511612218347578
+      },
+      {
+        "row_id": 176,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 7.9503735309541055
+      },
+      {
+        "row_id": 178,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.438761312606523
+      },
+      {
+        "row_id": 211,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065233
+      },
+      {
+        "row_id": 222,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065193
+      },
+      {
+        "row_id": 225,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065197
+      },
+      {
+        "row_id": 281,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 7.950373530954117
+      },
+      {
+        "row_id": 318,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065237
+      },
+      {
+        "row_id": 321,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.511612218347585
+      },
+      {
+        "row_id": 410,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.438761312606522
+      },
+      {
+        "row_id": 412,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.511612218347586
+      },
+      {
+        "row_id": 432,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065184
+      },
+      {
+        "row_id": 554,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.438761312606529
+      },
+      {
+        "row_id": 560,
+        "observed": "Mixed Outcome",
+        "alternative": "Contracts Expression",
+        "margin": 13.9285752441997
+      },
+      {
+        "row_id": 560,
+        "observed": "Mixed Outcome",
+        "alternative": "Expands Expression",
+        "margin": 13.928575244199694
+      },
+      {
+        "row_id": 584,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065233
+      },
+      {
+        "row_id": 585,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.511612218347594
+      },
+      {
+        "row_id": 612,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.438761312606522
+      },
+      {
+        "row_id": 628,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126064984
+      },
+      {
+        "row_id": 629,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 4.511612218347594
+      },
+      {
+        "row_id": 1072,
+        "observed": "Contracts Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.4387613126065233
+      },
+      {
+        "row_id": 1073,
+        "observed": "Expands Expression",
+        "alternative": "Mixed Outcome",
+        "margin": 3.438761312606522
+      }
+    ],
+    "minimum_recession_margin": -3.375077994860476e-14,
+    "sum_recession_margins": 134.8709762987922,
+    "strict_pair_count": 28,
+    "tied_pair_count": 358,
+    "verified_nonnegative_margins": true
+  },
+  "optimizer": {
+    "method": "newton",
+    "maxiter": 100,
+    "tol": 1e-12,
+    "converged": false,
+    "iterations": 100,
+    "exception": null
+  },
+  "iteration_trace": [
+    {
+      "iteration": 1,
+      "loglik": -129.47265378840999,
+      "max_abs_working_parameter": 1.3367875637036382,
+      "max_abs_score": 3.7511858615454408
+    },
+    {
+      "iteration": 2,
+      "loglik": -124.49281162110083,
+      "max_abs_working_parameter": 1.7955322596745975,
+      "max_abs_score": 1.277218539475025
+    },
+    {
+      "iteration": 3,
+      "loglik": -123.32179040509786,
+      "max_abs_working_parameter": 2.1786023960344436,
+      "max_abs_score": 0.3779072190501904
+    },
+    {
+      "iteration": 4,
+      "loglik": -123.02655031829693,
+      "max_abs_working_parameter": 2.4217688473801524,
+      "max_abs_score": 0.15909683935064406
+    },
+    {
+      "iteration": 5,
+      "loglik": -122.93694152597203,
+      "max_abs_working_parameter": 2.5870321935462055,
+      "max_abs_score": 0.06478495178291926
+    },
+    {
+      "iteration": 6,
+      "loglik": -122.90539336351998,
+      "max_abs_working_parameter": 2.7287557093162422,
+      "max_abs_score": 0.024872315889505503
+    },
+    {
+      "iteration": 7,
+      "loglik": -122.8937194783341,
+      "max_abs_working_parameter": 2.8681676867450854,
+      "max_abs_score": 0.009230984297144229
+    },
+    {
+      "iteration": 8,
+      "loglik": -122.88941160648345,
+      "max_abs_working_parameter": 3.0078721015057948,
+      "max_abs_score": 0.0034046506816129353
+    },
+    {
+      "iteration": 9,
+      "loglik": -122.88782500709412,
+      "max_abs_working_parameter": 3.147698811466435,
+      "max_abs_score": 0.0012536882785593266
+    },
+    {
+      "iteration": 10,
+      "loglik": -122.88724108213901,
+      "max_abs_working_parameter": 3.28756893096976,
+      "max_abs_score": 0.0004613688086887274
+    },
+    {
+      "iteration": 11,
+      "loglik": -122.88702623458221,
+      "max_abs_working_parameter": 3.4274534792587192,
+      "max_abs_score": 0.00016975133617201746
+    },
+    {
+      "iteration": 12,
+      "loglik": -122.8869471920371,
+      "max_abs_working_parameter": 3.567339549710613,
+      "max_abs_score": 6.24523536979512e-05
+    },
+    {
+      "iteration": 13,
+      "loglik": -122.88691811329434,
+      "max_abs_working_parameter": 3.8269208817181837,
+      "max_abs_score": 2.297670289779638e-05
+    },
+    {
+      "iteration": 14,
+      "loglik": -122.88690741573919,
+      "max_abs_working_parameter": 4.117617958689335,
+      "max_abs_score": 8.454075992231397e-06
+    },
+    {
+      "iteration": 15,
+      "loglik": -122.88690348031659,
+      "max_abs_working_parameter": 4.408135902729252,
+      "max_abs_score": 3.11145370312427e-06
+    },
+    {
+      "iteration": 16,
+      "loglik": -122.88690203255211,
+      "max_abs_working_parameter": 4.698167706730466,
+      "max_abs_score": 1.1460076615416795e-06
+    },
+    {
+      "iteration": 17,
+      "loglik": -122.886901499944,
+      "max_abs_working_parameter": 4.986890623438437,
+      "max_abs_score": 4.2296310384679144e-07
+    },
+    {
+      "iteration": 18,
+      "loglik": -122.88690130399472,
+      "max_abs_working_parameter": 5.27214822790192,
+      "max_abs_score": 1.5697844184618623e-07
+    },
+    {
+      "iteration": 19,
+      "loglik": -122.88690123187331,
+      "max_abs_working_parameter": 5.548619102058204,
+      "max_abs_score": 5.914841816802854e-08
+    },
+    {
+      "iteration": 20,
+      "loglik": -122.88690120525433,
+      "max_abs_working_parameter": 5.805031286636561,
+      "max_abs_score": 2.3194841053919106e-08
+    },
+    {
+      "iteration": 21,
+      "loglik": -122.88690119528083,
+      "max_abs_working_parameter": 6.024691788806101,
+      "max_abs_score": 9.991890543509177e-09
+    },
+    {
+      "iteration": 22,
+      "loglik": -122.88690119133076,
+      "max_abs_working_parameter": 6.196840697945762,
+      "max_abs_score": 5.065196992257332e-09
+    },
+    {
+      "iteration": 23,
+      "loglik": -122.88690118957213,
+      "max_abs_working_parameter": 6.326325495578456,
+      "max_abs_score": 3.0693456963726557e-09
+    },
+    {
+      "iteration": 24,
+      "loglik": -122.88690118866884,
+      "max_abs_working_parameter": 6.425078945090389,
+      "max_abs_score": 2.1255568400557117e-09
+    },
+    {
+      "iteration": 25,
+      "loglik": -122.88690118814347,
+      "max_abs_working_parameter": 6.503015698031938,
+      "max_abs_score": 1.6037815635916657e-09
+    },
+    {
+      "iteration": 26,
+      "loglik": -122.88690118780745,
+      "max_abs_working_parameter": 6.566636171027996,
+      "max_abs_score": 1.2794988112355262e-09
+    },
+    {
+      "iteration": 27,
+      "loglik": -122.88690118757685,
+      "max_abs_working_parameter": 6.620050080432541,
+      "max_abs_score": 1.060372520533008e-09
+    },
+    {
+      "iteration": 28,
+      "loglik": -122.88690118740993,
+      "max_abs_working_parameter": 6.665913797668168,
+      "max_abs_score": 9.034704049800024e-10
+    },
+    {
+      "iteration": 29,
+      "loglik": -122.88690118728412,
+      "max_abs_working_parameter": 6.706007467858843,
+      "max_abs_score": 7.857740981116566e-10
+    },
+    {
+      "iteration": 30,
+      "loglik": -122.88690118718608,
+      "max_abs_working_parameter": 6.741568396311427,
+      "max_abs_score": 6.945805360019766e-10
+    },
+    {
+      "iteration": 31,
+      "loglik": -122.88690118710778,
+      "max_abs_working_parameter": 6.773485006508949,
+      "max_abs_score": 6.218984173451018e-10
+    },
+    {
+      "iteration": 32,
+      "loglik": -122.88690118704388,
+      "max_abs_working_parameter": 6.802413500155506,
+      "max_abs_score": 5.62770811828851e-10
+    },
+    {
+      "iteration": 33,
+      "loglik": -122.88690118699074,
+      "max_abs_working_parameter": 6.828851636984405,
+      "max_abs_score": 5.135528852769948e-10
+    },
+    {
+      "iteration": 34,
+      "loglik": -122.88690118694595,
+      "max_abs_working_parameter": 6.853184199327245,
+      "max_abs_score": 4.721900330438018e-10
+    },
+    {
+      "iteration": 35,
+      "loglik": -122.88690118690768,
+      "max_abs_working_parameter": 6.875714857947256,
+      "max_abs_score": 4.3690909177769734e-10
+    },
+    {
+      "iteration": 36,
+      "loglik": -122.88690118687461,
+      "max_abs_working_parameter": 6.8966867385828285,
+      "max_abs_score": 4.0638459095937764e-10
+    },
+    {
+      "iteration": 37,
+      "loglik": -122.88690118684578,
+      "max_abs_working_parameter": 6.916297839844632,
+      "max_abs_score": 3.7983802182945776e-10
+    },
+    {
+      "iteration": 38,
+      "loglik": -122.88690118682041,
+      "max_abs_working_parameter": 6.934710834920605,
+      "max_abs_score": 3.564305218416787e-10
+    },
+    {
+      "iteration": 39,
+      "loglik": -122.88690118679796,
+      "max_abs_working_parameter": 6.952061516992956,
+      "max_abs_score": 3.357320331845512e-10
+    },
+    {
+      "iteration": 40,
+      "loglik": -122.88690118677793,
+      "max_abs_working_parameter": 6.9684636654297245,
+      "max_abs_score": 3.174124591964361e-10
+    },
+    {
+      "iteration": 41,
+      "loglik": -122.88690118675996,
+      "max_abs_working_parameter": 6.98401442056993,
+      "max_abs_score": 3.0079030613010353e-10
+    },
+    {
+      "iteration": 42,
+      "loglik": -122.8869011867437,
+      "max_abs_working_parameter": 6.9987966025868955,
+      "max_abs_score": 2.858472823489208e-10
+    },
+    {
+      "iteration": 43,
+      "loglik": -122.88690118672899,
+      "max_abs_working_parameter": 7.0128815240097415,
+      "max_abs_score": 2.7231925358473087e-10
+    },
+    {
+      "iteration": 44,
+      "loglik": -122.8869011867156,
+      "max_abs_working_parameter": 7.026331233353804,
+      "max_abs_score": 2.60027039515895e-10
+    },
+    {
+      "iteration": 45,
+      "loglik": -122.88690118670334,
+      "max_abs_working_parameter": 7.039199982591389,
+      "max_abs_score": 2.4878767999036446e-10
+    },
+    {
+      "iteration": 46,
+      "loglik": -122.88690118669209,
+      "max_abs_working_parameter": 7.0515353107857495,
+      "max_abs_score": 2.3833003864072477e-10
+    },
+    {
+      "iteration": 47,
+      "loglik": -122.88690118668173,
+      "max_abs_working_parameter": 7.06337906562079,
+      "max_abs_score": 2.2897216716368506e-10
+    },
+    {
+      "iteration": 48,
+      "loglik": -122.88690118667218,
+      "max_abs_working_parameter": 7.074768727885811,
+      "max_abs_score": 2.2006245869651228e-10
+    },
+    {
+      "iteration": 49,
+      "loglik": -122.8869011866633,
+      "max_abs_working_parameter": 7.085737436560452,
+      "max_abs_score": 2.1187687598498538e-10
+    },
+    {
+      "iteration": 50,
+      "loglik": -122.88690118665504,
+      "max_abs_working_parameter": 7.096314925083178,
+      "max_abs_score": 2.0439003124049243e-10
+    },
+    {
+      "iteration": 51,
+      "loglik": -122.88690118664735,
+      "max_abs_working_parameter": 7.1065277351179414,
+      "max_abs_score": 1.9729739488978835e-10
+    },
+    {
+      "iteration": 52,
+      "loglik": -122.8869011866402,
+      "max_abs_working_parameter": 7.1163999026461555,
+      "max_abs_score": 1.90754751840331e-10
+    },
+    {
+      "iteration": 53,
+      "loglik": -122.8869011866335,
+      "max_abs_working_parameter": 7.125953488816779,
+      "max_abs_score": 1.8449346848549297e-10
+    },
+    {
+      "iteration": 54,
+      "loglik": -122.88690118662718,
+      "max_abs_working_parameter": 7.1352081448522835,
+      "max_abs_score": 1.7874514940223768e-10
+    },
+    {
+      "iteration": 55,
+      "loglik": -122.88690118662129,
+      "max_abs_working_parameter": 7.144182017228143,
+      "max_abs_score": 1.733083192466622e-10
+    },
+    {
+      "iteration": 56,
+      "loglik": -122.8869011866157,
+      "max_abs_working_parameter": 7.152891215312441,
+      "max_abs_score": 1.6819011120169968e-10
+    },
+    {
+      "iteration": 57,
+      "loglik": -122.88690118661046,
+      "max_abs_working_parameter": 7.161350909661216,
+      "max_abs_score": 1.6339864012569533e-10
+    },
+    {
+      "iteration": 58,
+      "loglik": -122.88690118660548,
+      "max_abs_working_parameter": 7.1695748111342175,
+      "max_abs_score": 1.5882699336513895e-10
+    },
+    {
+      "iteration": 59,
+      "loglik": -122.88690118660078,
+      "max_abs_working_parameter": 7.177575802619409,
+      "max_abs_score": 1.544897612339983e-10
+    },
+    {
+      "iteration": 60,
+      "loglik": -122.88690118659633,
+      "max_abs_working_parameter": 7.18536526654338,
+      "max_abs_score": 1.5040899442564062e-10
+    },
+    {
+      "iteration": 61,
+      "loglik": -122.88690118659211,
+      "max_abs_working_parameter": 7.192954376810883,
+      "max_abs_score": 1.465195268896783e-10
+    },
+    {
+      "iteration": 62,
+      "loglik": -122.88690118658812,
+      "max_abs_working_parameter": 7.200352940130281,
+      "max_abs_score": 1.429742993159367e-10
+    },
+    {
+      "iteration": 63,
+      "loglik": -122.88690118658428,
+      "max_abs_working_parameter": 7.207570423090952,
+      "max_abs_score": 1.393808838938223e-10
+    },
+    {
+      "iteration": 64,
+      "loglik": -122.88690118658064,
+      "max_abs_working_parameter": 7.214615229656683,
+      "max_abs_score": 1.360498142496588e-10
+    },
+    {
+      "iteration": 65,
+      "loglik": -122.88690118657718,
+      "max_abs_working_parameter": 7.221495103803851,
+      "max_abs_score": 1.328340310760073e-10
+    },
+    {
+      "iteration": 66,
+      "loglik": -122.8869011865739,
+      "max_abs_working_parameter": 7.228218007144094,
+      "max_abs_score": 1.298034972972327e-10
+    },
+    {
+      "iteration": 67,
+      "loglik": -122.88690118657073,
+      "max_abs_working_parameter": 7.234790706655803,
+      "max_abs_score": 1.2691869575170554e-10
+    },
+    {
+      "iteration": 68,
+      "loglik": -122.88690118656771,
+      "max_abs_working_parameter": 7.241219805890523,
+      "max_abs_score": 1.2411706517668396e-10
+    },
+    {
+      "iteration": 69,
+      "loglik": -122.88690118656478,
+      "max_abs_working_parameter": 7.247511261260238,
+      "max_abs_score": 1.2151915759146054e-10
+    },
+    {
+      "iteration": 70,
+      "loglik": -122.88690118656203,
+      "max_abs_working_parameter": 7.2536710397036765,
+      "max_abs_score": 1.1897278471249236e-10
+    },
+    {
+      "iteration": 71,
+      "loglik": -122.88690118655937,
+      "max_abs_working_parameter": 7.259704338358943,
+      "max_abs_score": 1.164958549783339e-10
+    },
+    {
+      "iteration": 72,
+      "loglik": -122.88690118655681,
+      "max_abs_working_parameter": 7.265616266905695,
+      "max_abs_score": 1.1418527453648716e-10
+    },
+    {
+      "iteration": 73,
+      "loglik": -122.88690118655437,
+      "max_abs_working_parameter": 7.271411671370532,
+      "max_abs_score": 1.1187213511040017e-10
+    },
+    {
+      "iteration": 74,
+      "loglik": -122.88690118655201,
+      "max_abs_working_parameter": 7.277094795781077,
+      "max_abs_score": 1.0971044542812373e-10
+    },
+    {
+      "iteration": 75,
+      "loglik": -122.88690118654975,
+      "max_abs_working_parameter": 7.282670089092284,
+      "max_abs_score": 1.0765836889840387e-10
+    },
+    {
+      "iteration": 76,
+      "loglik": -122.88690118654753,
+      "max_abs_working_parameter": 7.288141480016936,
+      "max_abs_score": 1.0562666909477835e-10
+    },
+    {
+      "iteration": 77,
+      "loglik": -122.88690118654546,
+      "max_abs_working_parameter": 7.293512907300496,
+      "max_abs_score": 1.0373941836391687e-10
+    },
+    {
+      "iteration": 78,
+      "loglik": -122.8869011865434,
+      "max_abs_working_parameter": 7.298787713100173,
+      "max_abs_score": 1.0183065935633041e-10
+    },
+    {
+      "iteration": 79,
+      "loglik": -122.88690118654146,
+      "max_abs_working_parameter": 7.303969523808759,
+      "max_abs_score": 1.0004625487533897e-10
+    },
+    {
+      "iteration": 80,
+      "loglik": -122.88690118653957,
+      "max_abs_working_parameter": 7.3090614855874305,
+      "max_abs_score": 9.83307106334533e-11
+    },
+    {
+      "iteration": 81,
+      "loglik": -122.88690118653776,
+      "max_abs_working_parameter": 7.314066327940634,
+      "max_abs_score": 9.666786657614494e-11
+    },
+    {
+      "iteration": 82,
+      "loglik": -122.88690118653595,
+      "max_abs_working_parameter": 7.318987424799562,
+      "max_abs_score": 9.503856401046063e-11
+    },
+    {
+      "iteration": 83,
+      "loglik": -122.88690118653427,
+      "max_abs_working_parameter": 7.3238271355231355,
+      "max_abs_score": 9.343262024712169e-11
+    },
+    {
+      "iteration": 84,
+      "loglik": -122.88690118653261,
+      "max_abs_working_parameter": 7.32858823462434,
+      "max_abs_score": 9.190915381868219e-11
+    },
+    {
+      "iteration": 85,
+      "loglik": -122.886901186531,
+      "max_abs_working_parameter": 7.333273502651725,
+      "max_abs_score": 9.04855737657478e-11
+    },
+    {
+      "iteration": 86,
+      "loglik": -122.88690118652947,
+      "max_abs_working_parameter": 7.337884867822719,
+      "max_abs_score": 8.901530550011446e-11
+    },
+    {
+      "iteration": 87,
+      "loglik": -122.88690118652798,
+      "max_abs_working_parameter": 7.342424900342201,
+      "max_abs_score": 8.764240879557863e-11
+    },
+    {
+      "iteration": 88,
+      "loglik": -122.8869011865265,
+      "max_abs_working_parameter": 7.346895636934428,
+      "max_abs_score": 8.631641735628609e-11
+    },
+    {
+      "iteration": 89,
+      "loglik": -122.88690118652508,
+      "max_abs_working_parameter": 7.351299254655551,
+      "max_abs_score": 8.504633069885495e-11
+    },
+    {
+      "iteration": 90,
+      "loglik": -122.88690118652372,
+      "max_abs_working_parameter": 7.355637731378882,
+      "max_abs_score": 8.382735523139543e-11
+    },
+    {
+      "iteration": 91,
+      "loglik": -122.8869011865224,
+      "max_abs_working_parameter": 7.359912904043301,
+      "max_abs_score": 8.259547923311968e-11
+    },
+    {
+      "iteration": 92,
+      "loglik": -122.88690118652109,
+      "max_abs_working_parameter": 7.364126549476522,
+      "max_abs_score": 8.136108226762371e-11
+    },
+    {
+      "iteration": 93,
+      "loglik": -122.88690118651984,
+      "max_abs_working_parameter": 7.368280388408609,
+      "max_abs_score": 8.022641015784457e-11
+    },
+    {
+      "iteration": 94,
+      "loglik": -122.88690118651861,
+      "max_abs_working_parameter": 7.372376129473363,
+      "max_abs_score": 7.909634069131928e-11
+    },
+    {
+      "iteration": 95,
+      "loglik": -122.88690118651743,
+      "max_abs_working_parameter": 7.376415432568655,
+      "max_abs_score": 7.798197370479003e-11
+    },
+    {
+      "iteration": 96,
+      "loglik": -122.88690118651627,
+      "max_abs_working_parameter": 7.38039978706264,
+      "max_abs_score": 7.694069554339798e-11
+    },
+    {
+      "iteration": 97,
+      "loglik": -122.88690118651513,
+      "max_abs_working_parameter": 7.384330596992424,
+      "max_abs_score": 7.587399334735129e-11
+    },
+    {
+      "iteration": 98,
+      "loglik": -122.88690118651405,
+      "max_abs_working_parameter": 7.3882093592778535,
+      "max_abs_score": 7.489853578237976e-11
+    },
+    {
+      "iteration": 99,
+      "loglik": -122.88690118651297,
+      "max_abs_working_parameter": 7.392037449759529,
+      "max_abs_score": 7.389284145723143e-11
+    },
+    {
+      "iteration": 100,
+      "loglik": -122.88690118651196,
+      "max_abs_working_parameter": 7.3958161593318,
+      "max_abs_score": 7.296929062275573e-11
+    }
+  ],
+  "warnings": [
+    {
+      "category": "ConvergenceWarning",
+      "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in sqrt"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in sqrt"
+    }
+  ],
+  "hessian": {
+    "working_rank": 36,
+    "dimensions": [
+      36,
+      36
+    ],
+    "condition_working": 624120052211.9156,
+    "condition_original": 1.9434494903572945e+20,
+    "minimum_eigenvalue_working": 2.1400434841338208e-10,
+    "maximum_eigenvalue_working": 133.5667158012824,
+    "inverse_computed": true,
+    "inverse_residual_inf": 2.967255599159321e-05,
+    "finite": true
+  },
+  "finiteness": {
+    "coefficients": true,
+    "covariance": true,
+    "clustered_standard_errors": false,
+    "confidence_intervals": false
+  },
+  "omissions": [],
+  "stability_concerns": [
+    "Verified quasi-separation: no finite unrestricted MLE",
+    "Optimizer did not converge",
+    "At least one estimate/uncertainty component is nonfinite; see finiteness flags",
+    "Ill-conditioned working Hessian",
+    "Unusually large raw categorical coefficients",
+    "Computed sandwich has negative variances; uncertainty is invalid",
+    "Country sandwich crosscheck failed at the unstable terminal iterate",
+    "Only 29 country clusters; normal-based inference needs caution",
+    "Cluster covariance cannot have full parameter rank; full-vector joint Wald tests unavailable"
+  ],
+  "successful": false,
+  "reliable_unrestricted_fit": false,
+  "prediction_readiness": "Not ready: identification/numerical concerns",
+  "score": {
+    "maximum_absolute_working_score": 7.296929062275573e-11,
+    "l2_working_score": 1.411695968147139e-10,
+    "maximum_absolute_score_per_case": 3.780792260246411e-13,
+    "observation_scores_finite": true
+  },
+  "covariance": {
+    "clusters": 29,
+    "correction": 1.0357142857142858,
+    "rank_working": 36,
+    "maximum_rank_from_cluster_scores": 28,
+    "minimum_diagonal": -367761.5113801698,
+    "minimum_eigenvalue_working": -28578.441026936685,
+    "negative_variance_count": 4,
+    "negative_working_variance_count": 6,
+    "statsmodels_crosscheck_pass": false
+  },
+  "estimates": {
+    "terminal_loglik": -122.88690118651196,
+    "maximum_absolute_raw_coefficient": 746.8129409759648,
+    "maximum_absolute_working_coefficient": 7.3958161593318,
+    "large_working_parameter_indices": [],
+    "large_raw_categorical_coefficients": [
+      {
+        "equation": "Contracts_Expression",
+        "term": "Intermediary",
+        "coefficient": -24.723208590557725
+      },
+      {
+        "equation": "Contracts_Expression",
+        "term": "Other/unclear",
+        "coefficient": 25.432446483860353
+      },
+      {
+        "equation": "Contracts_Expression",
+        "term": "1.mode_public_assembly",
+        "coefficient": 23.77019525434625
+      },
+      {
+        "equation": "Expands_Expression",
+        "term": "Intermediary",
+        "coefficient": -27.453878365883206
+      },
+      {
+        "equation": "Expands_Expression",
+        "term": "Other/unclear",
+        "coefficient": 24.95032391001824
+      },
+      {
+        "equation": "Expands_Expression",
+        "term": "1.mode_public_assembly",
+        "coefficient": 24.658630045479658
+      }
+    ],
+    "maximum_raw_clustered_se": null,
+    "maximum_working_clustered_se": null,
+    "linear_predictor_transform_pass": true
+  },
+  "status": "unsuccessful",
+  "categorical_cells": [
+    {
+      "variable": "lgl_systm",
+      "level": 0,
+      "label": "Common",
+      "outcome": "Mixed Outcome",
+      "cases": 1,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 0,
+      "label": "Common",
+      "outcome": "Contracts Expression",
+      "cases": 8,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 0,
+      "label": "Common",
+      "outcome": "Expands Expression",
+      "cases": 2,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 1,
+      "label": "Civil",
+      "outcome": "Mixed Outcome",
+      "cases": 7,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 1,
+      "label": "Civil",
+      "outcome": "Contracts Expression",
+      "cases": 31,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 1,
+      "label": "Civil",
+      "outcome": "Expands Expression",
+      "cases": 20,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 2,
+      "label": "Mixed",
+      "outcome": "Mixed Outcome",
+      "cases": 9,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 2,
+      "label": "Mixed",
+      "outcome": "Contracts Expression",
+      "cases": 64,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "lgl_systm",
+      "level": 2,
+      "label": "Mixed",
+      "outcome": "Expands Expression",
+      "cases": 51,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 1,
+      "label": "Citizen",
+      "outcome": "Mixed Outcome",
+      "cases": 7,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 1,
+      "label": "Citizen",
+      "outcome": "Contracts Expression",
+      "cases": 67,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 1,
+      "label": "Citizen",
+      "outcome": "Expands Expression",
+      "cases": 21,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 2,
+      "label": "Press",
+      "outcome": "Mixed Outcome",
+      "cases": 4,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "defendant5",
+      "level": 2,
+      "label": "Press",
+      "outcome": "Contracts Expression",
+      "cases": 20,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 2,
+      "label": "Press",
+      "outcome": "Expands Expression",
+      "cases": 13,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 3,
+      "label": "Intermediary",
+      "outcome": "Mixed Outcome",
+      "cases": 1,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "defendant5",
+      "level": 3,
+      "label": "Intermediary",
+      "outcome": "Contracts Expression",
+      "cases": 0,
+      "empty": true,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 3,
+      "label": "Intermediary",
+      "outcome": "Expands Expression",
+      "cases": 0,
+      "empty": true,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 4,
+      "label": "Government",
+      "outcome": "Mixed Outcome",
+      "cases": 5,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "defendant5",
+      "level": 4,
+      "label": "Government",
+      "outcome": "Contracts Expression",
+      "cases": 9,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 4,
+      "label": "Government",
+      "outcome": "Expands Expression",
+      "cases": 28,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 5,
+      "label": "Other/unclear",
+      "outcome": "Mixed Outcome",
+      "cases": 0,
+      "empty": true,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 5,
+      "label": "Other/unclear",
+      "outcome": "Contracts Expression",
+      "cases": 7,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "defendant5",
+      "level": 5,
+      "label": "Other/unclear",
+      "outcome": "Expands Expression",
+      "cases": 11,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "high_court",
+      "level": 0,
+      "label": "0",
+      "outcome": "Mixed Outcome",
+      "cases": 6,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "high_court",
+      "level": 0,
+      "label": "0",
+      "outcome": "Contracts Expression",
+      "cases": 90,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "high_court",
+      "level": 0,
+      "label": "0",
+      "outcome": "Expands Expression",
+      "cases": 40,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "high_court",
+      "level": 1,
+      "label": "1",
+      "outcome": "Mixed Outcome",
+      "cases": 11,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "high_court",
+      "level": 1,
+      "label": "1",
+      "outcome": "Contracts Expression",
+      "cases": 13,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "high_court",
+      "level": 1,
+      "label": "1",
+      "outcome": "Expands Expression",
+      "cases": 33,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_electronic_internet",
+      "level": 0,
+      "label": "0",
+      "outcome": "Mixed Outcome",
+      "cases": 8,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_electronic_internet",
+      "level": 0,
+      "label": "0",
+      "outcome": "Contracts Expression",
+      "cases": 61,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_electronic_internet",
+      "level": 0,
+      "label": "0",
+      "outcome": "Expands Expression",
+      "cases": 45,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_electronic_internet",
+      "level": 1,
+      "label": "1",
+      "outcome": "Mixed Outcome",
+      "cases": 9,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_electronic_internet",
+      "level": 1,
+      "label": "1",
+      "outcome": "Contracts Expression",
+      "cases": 42,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_electronic_internet",
+      "level": 1,
+      "label": "1",
+      "outcome": "Expands Expression",
+      "cases": 28,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_press_newspapers",
+      "level": 0,
+      "label": "0",
+      "outcome": "Mixed Outcome",
+      "cases": 12,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_press_newspapers",
+      "level": 0,
+      "label": "0",
+      "outcome": "Contracts Expression",
+      "cases": 80,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_press_newspapers",
+      "level": 0,
+      "label": "0",
+      "outcome": "Expands Expression",
+      "cases": 49,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_press_newspapers",
+      "level": 1,
+      "label": "1",
+      "outcome": "Mixed Outcome",
+      "cases": 5,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "mode_press_newspapers",
+      "level": 1,
+      "label": "1",
+      "outcome": "Contracts Expression",
+      "cases": 23,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_press_newspapers",
+      "level": 1,
+      "label": "1",
+      "outcome": "Expands Expression",
+      "cases": 24,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_assembly",
+      "level": 0,
+      "label": "0",
+      "outcome": "Mixed Outcome",
+      "cases": 17,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_assembly",
+      "level": 0,
+      "label": "0",
+      "outcome": "Contracts Expression",
+      "cases": 98,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_assembly",
+      "level": 0,
+      "label": "0",
+      "outcome": "Expands Expression",
+      "cases": 68,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_assembly",
+      "level": 1,
+      "label": "1",
+      "outcome": "Mixed Outcome",
+      "cases": 0,
+      "empty": true,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_assembly",
+      "level": 1,
+      "label": "1",
+      "outcome": "Contracts Expression",
+      "cases": 5,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "mode_public_assembly",
+      "level": 1,
+      "label": "1",
+      "outcome": "Expands Expression",
+      "cases": 5,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "mode_public_speech",
+      "level": 0,
+      "label": "0",
+      "outcome": "Mixed Outcome",
+      "cases": 16,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_speech",
+      "level": 0,
+      "label": "0",
+      "outcome": "Contracts Expression",
+      "cases": 93,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_speech",
+      "level": 0,
+      "label": "0",
+      "outcome": "Expands Expression",
+      "cases": 69,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_speech",
+      "level": 1,
+      "label": "1",
+      "outcome": "Mixed Outcome",
+      "cases": 1,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "mode_public_speech",
+      "level": 1,
+      "label": "1",
+      "outcome": "Contracts Expression",
+      "cases": 10,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_public_speech",
+      "level": 1,
+      "label": "1",
+      "outcome": "Expands Expression",
+      "cases": 4,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "mode_non_verbal_expression",
+      "level": 0,
+      "label": "0",
+      "outcome": "Mixed Outcome",
+      "cases": 16,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_non_verbal_expression",
+      "level": 0,
+      "label": "0",
+      "outcome": "Contracts Expression",
+      "cases": 95,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_non_verbal_expression",
+      "level": 0,
+      "label": "0",
+      "outcome": "Expands Expression",
+      "cases": 69,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_non_verbal_expression",
+      "level": 1,
+      "label": "1",
+      "outcome": "Mixed Outcome",
+      "cases": 1,
+      "empty": false,
+      "sparse": true
+    },
+    {
+      "variable": "mode_non_verbal_expression",
+      "level": 1,
+      "label": "1",
+      "outcome": "Contracts Expression",
+      "cases": 8,
+      "empty": false,
+      "sparse": false
+    },
+    {
+      "variable": "mode_non_verbal_expression",
+      "level": 1,
+      "label": "1",
+      "outcome": "Expands Expression",
+      "cases": 4,
+      "empty": false,
+      "sparse": true
+    }
+  ]
+}

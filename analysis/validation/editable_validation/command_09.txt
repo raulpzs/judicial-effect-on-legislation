@@ -1,0 +1,1 @@
+Predictions and figures: /Users/RaulPerez/Documents/Projects/judicial_decisions/outputs/model_runs/editable_validation_smoke_fixed/predictions/batch_001

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/run_models.py", line 156, in <module>
+    main()
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/run_models.py", line 89, in main
+    directory.mkdir(parents=True, exist_ok=False)  # Existing runs are immutable.
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/Users/RaulPerez/Documents/Projects/judicial_decisions/outputs/model_runs/editable_validation_all'

@@ -1,0 +1,5 @@
+SKIPPED {'model': 'full1', 'sample': 'autocracy', 'reason': 'Fit diagnostics prohibit inference: unsuccessful'}
+SKIPPED {'model': 'full2', 'sample': 'autocracy', 'reason': 'Fit diagnostics prohibit inference: unsuccessful'}
+SKIPPED {'model': 'full3', 'sample': 'autocracy', 'reason': 'Fit diagnostics prohibit inference: unsuccessful'}
+SKIPPED {'model': 'full4', 'sample': 'autocracy', 'reason': 'Fit diagnostics prohibit inference: unsuccessful'}
+Predictions and figures: /Users/RaulPerez/Documents/Projects/judicial_decisions/outputs/model_runs/editable_validation_regimes/predictions/batch_001
