@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "run_name": "autocracy_reduced_01",
+  "status": "completed",
+  "fits": [
+    {
+      "model": "full2_reduced",
+      "sample": "autocracy",
+      "status": "successful_with_cautions",
+      "successful": true,
+      "specification": {
+        "name": "full2_reduced",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "ff3e38922eb327919ffbd1a54d3dd2ff245093ddf13d16193fe3c7edadf80e06",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 103,
+        "Mixed Outcome": 17,
+        "Expands Expression": 73,
+        "cases": 193,
+        "countries": 29
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2_reduced__autocracy.npz",
+      "state_sha256": "cf70dfaffe816d937922caa40c169dbde3db796b3199ed065b39777165bb35ac",
+      "membership": "fits/full2_reduced__autocracy__sample.csv",
+      "membership_sha256": "a89299c99c372b408e5cb1f72bfb00c3530b8752462e335858fed39896cdc72a",
+      "diagnostics": "fits/full2_reduced__autocracy__diagnostics.json",
+      "diagnostics_sha256": "f23d04b70d728c9754118614a23d504876faa0b42db816cb1518346b08984f9d"
+    }
+  ],
+  "started_at_utc": "2026-10-07T17:18:41.989137+00:00",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/run_models.py --models full2_reduced --sample autocracy --sample-policy fixed --reference-model full2 --run autocracy_reduced_01",
+  "environment": {
+    "python": "3.12.13",
+    "executable": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "platform": "macOS-26.5-arm64-arm-64bit"
+  },
+  "sample_policy": "fixed",
+  "sample_selection": "autocracy",
+  "reference_model": "full2",
+  "input": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/data/processed/cases_v7_short.csv",
+    "sha256": "f638264a63906fae73cec9991128d16f55737a19a552f3d206b820f1ccb78290"
+  },
+  "config": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/specifications.py",
+    "sha256": "6ae3639a3175de4e781e14288aed7ff4c6af9d07e44cd56826b08d2ff18c936e"
+  },
+  "estimator": {
+    "method": "newton",
+    "maxiter": 100,
+    "tol": 1e-12,
+    "disp": false
+  },
+  "specifications": [
+    {
+      "name": "full2_reduced",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    }
+  ],
+  "numeric_storage": "float32",
+  "spline_storage": "float32",
+  "outcome_mapping": {
+    "Mixed Outcome": 0,
+    "Contracts Expression": 1,
+    "Expands Expression": 2
+  },
+  "cluster_variable": "country_id",
+  "spline_knots": [
+    2001,
+    2016,
+    2022
+  ],
+  "diagnostic_thresholds": {
+    "score": 1e-07,
+    "lp_feasibility": 1e-09,
+    "separation_margin": 1e-07,
+    "hessian_condition_warning": 10000000000.0,
+    "large_working_coefficient": 20,
+    "large_raw_categorical_coefficient": 20,
+    "large_working_se": 10,
+    "sparse_cell_count": 5,
+    "few_clusters_warning": 30
+  },
+  "numerical_sources": {
+    "replication/scripts/replicate.py": "b8cea1d9b66da46db43472355464066244c1919f8b9add70ca3eba3ef4cd648f",
+    "replication/scripts/regime_subsets.py": "e87d7bc24b9249440179168694f818bb1aaa7f12f4ef96ee67e332c4bb3451f8"
+  },
+  "workflow_sources": {
+    "analysis/run_models.py": "bbac3e69428b4f8ac6db0e0410115b449519777c4ee0810830421fd066d6f04a",
+    "analysis/workflow.py": "3a0b7e44eff7db44dadb7c655fd1871642fc970816fdf1679d47b3476daf7f82"
+  },
+  "configuration_sha256": "f3394cf660d5389e27424d07b361d1221321aafdf24b269313f1b6807ba974dd",
+  "fixed_reference": {
+    "model": "full2",
+    "manifest_sha256": "dc5406b83df899e1d462c2411cba40df7796ca2ba69800208031040b388e2558",
+    "source_sha256": "ae4b38b130c999f5148b30186246fc2fc704a20d3fa17ec6f8ad1eb993c5b645",
+    "case_identity_validated": true
+  },
+  "finished_at_utc": "2026-10-07T17:18:42.309587+00:00"
+}

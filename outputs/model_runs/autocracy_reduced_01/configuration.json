@@ -1,0 +1,201 @@
+{
+  "specifications": [
+    {
+      "name": "full2_reduced",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    }
+  ],
+  "estimator": {
+    "method": "newton",
+    "maxiter": 100,
+    "tol": 1e-12,
+    "disp": false
+  },
+  "categories": {
+    "lgl_systm": {
+      "reference": 0,
+      "levels": {
+        "0": "Common",
+        "1": "Civil",
+        "2": "Mixed"
+      },
+      "columns": [
+        [
+          1,
+          "Civil"
+        ],
+        [
+          2,
+          "Mixed"
+        ]
+      ]
+    },
+    "defendant5": {
+      "reference": 4,
+      "levels": {
+        "1": "Citizen",
+        "2": "Press",
+        "3": "Intermediary",
+        "4": "Government",
+        "5": "Other/unclear"
+      },
+      "columns": [
+        [
+          1,
+          "Citizen"
+        ],
+        [
+          2,
+          "Press"
+        ],
+        [
+          3,
+          "Intermediary"
+        ],
+        [
+          5,
+          "Other/unclear"
+        ]
+      ]
+    },
+    "high_court": {
+      "reference": 0,
+      "levels": {
+        "0": "0",
+        "1": "1"
+      },
+      "columns": [
+        [
+          1,
+          "1.high_court"
+        ]
+      ]
+    },
+    "mode_electronic_internet": {
+      "reference": 0,
+      "levels": {
+        "0": "0",
+        "1": "1"
+      },
+      "columns": [
+        [
+          1,
+          "1.mode_electronic_internet"
+        ]
+      ]
+    },
+    "mode_press_newspapers": {
+      "reference": 0,
+      "levels": {
+        "0": "0",
+        "1": "1"
+      },
+      "columns": [
+        [
+          1,
+          "1.mode_press_newspapers"
+        ]
+      ]
+    },
+    "mode_public_assembly": {
+      "reference": 0,
+      "levels": {
+        "0": "0",
+        "1": "1"
+      },
+      "columns": [
+        [
+          1,
+          "1.mode_public_assembly"
+        ]
+      ]
+    },
+    "mode_public_speech": {
+      "reference": 0,
+      "levels": {
+        "0": "0",
+        "1": "1"
+      },
+      "columns": [
+        [
+          1,
+          "1.mode_public_speech"
+        ]
+      ]
+    },
+    "mode_non_verbal_expression": {
+      "reference": 0,
+      "levels": {
+        "0": "0",
+        "1": "1"
+      },
+      "columns": [
+        [
+          1,
+          "1.mode_non_verbal_expression"
+        ]
+      ]
+    }
+  },
+  "control_groups": {
+    "country": [
+      "lgl_systm",
+      "defendant5",
+      "high_court"
+    ],
+    "modes": [
+      "mode_electronic_internet",
+      "mode_press_newspapers",
+      "mode_public_assembly",
+      "mode_public_speech",
+      "mode_non_verbal_expression"
+    ],
+    "all": [
+      "lgl_systm",
+      "defendant5",
+      "high_court",
+      "mode_electronic_internet",
+      "mode_press_newspapers",
+      "mode_public_assembly",
+      "mode_public_speech",
+      "mode_non_verbal_expression"
+    ]
+  },
+  "design_control_order": [
+    "lgl_systm",
+    "high_court",
+    "defendant5",
+    "mode_electronic_internet",
+    "mode_press_newspapers",
+    "mode_public_assembly",
+    "mode_public_speech",
+    "mode_non_verbal_expression"
+  ],
+  "conventions": {
+    "numeric_storage": "float32",
+    "spline_storage": "float32",
+    "outcome_mapping": {
+      "Mixed Outcome": 0,
+      "Contracts Expression": 1,
+      "Expands Expression": 2
+    },
+    "cluster_variable": "country_id",
+    "spline_knots": [
+      2001,
+      2016,
+      2022
+    ]
+  }
+}
