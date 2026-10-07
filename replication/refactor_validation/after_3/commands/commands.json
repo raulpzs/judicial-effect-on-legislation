@@ -1,0 +1,30 @@
+[
+  [
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/replication/scripts/check_refactor_equivalence.py",
+    "--worker",
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/replication/refactor_validation/after_3",
+    "--analysis",
+    "original"
+  ],
+  [
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/replication/refactor_validation/after_3/replication/scripts/diagnose.py"
+  ],
+  [
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/replication/refactor_validation/after_3/replication/scripts/report.py"
+  ],
+  [
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/replication/refactor_validation/after_3/replication/scripts/plot_predictions.py"
+  ],
+  [
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/replication/scripts/check_refactor_equivalence.py",
+    "--worker",
+    "/Users/RaulPerez/Documents/Projects/judicial_decisions/replication/refactor_validation/after_3",
+    "--analysis",
+    "regime"
+  ]
+]

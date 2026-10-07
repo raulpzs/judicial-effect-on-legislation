@@ -1,0 +1,9 @@
+model,regime,Contracts Expression,Mixed Outcome,Expands Expression,cases,countries,expected_counts_match
+full1,autocracy,103,17,73,193,29,True
+full1,democracy,117,163,352,632,22,True
+full2,autocracy,103,17,73,193,29,True
+full2,democracy,117,163,352,632,22,True
+full3,autocracy,103,17,73,193,29,True
+full3,democracy,117,163,352,632,22,True
+full4,autocracy,103,17,73,193,29,True
+full4,democracy,117,163,352,632,22,True

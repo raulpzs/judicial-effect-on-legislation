@@ -1,0 +1,8 @@
+full1__autocracy unsuccessful {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': False, 'iterations': 100, 'exception': None} separation: quasi
+full1__democracy successful_with_cautions {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': True, 'iterations': 6, 'exception': None} separation: no_separating_direction_detected
+full2__autocracy unsuccessful {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': False, 'iterations': 100, 'exception': None} separation: quasi
+full2__democracy successful_with_cautions {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': True, 'iterations': 6, 'exception': None} separation: no_separating_direction_detected
+full3__autocracy unsuccessful {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': False, 'iterations': 100, 'exception': None} separation: quasi
+full3__democracy successful_with_cautions {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': True, 'iterations': 6, 'exception': None} separation: no_separating_direction_detected
+full4__autocracy unsuccessful {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': False, 'iterations': 100, 'exception': None} separation: quasi
+full4__democracy successful_with_cautions {'method': 'newton', 'maxiter': 100, 'tol': 1e-12, 'converged': True, 'iterations': 6, 'exception': None} separation: no_separating_direction_detected

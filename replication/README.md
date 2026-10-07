@@ -2,7 +2,49 @@
 
 Read [the validation report](results/VALIDATION_REPORT.md) before using the figures: all 17 models match sample sizes, cluster counts, parameter counts, likelihoods and information criteria, but nine retain small printed-precision discrepancies.
 
-The manifest derives all 17 model commands from the entire log, expands only the invoked macros, and records the exact controls and reference categories. Judicial independence is initialized missing, assigned the high-court value, then overwritten by the low-court value where applicable. Other/unclear defendants are combined. Complete-case deletion includes outcome, predictors, and country ID separately for every model. The unused expression-mode macro is not applied.
+All 17 models are written explicitly in `SPECIFICATIONS` near the top of [scripts/replicate.py](scripts/replicate.py). These ordered predictor lists and `controlled` flags drive estimation. `CONTROL_VARIABLES`, `CONTROL_TERMS`, `LEGAL_SYSTEM_COLUMNS`, and `DEFENDANT_COLUMNS` immediately beside them define the shared complete-case controls and ordered categorical design. `REFERENCE_CATEGORIES`, the outcome/category mappings, `CLUSTER_VARIABLE`, `SPLINE_KNOTS`, storage defaults, and `ESTIMATOR_SETTINGS` define the consequential choices in the following section.
+
+`parse_log()` remains an independent validation reader for the entire Stata log and its printed reference estimates. `specifications_with_references()` checks every explicit command, focal-predictor list and control flag against that reader, then attaches the logged estimates for validation. The log cannot override the Python specifications. Design columns and reference-equation ordering are checked against the detailed logged coefficient rows. The existing manifest schema is retained.
+
+Judicial independence is initialized missing, assigned the high-court value, then overwritten by the low-court value where applicable. Other/unclear defendants are combined. Complete-case deletion includes outcome, predictors, and country ID separately for every model. The unused expression-mode macro is not applied.
+
+## Code organization and commands
+
+The original analysis follows labeled stages in `replicate.py`: `load_data()` → `prepare_variables()` → `select_estimation_sample()` → `construct_design_matrix()` → `fit_model()` → `validate_and_export_fit()` → `predict_grid()`. The existing `prepare()` and `design()` entry points remain available to importers. Numerical conditioning, estimation, covariance, validation and prediction arithmetic stay in supporting functions. `diagnose.py` uses the same explicit specifications and estimator settings for its existing precision/start diagnostics; `report.py` and `plot_predictions.py` consume the unchanged exports.
+
+Run the existing entry points from the repository root:
+
+```sh
+.venv/bin/python replication/scripts/replicate.py
+.venv/bin/python replication/scripts/diagnose.py
+.venv/bin/python replication/scripts/report.py
+.venv/bin/python replication/scripts/plot_predictions.py
+.venv/bin/python replication/scripts/regime_subsets.py
+```
+
+The original analysis reads `data/processed/cases_v6_short.csv`; the regime extension reads `cases_v7_short.csv`. Default commands write their existing results locations. `replicate.py --output PATH` remains available for a separate output directory; `regime_subsets.py --output PATH` accepts directories below `replication/results/regime_subsets/`.
+
+The regime script visibly selects the shared `FULL_MODEL_NAMES` from the explicit specifications. Its stages prepare/check v7, verify complete-case membership against the original manifest, filter by decision-year `regime_binary`, diagnose the full design, attempt the original estimator, and export with inference-validity flags. `regime_binary` is never a design column. The four unsuccessful autocracy fits retain quasi-separation, nonconvergence and invalid uncertainty; no controls or outcome categories are changed to obtain a fit. It produces no predictions.
+
+## Exact refactor equivalence
+
+The untouched code, copied inputs, original results/figures and isolated baseline runs are preserved under `refactor_validation/`. The initial capture was run **before** editing the modeling scripts:
+
+```sh
+.venv/bin/python replication/scripts/check_refactor_equivalence.py --capture-baseline
+```
+
+It refuses to replace existing baseline evidence. Reproduce the before/after checks against the preserved baseline with:
+
+```sh
+.venv/bin/python replication/scripts/check_refactor_equivalence.py
+```
+
+This uses the current `.venv` for both versions, verifies environment/input hashes, and creates a new isolated `after_N/` project on each run. No checked-in results are refreshed during these checks. All 17 original fits, eight regime attempts, existing predictions, storage/start diagnostics, reports and 48 figures are rerun. Instrumentation records sample IDs, outcomes, cluster IDs, required variables, design matrices, optimizer state and failed-fit terminal covariance without changing fitting routines.
+
+[The comparison report](refactor_validation/REPORT.md) and [machine-readable comparison](refactor_validation/comparison.json) compare exact stored values, with no rounding or numerical tolerance. NPZ members are compared as arrays, not ZIP-container bytes. Matching missing values and signed infinities are explicit; CSV schemas/order/textual precision and every JSON leaf are checked. Only individually identified, verified source-hash provenance changes are allowed, and they are listed in the report; whole metadata files are never excluded. Environment, dependency versions, input hashes, commands and run logs are retained with the baseline. Existing discrepancies with Stata remain documented below and in the unchanged original validation report.
+
+## Numerical conventions and existing results
 
 The direct Stata spline is `s1 = year` and `s2 = [(year−2001)₊³ − 3.5(year−2016)₊³ + 2.5(year−2022)₊³]/441`, constructed before deletion with fixed full-data knots. Float32 storage is emulated, with float64 arithmetic for fitting. The log omits storage settings; sensitivity diagnostics and that limitation are reported. The basis formula and knot-percentile rule follow the [official mkspline manual](https://www.stata.com/manuals15/rmkspline.pdf). Numeric defaults are documented in [generate/set type](https://www.stata.com/manuals/dgenerate.pdf) and [import delimited](https://www.stata.com/manuals/dimportdelimited.pdf).
 

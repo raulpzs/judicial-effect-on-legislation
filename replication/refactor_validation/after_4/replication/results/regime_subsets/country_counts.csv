@@ -1,0 +1,205 @@
+model,regime,country_id,country,Contracts Expression,Mixed Outcome,Expands Expression,cases,countries
+full1,autocracy,10,myanmar,14,0,0,14,1
+full1,autocracy,24,bangladesh,2,0,2,4,1
+full1,autocracy,29,pakistan,5,2,7,14,1
+full1,autocracy,34,vietnam,8,0,0,8,1
+full1,autocracy,38,ethiopia,2,1,0,3,1
+full1,autocracy,40,kenya,2,0,8,10,1
+full1,autocracy,45,nigeria,2,0,1,3,1
+full1,autocracy,46,philippines,1,2,4,7,1
+full1,autocracy,49,thailand,19,0,3,22,1
+full1,autocracy,50,uganda,5,2,6,13,1
+full1,autocracy,51,venezuela,2,0,0,2,1
+full1,autocracy,55,cambodia,3,0,0,3,1
+full1,autocracy,61,zambia,0,0,3,3,1
+full1,autocracy,62,zimbabwe,3,0,9,12,1
+full1,autocracy,87,malawi,0,0,2,2,1
+full1,autocracy,99,turkey,4,3,14,21,1
+full1,autocracy,104,angola,2,0,0,2,1
+full1,autocracy,106,azerbaijan,0,1,0,1,1
+full1,autocracy,108,cameroon,0,1,0,1,1
+full1,autocracy,121,kazakhstan,11,0,2,13,1
+full1,autocracy,127,namibia,0,0,1,1,1
+full1,autocracy,129,rwanda,1,0,0,1,1
+full1,autocracy,131,sri lanka,0,0,1,1,1
+full1,autocracy,132,eswatini,0,2,2,4,1
+full1,autocracy,133,tajikistan,2,0,0,2,1
+full1,autocracy,162,fiji,0,0,1,1,1
+full1,autocracy,177,malaysia,7,0,2,9,1
+full1,autocracy,200,singapore,8,1,1,10,1
+full1,autocracy,210,hungary,0,2,4,6,1
+full1,democracy,8,south africa,5,16,50,71,1
+full1,democracy,17,poland,0,3,2,5,1
+full1,democracy,20,united states,68,90,185,343,1
+full1,democracy,22,el salvador,0,0,6,6,1
+full1,democracy,25,bolivia,0,0,1,1,1
+full1,democracy,40,kenya,0,1,7,8,1
+full1,democracy,45,nigeria,5,0,6,11,1
+full1,democracy,46,philippines,1,1,2,4,1
+full1,democracy,58,nepal,1,0,0,1,1
+full1,democracy,61,zambia,0,1,0,1,1
+full1,democracy,66,canada,13,26,30,69,1
+full1,democracy,67,australia,13,10,8,31,1
+full1,democracy,68,botswana,0,2,3,5,1
+full1,democracy,72,chile,3,4,22,29,1
+full1,democracy,76,france,4,7,8,19,1
+full1,democracy,85,lesotho,0,2,2,4,1
+full1,democracy,87,malawi,0,0,2,2,1
+full1,democracy,102,uruguay,1,0,4,5,1
+full1,democracy,127,namibia,0,0,3,3,1
+full1,democracy,131,sri lanka,0,0,2,2,1
+full1,democracy,178,malta,1,0,4,5,1
+full1,democracy,210,hungary,2,0,5,7,1
+full2,autocracy,10,myanmar,14,0,0,14,1
+full2,autocracy,24,bangladesh,2,0,2,4,1
+full2,autocracy,29,pakistan,5,2,7,14,1
+full2,autocracy,34,vietnam,8,0,0,8,1
+full2,autocracy,38,ethiopia,2,1,0,3,1
+full2,autocracy,40,kenya,2,0,8,10,1
+full2,autocracy,45,nigeria,2,0,1,3,1
+full2,autocracy,46,philippines,1,2,4,7,1
+full2,autocracy,49,thailand,19,0,3,22,1
+full2,autocracy,50,uganda,5,2,6,13,1
+full2,autocracy,51,venezuela,2,0,0,2,1
+full2,autocracy,55,cambodia,3,0,0,3,1
+full2,autocracy,61,zambia,0,0,3,3,1
+full2,autocracy,62,zimbabwe,3,0,9,12,1
+full2,autocracy,87,malawi,0,0,2,2,1
+full2,autocracy,99,turkey,4,3,14,21,1
+full2,autocracy,104,angola,2,0,0,2,1
+full2,autocracy,106,azerbaijan,0,1,0,1,1
+full2,autocracy,108,cameroon,0,1,0,1,1
+full2,autocracy,121,kazakhstan,11,0,2,13,1
+full2,autocracy,127,namibia,0,0,1,1,1
+full2,autocracy,129,rwanda,1,0,0,1,1
+full2,autocracy,131,sri lanka,0,0,1,1,1
+full2,autocracy,132,eswatini,0,2,2,4,1
+full2,autocracy,133,tajikistan,2,0,0,2,1
+full2,autocracy,162,fiji,0,0,1,1,1
+full2,autocracy,177,malaysia,7,0,2,9,1
+full2,autocracy,200,singapore,8,1,1,10,1
+full2,autocracy,210,hungary,0,2,4,6,1
+full2,democracy,8,south africa,5,16,50,71,1
+full2,democracy,17,poland,0,3,2,5,1
+full2,democracy,20,united states,68,90,185,343,1
+full2,democracy,22,el salvador,0,0,6,6,1
+full2,democracy,25,bolivia,0,0,1,1,1
+full2,democracy,40,kenya,0,1,7,8,1
+full2,democracy,45,nigeria,5,0,6,11,1
+full2,democracy,46,philippines,1,1,2,4,1
+full2,democracy,58,nepal,1,0,0,1,1
+full2,democracy,61,zambia,0,1,0,1,1
+full2,democracy,66,canada,13,26,30,69,1
+full2,democracy,67,australia,13,10,8,31,1
+full2,democracy,68,botswana,0,2,3,5,1
+full2,democracy,72,chile,3,4,22,29,1
+full2,democracy,76,france,4,7,8,19,1
+full2,democracy,85,lesotho,0,2,2,4,1
+full2,democracy,87,malawi,0,0,2,2,1
+full2,democracy,102,uruguay,1,0,4,5,1
+full2,democracy,127,namibia,0,0,3,3,1
+full2,democracy,131,sri lanka,0,0,2,2,1
+full2,democracy,178,malta,1,0,4,5,1
+full2,democracy,210,hungary,2,0,5,7,1
+full3,autocracy,10,myanmar,14,0,0,14,1
+full3,autocracy,24,bangladesh,2,0,2,4,1
+full3,autocracy,29,pakistan,5,2,7,14,1
+full3,autocracy,34,vietnam,8,0,0,8,1
+full3,autocracy,38,ethiopia,2,1,0,3,1
+full3,autocracy,40,kenya,2,0,8,10,1
+full3,autocracy,45,nigeria,2,0,1,3,1
+full3,autocracy,46,philippines,1,2,4,7,1
+full3,autocracy,49,thailand,19,0,3,22,1
+full3,autocracy,50,uganda,5,2,6,13,1
+full3,autocracy,51,venezuela,2,0,0,2,1
+full3,autocracy,55,cambodia,3,0,0,3,1
+full3,autocracy,61,zambia,0,0,3,3,1
+full3,autocracy,62,zimbabwe,3,0,9,12,1
+full3,autocracy,87,malawi,0,0,2,2,1
+full3,autocracy,99,turkey,4,3,14,21,1
+full3,autocracy,104,angola,2,0,0,2,1
+full3,autocracy,106,azerbaijan,0,1,0,1,1
+full3,autocracy,108,cameroon,0,1,0,1,1
+full3,autocracy,121,kazakhstan,11,0,2,13,1
+full3,autocracy,127,namibia,0,0,1,1,1
+full3,autocracy,129,rwanda,1,0,0,1,1
+full3,autocracy,131,sri lanka,0,0,1,1,1
+full3,autocracy,132,eswatini,0,2,2,4,1
+full3,autocracy,133,tajikistan,2,0,0,2,1
+full3,autocracy,162,fiji,0,0,1,1,1
+full3,autocracy,177,malaysia,7,0,2,9,1
+full3,autocracy,200,singapore,8,1,1,10,1
+full3,autocracy,210,hungary,0,2,4,6,1
+full3,democracy,8,south africa,5,16,50,71,1
+full3,democracy,17,poland,0,3,2,5,1
+full3,democracy,20,united states,68,90,185,343,1
+full3,democracy,22,el salvador,0,0,6,6,1
+full3,democracy,25,bolivia,0,0,1,1,1
+full3,democracy,40,kenya,0,1,7,8,1
+full3,democracy,45,nigeria,5,0,6,11,1
+full3,democracy,46,philippines,1,1,2,4,1
+full3,democracy,58,nepal,1,0,0,1,1
+full3,democracy,61,zambia,0,1,0,1,1
+full3,democracy,66,canada,13,26,30,69,1
+full3,democracy,67,australia,13,10,8,31,1
+full3,democracy,68,botswana,0,2,3,5,1
+full3,democracy,72,chile,3,4,22,29,1
+full3,democracy,76,france,4,7,8,19,1
+full3,democracy,85,lesotho,0,2,2,4,1
+full3,democracy,87,malawi,0,0,2,2,1
+full3,democracy,102,uruguay,1,0,4,5,1
+full3,democracy,127,namibia,0,0,3,3,1
+full3,democracy,131,sri lanka,0,0,2,2,1
+full3,democracy,178,malta,1,0,4,5,1
+full3,democracy,210,hungary,2,0,5,7,1
+full4,autocracy,10,myanmar,14,0,0,14,1
+full4,autocracy,24,bangladesh,2,0,2,4,1
+full4,autocracy,29,pakistan,5,2,7,14,1
+full4,autocracy,34,vietnam,8,0,0,8,1
+full4,autocracy,38,ethiopia,2,1,0,3,1
+full4,autocracy,40,kenya,2,0,8,10,1
+full4,autocracy,45,nigeria,2,0,1,3,1
+full4,autocracy,46,philippines,1,2,4,7,1
+full4,autocracy,49,thailand,19,0,3,22,1
+full4,autocracy,50,uganda,5,2,6,13,1
+full4,autocracy,51,venezuela,2,0,0,2,1
+full4,autocracy,55,cambodia,3,0,0,3,1
+full4,autocracy,61,zambia,0,0,3,3,1
+full4,autocracy,62,zimbabwe,3,0,9,12,1
+full4,autocracy,87,malawi,0,0,2,2,1
+full4,autocracy,99,turkey,4,3,14,21,1
+full4,autocracy,104,angola,2,0,0,2,1
+full4,autocracy,106,azerbaijan,0,1,0,1,1
+full4,autocracy,108,cameroon,0,1,0,1,1
+full4,autocracy,121,kazakhstan,11,0,2,13,1
+full4,autocracy,127,namibia,0,0,1,1,1
+full4,autocracy,129,rwanda,1,0,0,1,1
+full4,autocracy,131,sri lanka,0,0,1,1,1
+full4,autocracy,132,eswatini,0,2,2,4,1
+full4,autocracy,133,tajikistan,2,0,0,2,1
+full4,autocracy,162,fiji,0,0,1,1,1
+full4,autocracy,177,malaysia,7,0,2,9,1
+full4,autocracy,200,singapore,8,1,1,10,1
+full4,autocracy,210,hungary,0,2,4,6,1
+full4,democracy,8,south africa,5,16,50,71,1
+full4,democracy,17,poland,0,3,2,5,1
+full4,democracy,20,united states,68,90,185,343,1
+full4,democracy,22,el salvador,0,0,6,6,1
+full4,democracy,25,bolivia,0,0,1,1,1
+full4,democracy,40,kenya,0,1,7,8,1
+full4,democracy,45,nigeria,5,0,6,11,1
+full4,democracy,46,philippines,1,1,2,4,1
+full4,democracy,58,nepal,1,0,0,1,1
+full4,democracy,61,zambia,0,1,0,1,1
+full4,democracy,66,canada,13,26,30,69,1
+full4,democracy,67,australia,13,10,8,31,1
+full4,democracy,68,botswana,0,2,3,5,1
+full4,democracy,72,chile,3,4,22,29,1
+full4,democracy,76,france,4,7,8,19,1
+full4,democracy,85,lesotho,0,2,2,4,1
+full4,democracy,87,malawi,0,0,2,2,1
+full4,democracy,102,uruguay,1,0,4,5,1
+full4,democracy,127,namibia,0,0,3,3,1
+full4,democracy,131,sri lanka,0,0,2,2,1
+full4,democracy,178,malta,1,0,4,5,1
+full4,democracy,210,hungary,2,0,5,7,1

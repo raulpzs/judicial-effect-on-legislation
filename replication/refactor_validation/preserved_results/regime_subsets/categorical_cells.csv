@@ -1,0 +1,481 @@
+model,regime,variable,level,label,outcome,cases,level_total,empty,sparse
+full1,autocracy,lgl_systm,0,Common (reference),Mixed Outcome,1,11,False,True
+full1,autocracy,lgl_systm,0,Common (reference),Contracts Expression,8,11,False,False
+full1,autocracy,lgl_systm,0,Common (reference),Expands Expression,2,11,False,True
+full1,autocracy,lgl_systm,1,Civil,Mixed Outcome,7,58,False,False
+full1,autocracy,lgl_systm,1,Civil,Contracts Expression,31,58,False,False
+full1,autocracy,lgl_systm,1,Civil,Expands Expression,20,58,False,False
+full1,autocracy,lgl_systm,2,Mixed,Mixed Outcome,9,124,False,False
+full1,autocracy,lgl_systm,2,Mixed,Contracts Expression,64,124,False,False
+full1,autocracy,lgl_systm,2,Mixed,Expands Expression,51,124,False,False
+full1,autocracy,defendant5,1,Citizen,Mixed Outcome,7,95,False,False
+full1,autocracy,defendant5,1,Citizen,Contracts Expression,67,95,False,False
+full1,autocracy,defendant5,1,Citizen,Expands Expression,21,95,False,False
+full1,autocracy,defendant5,2,Press,Mixed Outcome,4,37,False,True
+full1,autocracy,defendant5,2,Press,Contracts Expression,20,37,False,False
+full1,autocracy,defendant5,2,Press,Expands Expression,13,37,False,False
+full1,autocracy,defendant5,3,Intermediary,Mixed Outcome,1,1,False,True
+full1,autocracy,defendant5,3,Intermediary,Contracts Expression,0,1,True,False
+full1,autocracy,defendant5,3,Intermediary,Expands Expression,0,1,True,False
+full1,autocracy,defendant5,4,Government (reference),Mixed Outcome,5,42,False,True
+full1,autocracy,defendant5,4,Government (reference),Contracts Expression,9,42,False,False
+full1,autocracy,defendant5,4,Government (reference),Expands Expression,28,42,False,False
+full1,autocracy,defendant5,5,Other/unclear,Mixed Outcome,0,18,True,False
+full1,autocracy,defendant5,5,Other/unclear,Contracts Expression,7,18,False,False
+full1,autocracy,defendant5,5,Other/unclear,Expands Expression,11,18,False,False
+full1,autocracy,high_court,0,0 (reference),Mixed Outcome,6,136,False,False
+full1,autocracy,high_court,0,0 (reference),Contracts Expression,90,136,False,False
+full1,autocracy,high_court,0,0 (reference),Expands Expression,40,136,False,False
+full1,autocracy,high_court,1,1,Mixed Outcome,11,57,False,False
+full1,autocracy,high_court,1,1,Contracts Expression,13,57,False,False
+full1,autocracy,high_court,1,1,Expands Expression,33,57,False,False
+full1,autocracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,8,114,False,False
+full1,autocracy,mode_electronic_internet,0,0 (reference),Contracts Expression,61,114,False,False
+full1,autocracy,mode_electronic_internet,0,0 (reference),Expands Expression,45,114,False,False
+full1,autocracy,mode_electronic_internet,1,1,Mixed Outcome,9,79,False,False
+full1,autocracy,mode_electronic_internet,1,1,Contracts Expression,42,79,False,False
+full1,autocracy,mode_electronic_internet,1,1,Expands Expression,28,79,False,False
+full1,autocracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,12,141,False,False
+full1,autocracy,mode_press_newspapers,0,0 (reference),Contracts Expression,80,141,False,False
+full1,autocracy,mode_press_newspapers,0,0 (reference),Expands Expression,49,141,False,False
+full1,autocracy,mode_press_newspapers,1,1,Mixed Outcome,5,52,False,True
+full1,autocracy,mode_press_newspapers,1,1,Contracts Expression,23,52,False,False
+full1,autocracy,mode_press_newspapers,1,1,Expands Expression,24,52,False,False
+full1,autocracy,mode_public_assembly,0,0 (reference),Mixed Outcome,17,183,False,False
+full1,autocracy,mode_public_assembly,0,0 (reference),Contracts Expression,98,183,False,False
+full1,autocracy,mode_public_assembly,0,0 (reference),Expands Expression,68,183,False,False
+full1,autocracy,mode_public_assembly,1,1,Mixed Outcome,0,10,True,False
+full1,autocracy,mode_public_assembly,1,1,Contracts Expression,5,10,False,True
+full1,autocracy,mode_public_assembly,1,1,Expands Expression,5,10,False,True
+full1,autocracy,mode_public_speech,0,0 (reference),Mixed Outcome,16,178,False,False
+full1,autocracy,mode_public_speech,0,0 (reference),Contracts Expression,93,178,False,False
+full1,autocracy,mode_public_speech,0,0 (reference),Expands Expression,69,178,False,False
+full1,autocracy,mode_public_speech,1,1,Mixed Outcome,1,15,False,True
+full1,autocracy,mode_public_speech,1,1,Contracts Expression,10,15,False,False
+full1,autocracy,mode_public_speech,1,1,Expands Expression,4,15,False,True
+full1,autocracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,16,180,False,False
+full1,autocracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,95,180,False,False
+full1,autocracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,69,180,False,False
+full1,autocracy,mode_non_verbal_expression,1,1,Mixed Outcome,1,13,False,True
+full1,autocracy,mode_non_verbal_expression,1,1,Contracts Expression,8,13,False,False
+full1,autocracy,mode_non_verbal_expression,1,1,Expands Expression,4,13,False,True
+full1,democracy,lgl_systm,0,Common (reference),Mixed Outcome,126,443,False,False
+full1,democracy,lgl_systm,0,Common (reference),Contracts Expression,94,443,False,False
+full1,democracy,lgl_systm,0,Common (reference),Expands Expression,223,443,False,False
+full1,democracy,lgl_systm,1,Civil,Mixed Outcome,14,72,False,False
+full1,democracy,lgl_systm,1,Civil,Contracts Expression,10,72,False,False
+full1,democracy,lgl_systm,1,Civil,Expands Expression,48,72,False,False
+full1,democracy,lgl_systm,2,Mixed,Mixed Outcome,23,117,False,False
+full1,democracy,lgl_systm,2,Mixed,Contracts Expression,13,117,False,False
+full1,democracy,lgl_systm,2,Mixed,Expands Expression,81,117,False,False
+full1,democracy,defendant5,1,Citizen,Mixed Outcome,37,115,False,False
+full1,democracy,defendant5,1,Citizen,Contracts Expression,25,115,False,False
+full1,democracy,defendant5,1,Citizen,Expands Expression,53,115,False,False
+full1,democracy,defendant5,2,Press,Mixed Outcome,24,92,False,False
+full1,democracy,defendant5,2,Press,Contracts Expression,14,92,False,False
+full1,democracy,defendant5,2,Press,Expands Expression,54,92,False,False
+full1,democracy,defendant5,3,Intermediary,Mixed Outcome,17,56,False,False
+full1,democracy,defendant5,3,Intermediary,Contracts Expression,19,56,False,False
+full1,democracy,defendant5,3,Intermediary,Expands Expression,20,56,False,False
+full1,democracy,defendant5,4,Government (reference),Mixed Outcome,54,258,False,False
+full1,democracy,defendant5,4,Government (reference),Contracts Expression,41,258,False,False
+full1,democracy,defendant5,4,Government (reference),Expands Expression,163,258,False,False
+full1,democracy,defendant5,5,Other/unclear,Mixed Outcome,31,111,False,False
+full1,democracy,defendant5,5,Other/unclear,Contracts Expression,18,111,False,False
+full1,democracy,defendant5,5,Other/unclear,Expands Expression,62,111,False,False
+full1,democracy,high_court,0,0 (reference),Mixed Outcome,103,393,False,False
+full1,democracy,high_court,0,0 (reference),Contracts Expression,74,393,False,False
+full1,democracy,high_court,0,0 (reference),Expands Expression,216,393,False,False
+full1,democracy,high_court,1,1,Mixed Outcome,60,239,False,False
+full1,democracy,high_court,1,1,Contracts Expression,43,239,False,False
+full1,democracy,high_court,1,1,Expands Expression,136,239,False,False
+full1,democracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,105,420,False,False
+full1,democracy,mode_electronic_internet,0,0 (reference),Contracts Expression,65,420,False,False
+full1,democracy,mode_electronic_internet,0,0 (reference),Expands Expression,250,420,False,False
+full1,democracy,mode_electronic_internet,1,1,Mixed Outcome,58,212,False,False
+full1,democracy,mode_electronic_internet,1,1,Contracts Expression,52,212,False,False
+full1,democracy,mode_electronic_internet,1,1,Expands Expression,102,212,False,False
+full1,democracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,137,526,False,False
+full1,democracy,mode_press_newspapers,0,0 (reference),Contracts Expression,105,526,False,False
+full1,democracy,mode_press_newspapers,0,0 (reference),Expands Expression,284,526,False,False
+full1,democracy,mode_press_newspapers,1,1,Mixed Outcome,26,106,False,False
+full1,democracy,mode_press_newspapers,1,1,Contracts Expression,12,106,False,False
+full1,democracy,mode_press_newspapers,1,1,Expands Expression,68,106,False,False
+full1,democracy,mode_public_assembly,0,0 (reference),Mixed Outcome,152,600,False,False
+full1,democracy,mode_public_assembly,0,0 (reference),Contracts Expression,111,600,False,False
+full1,democracy,mode_public_assembly,0,0 (reference),Expands Expression,337,600,False,False
+full1,democracy,mode_public_assembly,1,1,Mixed Outcome,11,32,False,False
+full1,democracy,mode_public_assembly,1,1,Contracts Expression,6,32,False,False
+full1,democracy,mode_public_assembly,1,1,Expands Expression,15,32,False,False
+full1,democracy,mode_public_speech,0,0 (reference),Mixed Outcome,146,570,False,False
+full1,democracy,mode_public_speech,0,0 (reference),Contracts Expression,102,570,False,False
+full1,democracy,mode_public_speech,0,0 (reference),Expands Expression,322,570,False,False
+full1,democracy,mode_public_speech,1,1,Mixed Outcome,17,62,False,False
+full1,democracy,mode_public_speech,1,1,Contracts Expression,15,62,False,False
+full1,democracy,mode_public_speech,1,1,Expands Expression,30,62,False,False
+full1,democracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,135,548,False,False
+full1,democracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,103,548,False,False
+full1,democracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,310,548,False,False
+full1,democracy,mode_non_verbal_expression,1,1,Mixed Outcome,28,84,False,False
+full1,democracy,mode_non_verbal_expression,1,1,Contracts Expression,14,84,False,False
+full1,democracy,mode_non_verbal_expression,1,1,Expands Expression,42,84,False,False
+full2,autocracy,lgl_systm,0,Common (reference),Mixed Outcome,1,11,False,True
+full2,autocracy,lgl_systm,0,Common (reference),Contracts Expression,8,11,False,False
+full2,autocracy,lgl_systm,0,Common (reference),Expands Expression,2,11,False,True
+full2,autocracy,lgl_systm,1,Civil,Mixed Outcome,7,58,False,False
+full2,autocracy,lgl_systm,1,Civil,Contracts Expression,31,58,False,False
+full2,autocracy,lgl_systm,1,Civil,Expands Expression,20,58,False,False
+full2,autocracy,lgl_systm,2,Mixed,Mixed Outcome,9,124,False,False
+full2,autocracy,lgl_systm,2,Mixed,Contracts Expression,64,124,False,False
+full2,autocracy,lgl_systm,2,Mixed,Expands Expression,51,124,False,False
+full2,autocracy,defendant5,1,Citizen,Mixed Outcome,7,95,False,False
+full2,autocracy,defendant5,1,Citizen,Contracts Expression,67,95,False,False
+full2,autocracy,defendant5,1,Citizen,Expands Expression,21,95,False,False
+full2,autocracy,defendant5,2,Press,Mixed Outcome,4,37,False,True
+full2,autocracy,defendant5,2,Press,Contracts Expression,20,37,False,False
+full2,autocracy,defendant5,2,Press,Expands Expression,13,37,False,False
+full2,autocracy,defendant5,3,Intermediary,Mixed Outcome,1,1,False,True
+full2,autocracy,defendant5,3,Intermediary,Contracts Expression,0,1,True,False
+full2,autocracy,defendant5,3,Intermediary,Expands Expression,0,1,True,False
+full2,autocracy,defendant5,4,Government (reference),Mixed Outcome,5,42,False,True
+full2,autocracy,defendant5,4,Government (reference),Contracts Expression,9,42,False,False
+full2,autocracy,defendant5,4,Government (reference),Expands Expression,28,42,False,False
+full2,autocracy,defendant5,5,Other/unclear,Mixed Outcome,0,18,True,False
+full2,autocracy,defendant5,5,Other/unclear,Contracts Expression,7,18,False,False
+full2,autocracy,defendant5,5,Other/unclear,Expands Expression,11,18,False,False
+full2,autocracy,high_court,0,0 (reference),Mixed Outcome,6,136,False,False
+full2,autocracy,high_court,0,0 (reference),Contracts Expression,90,136,False,False
+full2,autocracy,high_court,0,0 (reference),Expands Expression,40,136,False,False
+full2,autocracy,high_court,1,1,Mixed Outcome,11,57,False,False
+full2,autocracy,high_court,1,1,Contracts Expression,13,57,False,False
+full2,autocracy,high_court,1,1,Expands Expression,33,57,False,False
+full2,autocracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,8,114,False,False
+full2,autocracy,mode_electronic_internet,0,0 (reference),Contracts Expression,61,114,False,False
+full2,autocracy,mode_electronic_internet,0,0 (reference),Expands Expression,45,114,False,False
+full2,autocracy,mode_electronic_internet,1,1,Mixed Outcome,9,79,False,False
+full2,autocracy,mode_electronic_internet,1,1,Contracts Expression,42,79,False,False
+full2,autocracy,mode_electronic_internet,1,1,Expands Expression,28,79,False,False
+full2,autocracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,12,141,False,False
+full2,autocracy,mode_press_newspapers,0,0 (reference),Contracts Expression,80,141,False,False
+full2,autocracy,mode_press_newspapers,0,0 (reference),Expands Expression,49,141,False,False
+full2,autocracy,mode_press_newspapers,1,1,Mixed Outcome,5,52,False,True
+full2,autocracy,mode_press_newspapers,1,1,Contracts Expression,23,52,False,False
+full2,autocracy,mode_press_newspapers,1,1,Expands Expression,24,52,False,False
+full2,autocracy,mode_public_assembly,0,0 (reference),Mixed Outcome,17,183,False,False
+full2,autocracy,mode_public_assembly,0,0 (reference),Contracts Expression,98,183,False,False
+full2,autocracy,mode_public_assembly,0,0 (reference),Expands Expression,68,183,False,False
+full2,autocracy,mode_public_assembly,1,1,Mixed Outcome,0,10,True,False
+full2,autocracy,mode_public_assembly,1,1,Contracts Expression,5,10,False,True
+full2,autocracy,mode_public_assembly,1,1,Expands Expression,5,10,False,True
+full2,autocracy,mode_public_speech,0,0 (reference),Mixed Outcome,16,178,False,False
+full2,autocracy,mode_public_speech,0,0 (reference),Contracts Expression,93,178,False,False
+full2,autocracy,mode_public_speech,0,0 (reference),Expands Expression,69,178,False,False
+full2,autocracy,mode_public_speech,1,1,Mixed Outcome,1,15,False,True
+full2,autocracy,mode_public_speech,1,1,Contracts Expression,10,15,False,False
+full2,autocracy,mode_public_speech,1,1,Expands Expression,4,15,False,True
+full2,autocracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,16,180,False,False
+full2,autocracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,95,180,False,False
+full2,autocracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,69,180,False,False
+full2,autocracy,mode_non_verbal_expression,1,1,Mixed Outcome,1,13,False,True
+full2,autocracy,mode_non_verbal_expression,1,1,Contracts Expression,8,13,False,False
+full2,autocracy,mode_non_verbal_expression,1,1,Expands Expression,4,13,False,True
+full2,democracy,lgl_systm,0,Common (reference),Mixed Outcome,126,443,False,False
+full2,democracy,lgl_systm,0,Common (reference),Contracts Expression,94,443,False,False
+full2,democracy,lgl_systm,0,Common (reference),Expands Expression,223,443,False,False
+full2,democracy,lgl_systm,1,Civil,Mixed Outcome,14,72,False,False
+full2,democracy,lgl_systm,1,Civil,Contracts Expression,10,72,False,False
+full2,democracy,lgl_systm,1,Civil,Expands Expression,48,72,False,False
+full2,democracy,lgl_systm,2,Mixed,Mixed Outcome,23,117,False,False
+full2,democracy,lgl_systm,2,Mixed,Contracts Expression,13,117,False,False
+full2,democracy,lgl_systm,2,Mixed,Expands Expression,81,117,False,False
+full2,democracy,defendant5,1,Citizen,Mixed Outcome,37,115,False,False
+full2,democracy,defendant5,1,Citizen,Contracts Expression,25,115,False,False
+full2,democracy,defendant5,1,Citizen,Expands Expression,53,115,False,False
+full2,democracy,defendant5,2,Press,Mixed Outcome,24,92,False,False
+full2,democracy,defendant5,2,Press,Contracts Expression,14,92,False,False
+full2,democracy,defendant5,2,Press,Expands Expression,54,92,False,False
+full2,democracy,defendant5,3,Intermediary,Mixed Outcome,17,56,False,False
+full2,democracy,defendant5,3,Intermediary,Contracts Expression,19,56,False,False
+full2,democracy,defendant5,3,Intermediary,Expands Expression,20,56,False,False
+full2,democracy,defendant5,4,Government (reference),Mixed Outcome,54,258,False,False
+full2,democracy,defendant5,4,Government (reference),Contracts Expression,41,258,False,False
+full2,democracy,defendant5,4,Government (reference),Expands Expression,163,258,False,False
+full2,democracy,defendant5,5,Other/unclear,Mixed Outcome,31,111,False,False
+full2,democracy,defendant5,5,Other/unclear,Contracts Expression,18,111,False,False
+full2,democracy,defendant5,5,Other/unclear,Expands Expression,62,111,False,False
+full2,democracy,high_court,0,0 (reference),Mixed Outcome,103,393,False,False
+full2,democracy,high_court,0,0 (reference),Contracts Expression,74,393,False,False
+full2,democracy,high_court,0,0 (reference),Expands Expression,216,393,False,False
+full2,democracy,high_court,1,1,Mixed Outcome,60,239,False,False
+full2,democracy,high_court,1,1,Contracts Expression,43,239,False,False
+full2,democracy,high_court,1,1,Expands Expression,136,239,False,False
+full2,democracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,105,420,False,False
+full2,democracy,mode_electronic_internet,0,0 (reference),Contracts Expression,65,420,False,False
+full2,democracy,mode_electronic_internet,0,0 (reference),Expands Expression,250,420,False,False
+full2,democracy,mode_electronic_internet,1,1,Mixed Outcome,58,212,False,False
+full2,democracy,mode_electronic_internet,1,1,Contracts Expression,52,212,False,False
+full2,democracy,mode_electronic_internet,1,1,Expands Expression,102,212,False,False
+full2,democracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,137,526,False,False
+full2,democracy,mode_press_newspapers,0,0 (reference),Contracts Expression,105,526,False,False
+full2,democracy,mode_press_newspapers,0,0 (reference),Expands Expression,284,526,False,False
+full2,democracy,mode_press_newspapers,1,1,Mixed Outcome,26,106,False,False
+full2,democracy,mode_press_newspapers,1,1,Contracts Expression,12,106,False,False
+full2,democracy,mode_press_newspapers,1,1,Expands Expression,68,106,False,False
+full2,democracy,mode_public_assembly,0,0 (reference),Mixed Outcome,152,600,False,False
+full2,democracy,mode_public_assembly,0,0 (reference),Contracts Expression,111,600,False,False
+full2,democracy,mode_public_assembly,0,0 (reference),Expands Expression,337,600,False,False
+full2,democracy,mode_public_assembly,1,1,Mixed Outcome,11,32,False,False
+full2,democracy,mode_public_assembly,1,1,Contracts Expression,6,32,False,False
+full2,democracy,mode_public_assembly,1,1,Expands Expression,15,32,False,False
+full2,democracy,mode_public_speech,0,0 (reference),Mixed Outcome,146,570,False,False
+full2,democracy,mode_public_speech,0,0 (reference),Contracts Expression,102,570,False,False
+full2,democracy,mode_public_speech,0,0 (reference),Expands Expression,322,570,False,False
+full2,democracy,mode_public_speech,1,1,Mixed Outcome,17,62,False,False
+full2,democracy,mode_public_speech,1,1,Contracts Expression,15,62,False,False
+full2,democracy,mode_public_speech,1,1,Expands Expression,30,62,False,False
+full2,democracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,135,548,False,False
+full2,democracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,103,548,False,False
+full2,democracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,310,548,False,False
+full2,democracy,mode_non_verbal_expression,1,1,Mixed Outcome,28,84,False,False
+full2,democracy,mode_non_verbal_expression,1,1,Contracts Expression,14,84,False,False
+full2,democracy,mode_non_verbal_expression,1,1,Expands Expression,42,84,False,False
+full3,autocracy,lgl_systm,0,Common (reference),Mixed Outcome,1,11,False,True
+full3,autocracy,lgl_systm,0,Common (reference),Contracts Expression,8,11,False,False
+full3,autocracy,lgl_systm,0,Common (reference),Expands Expression,2,11,False,True
+full3,autocracy,lgl_systm,1,Civil,Mixed Outcome,7,58,False,False
+full3,autocracy,lgl_systm,1,Civil,Contracts Expression,31,58,False,False
+full3,autocracy,lgl_systm,1,Civil,Expands Expression,20,58,False,False
+full3,autocracy,lgl_systm,2,Mixed,Mixed Outcome,9,124,False,False
+full3,autocracy,lgl_systm,2,Mixed,Contracts Expression,64,124,False,False
+full3,autocracy,lgl_systm,2,Mixed,Expands Expression,51,124,False,False
+full3,autocracy,defendant5,1,Citizen,Mixed Outcome,7,95,False,False
+full3,autocracy,defendant5,1,Citizen,Contracts Expression,67,95,False,False
+full3,autocracy,defendant5,1,Citizen,Expands Expression,21,95,False,False
+full3,autocracy,defendant5,2,Press,Mixed Outcome,4,37,False,True
+full3,autocracy,defendant5,2,Press,Contracts Expression,20,37,False,False
+full3,autocracy,defendant5,2,Press,Expands Expression,13,37,False,False
+full3,autocracy,defendant5,3,Intermediary,Mixed Outcome,1,1,False,True
+full3,autocracy,defendant5,3,Intermediary,Contracts Expression,0,1,True,False
+full3,autocracy,defendant5,3,Intermediary,Expands Expression,0,1,True,False
+full3,autocracy,defendant5,4,Government (reference),Mixed Outcome,5,42,False,True
+full3,autocracy,defendant5,4,Government (reference),Contracts Expression,9,42,False,False
+full3,autocracy,defendant5,4,Government (reference),Expands Expression,28,42,False,False
+full3,autocracy,defendant5,5,Other/unclear,Mixed Outcome,0,18,True,False
+full3,autocracy,defendant5,5,Other/unclear,Contracts Expression,7,18,False,False
+full3,autocracy,defendant5,5,Other/unclear,Expands Expression,11,18,False,False
+full3,autocracy,high_court,0,0 (reference),Mixed Outcome,6,136,False,False
+full3,autocracy,high_court,0,0 (reference),Contracts Expression,90,136,False,False
+full3,autocracy,high_court,0,0 (reference),Expands Expression,40,136,False,False
+full3,autocracy,high_court,1,1,Mixed Outcome,11,57,False,False
+full3,autocracy,high_court,1,1,Contracts Expression,13,57,False,False
+full3,autocracy,high_court,1,1,Expands Expression,33,57,False,False
+full3,autocracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,8,114,False,False
+full3,autocracy,mode_electronic_internet,0,0 (reference),Contracts Expression,61,114,False,False
+full3,autocracy,mode_electronic_internet,0,0 (reference),Expands Expression,45,114,False,False
+full3,autocracy,mode_electronic_internet,1,1,Mixed Outcome,9,79,False,False
+full3,autocracy,mode_electronic_internet,1,1,Contracts Expression,42,79,False,False
+full3,autocracy,mode_electronic_internet,1,1,Expands Expression,28,79,False,False
+full3,autocracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,12,141,False,False
+full3,autocracy,mode_press_newspapers,0,0 (reference),Contracts Expression,80,141,False,False
+full3,autocracy,mode_press_newspapers,0,0 (reference),Expands Expression,49,141,False,False
+full3,autocracy,mode_press_newspapers,1,1,Mixed Outcome,5,52,False,True
+full3,autocracy,mode_press_newspapers,1,1,Contracts Expression,23,52,False,False
+full3,autocracy,mode_press_newspapers,1,1,Expands Expression,24,52,False,False
+full3,autocracy,mode_public_assembly,0,0 (reference),Mixed Outcome,17,183,False,False
+full3,autocracy,mode_public_assembly,0,0 (reference),Contracts Expression,98,183,False,False
+full3,autocracy,mode_public_assembly,0,0 (reference),Expands Expression,68,183,False,False
+full3,autocracy,mode_public_assembly,1,1,Mixed Outcome,0,10,True,False
+full3,autocracy,mode_public_assembly,1,1,Contracts Expression,5,10,False,True
+full3,autocracy,mode_public_assembly,1,1,Expands Expression,5,10,False,True
+full3,autocracy,mode_public_speech,0,0 (reference),Mixed Outcome,16,178,False,False
+full3,autocracy,mode_public_speech,0,0 (reference),Contracts Expression,93,178,False,False
+full3,autocracy,mode_public_speech,0,0 (reference),Expands Expression,69,178,False,False
+full3,autocracy,mode_public_speech,1,1,Mixed Outcome,1,15,False,True
+full3,autocracy,mode_public_speech,1,1,Contracts Expression,10,15,False,False
+full3,autocracy,mode_public_speech,1,1,Expands Expression,4,15,False,True
+full3,autocracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,16,180,False,False
+full3,autocracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,95,180,False,False
+full3,autocracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,69,180,False,False
+full3,autocracy,mode_non_verbal_expression,1,1,Mixed Outcome,1,13,False,True
+full3,autocracy,mode_non_verbal_expression,1,1,Contracts Expression,8,13,False,False
+full3,autocracy,mode_non_verbal_expression,1,1,Expands Expression,4,13,False,True
+full3,democracy,lgl_systm,0,Common (reference),Mixed Outcome,126,443,False,False
+full3,democracy,lgl_systm,0,Common (reference),Contracts Expression,94,443,False,False
+full3,democracy,lgl_systm,0,Common (reference),Expands Expression,223,443,False,False
+full3,democracy,lgl_systm,1,Civil,Mixed Outcome,14,72,False,False
+full3,democracy,lgl_systm,1,Civil,Contracts Expression,10,72,False,False
+full3,democracy,lgl_systm,1,Civil,Expands Expression,48,72,False,False
+full3,democracy,lgl_systm,2,Mixed,Mixed Outcome,23,117,False,False
+full3,democracy,lgl_systm,2,Mixed,Contracts Expression,13,117,False,False
+full3,democracy,lgl_systm,2,Mixed,Expands Expression,81,117,False,False
+full3,democracy,defendant5,1,Citizen,Mixed Outcome,37,115,False,False
+full3,democracy,defendant5,1,Citizen,Contracts Expression,25,115,False,False
+full3,democracy,defendant5,1,Citizen,Expands Expression,53,115,False,False
+full3,democracy,defendant5,2,Press,Mixed Outcome,24,92,False,False
+full3,democracy,defendant5,2,Press,Contracts Expression,14,92,False,False
+full3,democracy,defendant5,2,Press,Expands Expression,54,92,False,False
+full3,democracy,defendant5,3,Intermediary,Mixed Outcome,17,56,False,False
+full3,democracy,defendant5,3,Intermediary,Contracts Expression,19,56,False,False
+full3,democracy,defendant5,3,Intermediary,Expands Expression,20,56,False,False
+full3,democracy,defendant5,4,Government (reference),Mixed Outcome,54,258,False,False
+full3,democracy,defendant5,4,Government (reference),Contracts Expression,41,258,False,False
+full3,democracy,defendant5,4,Government (reference),Expands Expression,163,258,False,False
+full3,democracy,defendant5,5,Other/unclear,Mixed Outcome,31,111,False,False
+full3,democracy,defendant5,5,Other/unclear,Contracts Expression,18,111,False,False
+full3,democracy,defendant5,5,Other/unclear,Expands Expression,62,111,False,False
+full3,democracy,high_court,0,0 (reference),Mixed Outcome,103,393,False,False
+full3,democracy,high_court,0,0 (reference),Contracts Expression,74,393,False,False
+full3,democracy,high_court,0,0 (reference),Expands Expression,216,393,False,False
+full3,democracy,high_court,1,1,Mixed Outcome,60,239,False,False
+full3,democracy,high_court,1,1,Contracts Expression,43,239,False,False
+full3,democracy,high_court,1,1,Expands Expression,136,239,False,False
+full3,democracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,105,420,False,False
+full3,democracy,mode_electronic_internet,0,0 (reference),Contracts Expression,65,420,False,False
+full3,democracy,mode_electronic_internet,0,0 (reference),Expands Expression,250,420,False,False
+full3,democracy,mode_electronic_internet,1,1,Mixed Outcome,58,212,False,False
+full3,democracy,mode_electronic_internet,1,1,Contracts Expression,52,212,False,False
+full3,democracy,mode_electronic_internet,1,1,Expands Expression,102,212,False,False
+full3,democracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,137,526,False,False
+full3,democracy,mode_press_newspapers,0,0 (reference),Contracts Expression,105,526,False,False
+full3,democracy,mode_press_newspapers,0,0 (reference),Expands Expression,284,526,False,False
+full3,democracy,mode_press_newspapers,1,1,Mixed Outcome,26,106,False,False
+full3,democracy,mode_press_newspapers,1,1,Contracts Expression,12,106,False,False
+full3,democracy,mode_press_newspapers,1,1,Expands Expression,68,106,False,False
+full3,democracy,mode_public_assembly,0,0 (reference),Mixed Outcome,152,600,False,False
+full3,democracy,mode_public_assembly,0,0 (reference),Contracts Expression,111,600,False,False
+full3,democracy,mode_public_assembly,0,0 (reference),Expands Expression,337,600,False,False
+full3,democracy,mode_public_assembly,1,1,Mixed Outcome,11,32,False,False
+full3,democracy,mode_public_assembly,1,1,Contracts Expression,6,32,False,False
+full3,democracy,mode_public_assembly,1,1,Expands Expression,15,32,False,False
+full3,democracy,mode_public_speech,0,0 (reference),Mixed Outcome,146,570,False,False
+full3,democracy,mode_public_speech,0,0 (reference),Contracts Expression,102,570,False,False
+full3,democracy,mode_public_speech,0,0 (reference),Expands Expression,322,570,False,False
+full3,democracy,mode_public_speech,1,1,Mixed Outcome,17,62,False,False
+full3,democracy,mode_public_speech,1,1,Contracts Expression,15,62,False,False
+full3,democracy,mode_public_speech,1,1,Expands Expression,30,62,False,False
+full3,democracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,135,548,False,False
+full3,democracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,103,548,False,False
+full3,democracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,310,548,False,False
+full3,democracy,mode_non_verbal_expression,1,1,Mixed Outcome,28,84,False,False
+full3,democracy,mode_non_verbal_expression,1,1,Contracts Expression,14,84,False,False
+full3,democracy,mode_non_verbal_expression,1,1,Expands Expression,42,84,False,False
+full4,autocracy,lgl_systm,0,Common (reference),Mixed Outcome,1,11,False,True
+full4,autocracy,lgl_systm,0,Common (reference),Contracts Expression,8,11,False,False
+full4,autocracy,lgl_systm,0,Common (reference),Expands Expression,2,11,False,True
+full4,autocracy,lgl_systm,1,Civil,Mixed Outcome,7,58,False,False
+full4,autocracy,lgl_systm,1,Civil,Contracts Expression,31,58,False,False
+full4,autocracy,lgl_systm,1,Civil,Expands Expression,20,58,False,False
+full4,autocracy,lgl_systm,2,Mixed,Mixed Outcome,9,124,False,False
+full4,autocracy,lgl_systm,2,Mixed,Contracts Expression,64,124,False,False
+full4,autocracy,lgl_systm,2,Mixed,Expands Expression,51,124,False,False
+full4,autocracy,defendant5,1,Citizen,Mixed Outcome,7,95,False,False
+full4,autocracy,defendant5,1,Citizen,Contracts Expression,67,95,False,False
+full4,autocracy,defendant5,1,Citizen,Expands Expression,21,95,False,False
+full4,autocracy,defendant5,2,Press,Mixed Outcome,4,37,False,True
+full4,autocracy,defendant5,2,Press,Contracts Expression,20,37,False,False
+full4,autocracy,defendant5,2,Press,Expands Expression,13,37,False,False
+full4,autocracy,defendant5,3,Intermediary,Mixed Outcome,1,1,False,True
+full4,autocracy,defendant5,3,Intermediary,Contracts Expression,0,1,True,False
+full4,autocracy,defendant5,3,Intermediary,Expands Expression,0,1,True,False
+full4,autocracy,defendant5,4,Government (reference),Mixed Outcome,5,42,False,True
+full4,autocracy,defendant5,4,Government (reference),Contracts Expression,9,42,False,False
+full4,autocracy,defendant5,4,Government (reference),Expands Expression,28,42,False,False
+full4,autocracy,defendant5,5,Other/unclear,Mixed Outcome,0,18,True,False
+full4,autocracy,defendant5,5,Other/unclear,Contracts Expression,7,18,False,False
+full4,autocracy,defendant5,5,Other/unclear,Expands Expression,11,18,False,False
+full4,autocracy,high_court,0,0 (reference),Mixed Outcome,6,136,False,False
+full4,autocracy,high_court,0,0 (reference),Contracts Expression,90,136,False,False
+full4,autocracy,high_court,0,0 (reference),Expands Expression,40,136,False,False
+full4,autocracy,high_court,1,1,Mixed Outcome,11,57,False,False
+full4,autocracy,high_court,1,1,Contracts Expression,13,57,False,False
+full4,autocracy,high_court,1,1,Expands Expression,33,57,False,False
+full4,autocracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,8,114,False,False
+full4,autocracy,mode_electronic_internet,0,0 (reference),Contracts Expression,61,114,False,False
+full4,autocracy,mode_electronic_internet,0,0 (reference),Expands Expression,45,114,False,False
+full4,autocracy,mode_electronic_internet,1,1,Mixed Outcome,9,79,False,False
+full4,autocracy,mode_electronic_internet,1,1,Contracts Expression,42,79,False,False
+full4,autocracy,mode_electronic_internet,1,1,Expands Expression,28,79,False,False
+full4,autocracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,12,141,False,False
+full4,autocracy,mode_press_newspapers,0,0 (reference),Contracts Expression,80,141,False,False
+full4,autocracy,mode_press_newspapers,0,0 (reference),Expands Expression,49,141,False,False
+full4,autocracy,mode_press_newspapers,1,1,Mixed Outcome,5,52,False,True
+full4,autocracy,mode_press_newspapers,1,1,Contracts Expression,23,52,False,False
+full4,autocracy,mode_press_newspapers,1,1,Expands Expression,24,52,False,False
+full4,autocracy,mode_public_assembly,0,0 (reference),Mixed Outcome,17,183,False,False
+full4,autocracy,mode_public_assembly,0,0 (reference),Contracts Expression,98,183,False,False
+full4,autocracy,mode_public_assembly,0,0 (reference),Expands Expression,68,183,False,False
+full4,autocracy,mode_public_assembly,1,1,Mixed Outcome,0,10,True,False
+full4,autocracy,mode_public_assembly,1,1,Contracts Expression,5,10,False,True
+full4,autocracy,mode_public_assembly,1,1,Expands Expression,5,10,False,True
+full4,autocracy,mode_public_speech,0,0 (reference),Mixed Outcome,16,178,False,False
+full4,autocracy,mode_public_speech,0,0 (reference),Contracts Expression,93,178,False,False
+full4,autocracy,mode_public_speech,0,0 (reference),Expands Expression,69,178,False,False
+full4,autocracy,mode_public_speech,1,1,Mixed Outcome,1,15,False,True
+full4,autocracy,mode_public_speech,1,1,Contracts Expression,10,15,False,False
+full4,autocracy,mode_public_speech,1,1,Expands Expression,4,15,False,True
+full4,autocracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,16,180,False,False
+full4,autocracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,95,180,False,False
+full4,autocracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,69,180,False,False
+full4,autocracy,mode_non_verbal_expression,1,1,Mixed Outcome,1,13,False,True
+full4,autocracy,mode_non_verbal_expression,1,1,Contracts Expression,8,13,False,False
+full4,autocracy,mode_non_verbal_expression,1,1,Expands Expression,4,13,False,True
+full4,democracy,lgl_systm,0,Common (reference),Mixed Outcome,126,443,False,False
+full4,democracy,lgl_systm,0,Common (reference),Contracts Expression,94,443,False,False
+full4,democracy,lgl_systm,0,Common (reference),Expands Expression,223,443,False,False
+full4,democracy,lgl_systm,1,Civil,Mixed Outcome,14,72,False,False
+full4,democracy,lgl_systm,1,Civil,Contracts Expression,10,72,False,False
+full4,democracy,lgl_systm,1,Civil,Expands Expression,48,72,False,False
+full4,democracy,lgl_systm,2,Mixed,Mixed Outcome,23,117,False,False
+full4,democracy,lgl_systm,2,Mixed,Contracts Expression,13,117,False,False
+full4,democracy,lgl_systm,2,Mixed,Expands Expression,81,117,False,False
+full4,democracy,defendant5,1,Citizen,Mixed Outcome,37,115,False,False
+full4,democracy,defendant5,1,Citizen,Contracts Expression,25,115,False,False
+full4,democracy,defendant5,1,Citizen,Expands Expression,53,115,False,False
+full4,democracy,defendant5,2,Press,Mixed Outcome,24,92,False,False
+full4,democracy,defendant5,2,Press,Contracts Expression,14,92,False,False
+full4,democracy,defendant5,2,Press,Expands Expression,54,92,False,False
+full4,democracy,defendant5,3,Intermediary,Mixed Outcome,17,56,False,False
+full4,democracy,defendant5,3,Intermediary,Contracts Expression,19,56,False,False
+full4,democracy,defendant5,3,Intermediary,Expands Expression,20,56,False,False
+full4,democracy,defendant5,4,Government (reference),Mixed Outcome,54,258,False,False
+full4,democracy,defendant5,4,Government (reference),Contracts Expression,41,258,False,False
+full4,democracy,defendant5,4,Government (reference),Expands Expression,163,258,False,False
+full4,democracy,defendant5,5,Other/unclear,Mixed Outcome,31,111,False,False
+full4,democracy,defendant5,5,Other/unclear,Contracts Expression,18,111,False,False
+full4,democracy,defendant5,5,Other/unclear,Expands Expression,62,111,False,False
+full4,democracy,high_court,0,0 (reference),Mixed Outcome,103,393,False,False
+full4,democracy,high_court,0,0 (reference),Contracts Expression,74,393,False,False
+full4,democracy,high_court,0,0 (reference),Expands Expression,216,393,False,False
+full4,democracy,high_court,1,1,Mixed Outcome,60,239,False,False
+full4,democracy,high_court,1,1,Contracts Expression,43,239,False,False
+full4,democracy,high_court,1,1,Expands Expression,136,239,False,False
+full4,democracy,mode_electronic_internet,0,0 (reference),Mixed Outcome,105,420,False,False
+full4,democracy,mode_electronic_internet,0,0 (reference),Contracts Expression,65,420,False,False
+full4,democracy,mode_electronic_internet,0,0 (reference),Expands Expression,250,420,False,False
+full4,democracy,mode_electronic_internet,1,1,Mixed Outcome,58,212,False,False
+full4,democracy,mode_electronic_internet,1,1,Contracts Expression,52,212,False,False
+full4,democracy,mode_electronic_internet,1,1,Expands Expression,102,212,False,False
+full4,democracy,mode_press_newspapers,0,0 (reference),Mixed Outcome,137,526,False,False
+full4,democracy,mode_press_newspapers,0,0 (reference),Contracts Expression,105,526,False,False
+full4,democracy,mode_press_newspapers,0,0 (reference),Expands Expression,284,526,False,False
+full4,democracy,mode_press_newspapers,1,1,Mixed Outcome,26,106,False,False
+full4,democracy,mode_press_newspapers,1,1,Contracts Expression,12,106,False,False
+full4,democracy,mode_press_newspapers,1,1,Expands Expression,68,106,False,False
+full4,democracy,mode_public_assembly,0,0 (reference),Mixed Outcome,152,600,False,False
+full4,democracy,mode_public_assembly,0,0 (reference),Contracts Expression,111,600,False,False
+full4,democracy,mode_public_assembly,0,0 (reference),Expands Expression,337,600,False,False
+full4,democracy,mode_public_assembly,1,1,Mixed Outcome,11,32,False,False
+full4,democracy,mode_public_assembly,1,1,Contracts Expression,6,32,False,False
+full4,democracy,mode_public_assembly,1,1,Expands Expression,15,32,False,False
+full4,democracy,mode_public_speech,0,0 (reference),Mixed Outcome,146,570,False,False
+full4,democracy,mode_public_speech,0,0 (reference),Contracts Expression,102,570,False,False
+full4,democracy,mode_public_speech,0,0 (reference),Expands Expression,322,570,False,False
+full4,democracy,mode_public_speech,1,1,Mixed Outcome,17,62,False,False
+full4,democracy,mode_public_speech,1,1,Contracts Expression,15,62,False,False
+full4,democracy,mode_public_speech,1,1,Expands Expression,30,62,False,False
+full4,democracy,mode_non_verbal_expression,0,0 (reference),Mixed Outcome,135,548,False,False
+full4,democracy,mode_non_verbal_expression,0,0 (reference),Contracts Expression,103,548,False,False
+full4,democracy,mode_non_verbal_expression,0,0 (reference),Expands Expression,310,548,False,False
+full4,democracy,mode_non_verbal_expression,1,1,Mixed Outcome,28,84,False,False
+full4,democracy,mode_non_verbal_expression,1,1,Contracts Expression,14,84,False,False
+full4,democracy,mode_non_verbal_expression,1,1,Expands Expression,42,84,False,False
