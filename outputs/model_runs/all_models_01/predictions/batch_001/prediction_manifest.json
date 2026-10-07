@@ -1,0 +1,151 @@
+{
+  "run_name": "all_models_01",
+  "status": "completed",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/plot_probabilities.py --run all_models_01",
+  "fit_manifest_sha256": "2b5fc4342b6053ca92227e26da2afd21fc0dd0017366040e54ee3d5617c00bdb",
+  "skipped_fits": [],
+  "consumed_states": [
+    {
+      "model": "indep1",
+      "sample": "all",
+      "sha256": "48619539b71e6bb86cc6cf8e994d64d51ebe8e3743d9a4ebda179699e206238b"
+    },
+    {
+      "model": "indep2",
+      "sample": "all",
+      "sha256": "7bf9615872d14aa307d4330118bc0aeaa53727d50f2757e24b24e81f5f12c246"
+    },
+    {
+      "model": "attack1",
+      "sample": "all",
+      "sha256": "fac436d0db2f21f0cc152d966867265538da51eb47da2278a0992f3ff093f162"
+    },
+    {
+      "model": "attack2",
+      "sample": "all",
+      "sha256": "c3903498e667ce9fa916558501a88e45a36c8171365dcb1ccbe7284a130ac997"
+    },
+    {
+      "model": "attack3",
+      "sample": "all",
+      "sha256": "7b9d52abfe82972be4b09f1d61cc8042d9b6990bef4f9627f9a7a5da01580ef7"
+    },
+    {
+      "model": "attack4",
+      "sample": "all",
+      "sha256": "769d1e4fe537c8fbc18d300a735259e170673862e281aeac168b0c0705d80634"
+    },
+    {
+      "model": "attack5",
+      "sample": "all",
+      "sha256": "c907bc9eb2e4c995c70d1c0055a5ef54b37e41f8fc1f5a3a9c1c18726e75eb50"
+    },
+    {
+      "model": "dejure1",
+      "sample": "all",
+      "sha256": "695e186cdc202e00a4cb1ae3c05b3ffe184910a54eba572e3443e124f0c94158"
+    },
+    {
+      "model": "dejure2",
+      "sample": "all",
+      "sha256": "5c52f42e468f01f6eca72cc3fcde2b52ffc08cb16825a185d9997aec761a2d8a"
+    },
+    {
+      "model": "dejure3",
+      "sample": "all",
+      "sha256": "bacef5e8880815a183ac25f7ee67f185d2874605709513c0e72a8191366cfe6f"
+    },
+    {
+      "model": "dejure4",
+      "sample": "all",
+      "sha256": "3e88fb3142af2fc007fedd80af09bd35090a4cc6e327bc0bc104159abce46839"
+    },
+    {
+      "model": "dejure5",
+      "sample": "all",
+      "sha256": "ab922d2b392520b56e98d8368617aca4c8ec9cb9dae6c7133642790380ff9f02"
+    },
+    {
+      "model": "dejure6",
+      "sample": "all",
+      "sha256": "b0b4c84111f6aeebadf93067e3e70917ddcd9bdcbbcf4f3b770e300a4f123b9f"
+    },
+    {
+      "model": "full1",
+      "sample": "all",
+      "sha256": "4cb55f7e7ef6c08d9b1101d3bbe0875e6bff9675aaa4e545b7b4fc3c6ab19fab"
+    },
+    {
+      "model": "full2",
+      "sample": "all",
+      "sha256": "95717017f06ac37205e7314b7c406505fc1544c0c92f340b4b3737ce18130a16"
+    },
+    {
+      "model": "full3",
+      "sample": "all",
+      "sha256": "b05cb9499f283c1715f1c2b21e3dee15210293eda6dcb7277fd100af1f741582"
+    },
+    {
+      "model": "full4",
+      "sample": "all",
+      "sha256": "4fc92e925ff5697f0eb1f1fefa339738c789baee8358d094e8798d15d9e74fb6"
+    }
+  ],
+  "prediction_rows": 3672,
+  "figures": 48,
+  "file_sha256": {
+    "predictions.csv": "1c5c3252be93295d84c56b68e55a0ec4468e703f71c88111dd258e530f6ccb0e",
+    "prediction_grids.csv": "0fbd36fe4664c3c60483d20cdda536a1c052cf2d807edb78fabbb57768d390ee",
+    "prediction_validation.csv": "46d4aa95bb72bd97a9c18f2538097f29481becdada5f15b3f017b425b63404eb",
+    "observed_support.csv": "605687bf40e6aeca4d51e662daa8d458c80d3ca8ce2f540fc8420a80c355825f",
+    "figure_index.csv": "01bd6e43b5830c7ec61c19489bd9941e8c084a0943884e94b4e5a7f652c36fcc",
+    "figures/dejure3__all__wdj_press_lag1__without_histogram.png": "d6642ff310d92b513b6b5fc94fa0e42a5961ac54c5faa289218dee611d9b45a5",
+    "figures/full4__all__v2jupurge_lag1__without_histogram.png": "a70f7f0b5eda133b98165dddc76e02a31fdad7387516b38fe512d69812949801",
+    "figures/full3__all__court_independence_lag1__with_histogram.png": "67feb169a3a8418ab18c8916418cc5321bd214fde2db72a7d6c9e05e51c74ccf",
+    "figures/full2__all__court_independence_lag1__with_histogram.png": "826d211cb045fe09002eb12c30838bf4706ad4086fcb8cddaccda18d893dff0e",
+    "figures/full1__all__v2jupurge_lag1__without_histogram.png": "e81a51682aa45e1c7c045b5bc8647f3331ea717311d8cd40de6ab8adcee82f79",
+    "figures/full3__all__v2jupurge_lag1__with_histogram.png": "4e2916daa2639598fa8d6ebfdb0d98f7240b4fe2e1848793a2dd3a48a84d3fa4",
+    "figures/attack4__all__v2jupurge_lag1__with_histogram.png": "298c4f926419aef09d728eadf1ba7fa6445b2c93f72f6f2ae9360c6f77561e6b",
+    "figures/full2__all__wdj_expression_lag1__with_histogram.png": "f7e19ee747c8a005db7b05e08580579777fd82d3ea49e9b666a7b18ee303304b",
+    "figures/full2__all__wdj_expression_lag1__without_histogram.png": "75f8f7554328cea9d38100dd60cfc096b96449103059270425adc73cb5d45b03",
+    "figures/dejure2__all__wdj_expression_lag1__with_histogram.png": "753ebb6a64637f25a85187f5e04bfc43cc98a7bdab613c3a4cdbda2265d6b2e5",
+    "figures/full1__all__court_independence_lag1__with_histogram.png": "a95823a9e2815ad4d64d999359d0dbb986a2e4698325d1975a34dcc733d9cd87",
+    "figures/attack3__all__v2jureform_lag1__without_histogram.png": "3a197c6e664d7141c207d6e9a08926b8dfa3f6531221d01704216ce6afb67715",
+    "figures/dejure1__all__wdj_expression_lag1__with_histogram.png": "0d1cbeccd61d8e7ceaf16cbe16dac2e372456a8541e9baf7366b7b2538c43af1",
+    "figures/attack2__all__v2jupack_lag1__without_histogram.png": "d26053682585a1fbc90a86be4ecabdde19f95191b290e58f8d9bd9a5d36f9fa6",
+    "figures/full4__all__v2jupurge_lag1__with_histogram.png": "6b039a6b3466705caaff1bbf73f8bcbceee77481ab561d69d713336afa3c5b20",
+    "figures/attack4__all__v2jupurge_lag1__without_histogram.png": "367fbed4821cf082f67553352369bd9ebf0836b01fdd28a542387447d6cc83fd",
+    "figures/full3__all__wdj_press_lag1__without_histogram.png": "865fa612b032f944239dedc4f1710d1fdd494f54c657a9d00c99a0c7b305a91f",
+    "figures/full3__all__court_independence_lag1__without_histogram.png": "93bacc3381bc5ed506b0222db315c78d51fd8b79b56f8ec07cd96682deb7a70a",
+    "figures/indep2__all__court_independence_lag1__without_histogram.png": "cacb098154794020430dc9f5a6fc0526a3d1e2381b6a8cbb3021084ac6f04d4a",
+    "figures/full3__all__wdj_press_lag1__with_histogram.png": "69c8584815ca568a60f91e1ef1345d4788f9c75e550bf2e718874dc41032c993",
+    "figures/attack3__all__v2jureform_lag1__with_histogram.png": "c7868b9a76bffbad942950cb456812834bb441a5355e4d0eedc6342ec891ac8d",
+    "figures/full2__all__v2jupurge_lag1__without_histogram.png": "6e80d7774e57e47629dba4705d5b8b24fa0dbff49021feb374b1c595e11f5de9",
+    "figures/full1__all__court_independence_lag1__without_histogram.png": "84c0b2f7d1e2baf2a4ca9744f9c8b598a123bb4c4af476cfb413d122dfbaa607",
+    "figures/full4__all__wdj_citizen_lag1__with_histogram.png": "ff4df56c0b92b73689b7b34afaf9a6e7ebaec5e614b3b57ff5c705da0383fcdc",
+    "figures/dejure1__all__wdj_expression_lag1__without_histogram.png": "72621da00c9a25e740286cd031985d4e9e10fd15bc44e64f639a6b30a9a0ca74",
+    "figures/dejure3__all__wdj_press_lag1__with_histogram.png": "0576fbaefaba0dc49896d14b6a33e79415a70d5249aad10c26e7e881c200f762",
+    "figures/dejure6__all__wdj_citizen_lag1__without_histogram.png": "e6b88df535e37ab9fbb766bd839b69e55da978ddbc7473ac3710931203f4adeb",
+    "figures/full4__all__court_independence_lag1__without_histogram.png": "6df1e2991032e88a7fdb9b53eb2ec155a459eeb3ee75adbc07a0cfe61554dcee",
+    "figures/full2__all__v2jupurge_lag1__with_histogram.png": "77a913112bcb7fb58300fdd2676548f21798295ecd056a0f9563d9078c01ea94",
+    "figures/attack5__all__v2jupurge_lag1__with_histogram.png": "bb950feff55b576c7929ca1f3ab1a3d6cc25a5590332625833658d63a976cf04",
+    "figures/dejure5__all__wdj_citizen_lag1__with_histogram.png": "8bdec1299400c03fb85d1a2644f17497a5eb99dc71613f4f058f5575d13a4fb3",
+    "figures/indep1__all__court_independence_lag1__without_histogram.png": "b43e199f30de85a718f442d76f68b5543319151e1d4416d014dc1dd915b33417",
+    "figures/full2__all__court_independence_lag1__without_histogram.png": "af141e6c466c66a2d03e813eec6541264ba2c4896ed9874d6a4f36f8f5756167",
+    "figures/full3__all__v2jupurge_lag1__without_histogram.png": "b35a9cfe1cfcb5c67fabcd8eec991c0a3cc352a23b5762367fbc5a496ca02f4e",
+    "figures/attack1__all__v2jupoatck_lag1__with_histogram.png": "5fc6431d0fe89b43395eb9ca2db3454e29ea96d7c6f6b092f83bb2bb1d595d13",
+    "figures/indep1__all__court_independence_lag1__with_histogram.png": "b5d650f5db6da68d143c6b762ccb712d374751595d9719fab7b7283e34d0a34f",
+    "figures/dejure4__all__wdj_press_lag1__without_histogram.png": "63d8d47c554ae7d46e00c02c3dfadc643dde1b2ae0cde8b041662042783ae1b6",
+    "figures/full4__all__wdj_citizen_lag1__without_histogram.png": "a27c8642977825ecedc837adb1320a53eff33cee501c8e9880155454cad4d588",
+    "figures/indep2__all__court_independence_lag1__with_histogram.png": "40d201ed043e29f1f63d52a8298aa5d201ad4099f7ed7b5fe09386e1e4b4a384",
+    "figures/dejure5__all__wdj_citizen_lag1__without_histogram.png": "d6552f299a474b7d2d8ee37d336dc1b5163b8f73702697287f348f6c1b3a6cae",
+    "figures/attack1__all__v2jupoatck_lag1__without_histogram.png": "e73621c2b580a4bc3f5ec2742ec94b0084817623262a079ddef9286591e2a59a",
+    "figures/attack2__all__v2jupack_lag1__with_histogram.png": "5510247b51b9fa371335618d7f2c1a942e0b2a563d3566677cd96ea28d222b95",
+    "figures/dejure2__all__wdj_expression_lag1__without_histogram.png": "3f0d609a7c2bbd8bcd2732901de40f4a2892967c285890b9f0dbdbfcae8ff32b",
+    "figures/attack5__all__v2jupurge_lag1__without_histogram.png": "d4d9920f6db2756f10c31249d52daaa9bd0c237ab69a5440bf9d8e90a7a339b0",
+    "figures/dejure6__all__wdj_citizen_lag1__with_histogram.png": "18da930df540b847a5bc257639e618b5beb44b29fb12d01bbaf5a93833ac96a8",
+    "figures/full4__all__court_independence_lag1__with_histogram.png": "bd405ae82daaec113f23ec89d027a1dd5c7b9520b020642b0b1f66001c2bdff1",
+    "figures/full1__all__v2jupurge_lag1__with_histogram.png": "98ed213ac8e4fff64304a69886f1a0f129de4cd75d27b95ee689c58c535e032f",
+    "figures/dejure4__all__wdj_press_lag1__with_histogram.png": "b8066535584f557aaa2b6b0004bc653e53607435956159235d3635705c2c18d6"
+  }
+}

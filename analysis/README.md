@@ -39,6 +39,21 @@ The default sample policy is **available**: each model uses its own complete cas
 
 Regime samples filter decision-year `regime_binary`; regime is not added as a predictor. Any selected specification can use any of these samples. Knots are never recalculated within a subset.
 
+To estimate all four full models on the pooled sample with `regime_binary` as a
+control, use the separate configuration below. It adds a democracy indicator
+with autocracy as the reference and retains each full model's other controls.
+Available sampling requires nonmissing regime values as well as the other
+model variables.
+
+```sh
+.venv/bin/python analysis/run_models.py \
+  --config analysis/specifications_regime_control.py \
+  --models full1 full2 full3 full4 --sample all --run full_models_regime_control_01
+```
+
+This configuration copies the full models from `analysis/specifications.py`
+when loaded; later edits to those base models carry through to new runs.
+
 Use **fixed** to retain the recorded complete-case membership of an original replication model, then subset it by regime:
 
 ```sh
@@ -56,6 +71,11 @@ Use `--config path/to/copied_specifications.py` for experiments isolated from th
 Open `outputs/model_runs/<run>/SUMMARY.md` first. `run_manifest.json` distinguishes completed runs, runs with unsuccessful fits, and interrupted execution. A completed command does not imply successful estimation of every model.
 
 Each run saves the expanded `configuration.json`, exact configuration source, input/code fingerprints, dependency versions, command, and sample policy. Under `fits/`, inspect membership CSVs, coefficient tables, diagnostics JSON, and saved numerical state. Successful fits also have labeled covariance CSVs. The combined `coefficients.csv` includes status and inference flags; unsuccessful terminal iterates are explicitly diagnostic only.
+
+Coefficient tables include two-sided normal Wald `p_value` values based on
+country-clustered standard errors and a `significant_5pct` flag (`p_value < 0.05`).
+These fields are left empty when inference is invalid or the standard error
+cannot support the calculation.
 
 Diagnostics cover outcome/country counts, rank, constant predictors, absent levels, sparse cells, separation, convergence, score, Hessian conditioning, finite uncertainty, and covariance crosschecks. Successful fits with cautions remain distinct from unsuccessful fits. No term, reference, or outcome is automatically changed to obtain a fit.
 

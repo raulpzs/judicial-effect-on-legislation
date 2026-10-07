@@ -1,0 +1,826 @@
+row_id,case_id,country_id,country,year,decision_direction,regime_binary
+1,Angola_2015_01,104,angola,2015,Contracts Expression,autocracy
+2,Angola_2016_01,104,angola,2016,Contracts Expression,autocracy
+3,Australia_1994_01,67,australia,1994,Mixed Outcome,democracy
+4,Australia_1998_01,67,australia,1998,Contracts Expression,democracy
+5,Australia_2004_01,67,australia,2004,Expands Expression,democracy
+6,Australia_2010_01,67,australia,2010,Expands Expression,democracy
+7,Australia_2011_01,67,australia,2011,Mixed Outcome,democracy
+8,Australia_2013_01,67,australia,2013,Contracts Expression,democracy
+9,Australia_2014_03,67,australia,2014,Contracts Expression,democracy
+10,Australia_2015_02,67,australia,2015,Mixed Outcome,democracy
+11,Australia_2017_03,67,australia,2017,Expands Expression,democracy
+12,Australia_2018_03,67,australia,2018,Contracts Expression,democracy
+13,Australia_2019_03,67,australia,2019,Contracts Expression,democracy
+14,Australia_2020_01,67,australia,2020,Contracts Expression,democracy
+15,Australia_2021_01,67,australia,2021,Contracts Expression,democracy
+16,Australia_2022_01,67,australia,2022,Mixed Outcome,democracy
+17,Australia_2023_01,67,australia,2023,Expands Expression,democracy
+19,Australia_2025_01,67,australia,2025,Expands Expression,democracy
+24,Azerbaijan_2016_01,106,azerbaijan,2016,Mixed Outcome,autocracy
+29,Bangladesh_2014_01,24,bangladesh,2014,Contracts Expression,autocracy
+30,Bangladesh_2015_01,24,bangladesh,2015,Contracts Expression,autocracy
+31,Bangladesh_2019_02,24,bangladesh,2019,Expands Expression,autocracy
+33,Bolivia_2012_01,25,bolivia,2012,Expands Expression,democracy
+35,Botswana_2001_01,68,botswana,2001,Expands Expression,democracy
+37,Botswana_2011_02,68,botswana,2011,Mixed Outcome,democracy
+38,Botswana_2016_01,68,botswana,2016,Expands Expression,democracy
+39,Botswana_2019_01,68,botswana,2019,Expands Expression,democracy
+40,Cambodia_2015_01,55,cambodia,2015,Contracts Expression,autocracy
+41,Cambodia_2016_01,55,cambodia,2016,Contracts Expression,autocracy
+42,Cambodia_2017_01,55,cambodia,2017,Contracts Expression,autocracy
+46,Cameroon_2018_01,108,cameroon,2018,Mixed Outcome,autocracy
+48,Canada_1989_02,66,canada,1989,Expands Expression,democracy
+49,Canada_1990_01,66,canada,1990,Mixed Outcome,democracy
+50,Canada_1992_01,66,canada,1992,Expands Expression,democracy
+51,Canada_1994_01,66,canada,1994,Expands Expression,democracy
+52,Canada_1995_01,66,canada,1995,Contracts Expression,democracy
+53,Canada_1996_01,66,canada,1996,Mixed Outcome,democracy
+54,Canada_1997_01,66,canada,1997,Expands Expression,democracy
+55,Canada_1998_01,66,canada,1998,Contracts Expression,democracy
+56,Canada_2001_01,66,canada,2001,Expands Expression,democracy
+57,Canada_2002_01,66,canada,2002,Expands Expression,democracy
+58,Canada_2004_01,66,canada,2004,Mixed Outcome,democracy
+59,Canada_2005_02,66,canada,2005,Contracts Expression,democracy
+60,Canada_2006_02,66,canada,2006,Expands Expression,democracy
+61,Canada_2007_01,66,canada,2007,Expands Expression,democracy
+62,Canada_2008_01,66,canada,2008,Expands Expression,democracy
+63,Canada_2009_01,66,canada,2009,Expands Expression,democracy
+64,Canada_2010_03,66,canada,2010,Expands Expression,democracy
+65,Canada_2011_02,66,canada,2011,Expands Expression,democracy
+66,Canada_2012_04,66,canada,2012,Mixed Outcome,democracy
+67,Canada_2013_02,66,canada,2013,Mixed Outcome,democracy
+68,Canada_2014_06,66,canada,2014,Contracts Expression,democracy
+69,Canada_2015_01,66,canada,2015,Mixed Outcome,democracy
+70,Canada_2016_01,66,canada,2016,Expands Expression,democracy
+71,Canada_2017_02,66,canada,2017,Contracts Expression,democracy
+72,Canada_2018_03,66,canada,2018,Mixed Outcome,democracy
+73,Canada_2019_03,66,canada,2019,Mixed Outcome,democracy
+74,Canada_2020_02,66,canada,2020,Expands Expression,democracy
+75,Canada_2021_02,66,canada,2021,Mixed Outcome,democracy
+76,Canada_2023_01,66,canada,2023,Mixed Outcome,democracy
+77,Canada_2025_01,66,canada,2025,Mixed Outcome,democracy
+82,Chile_2007_01,72,chile,2007,Expands Expression,democracy
+83,Chile_2009_01,72,chile,2009,Expands Expression,democracy
+84,Chile_2010_01,72,chile,2010,Mixed Outcome,democracy
+85,Chile_2012_01,72,chile,2012,Contracts Expression,democracy
+86,Chile_2013_01,72,chile,2013,Expands Expression,democracy
+89,Chile_2016_01,72,chile,2016,Contracts Expression,democracy
+90,Chile_2017_01,72,chile,2017,Expands Expression,democracy
+91,Chile_2018_02,72,chile,2018,Expands Expression,democracy
+92,Chile_2019_02,72,chile,2019,Expands Expression,democracy
+93,Chile_2020_05,72,chile,2020,Expands Expression,democracy
+94,Chile_2021_08,72,chile,2021,Expands Expression,democracy
+95,Chile_2022_03,72,chile,2022,Expands Expression,democracy
+96,Chile_2023_01,72,chile,2023,Expands Expression,democracy
+97,El Salvador_2014_01,22,el salvador,2014,Expands Expression,democracy
+98,El Salvador_2015_01,22,el salvador,2015,Expands Expression,democracy
+99,El Salvador_2016_02,22,el salvador,2016,Expands Expression,democracy
+100,El Salvador_2017_01,22,el salvador,2017,Expands Expression,democracy
+101,Eswatini_2014_01,132,eswatini,2014,Mixed Outcome,autocracy
+102,Eswatini_2015_01,132,eswatini,2015,Expands Expression,autocracy
+103,Eswatini_2016_01,132,eswatini,2016,Expands Expression,autocracy
+104,Ethiopia_2015_02,38,ethiopia,2015,Mixed Outcome,autocracy
+105,Ethiopia_2017_01,38,ethiopia,2017,Contracts Expression,autocracy
+109,Fiji_2018_01,162,fiji,2018,Expands Expression,autocracy
+118,France_2009_01,76,france,2009,Expands Expression,democracy
+122,France_2016_06,76,france,2016,Contracts Expression,democracy
+128,France_2022_03,76,france,2022,Mixed Outcome,democracy
+136,Hungary_1992_01,210,hungary,1992,Expands Expression,democracy
+138,Hungary_2004_01,210,hungary,2004,Expands Expression,democracy
+139,Hungary_2006_01,210,hungary,2006,Expands Expression,democracy
+140,Hungary_2008_01,210,hungary,2008,Expands Expression,democracy
+145,Hungary_2014_02,210,hungary,2014,Expands Expression,democracy
+150,Hungary_2022_01,210,hungary,2022,Expands Expression,autocracy
+152,Hungary_2024_03,210,hungary,2024,Mixed Outcome,autocracy
+153,Kazakhstan_2009_01,121,kazakhstan,2009,Contracts Expression,autocracy
+154,Kazakhstan_2013_01,121,kazakhstan,2013,Contracts Expression,autocracy
+155,Kazakhstan_2014_02,121,kazakhstan,2014,Contracts Expression,autocracy
+156,Kazakhstan_2015_02,121,kazakhstan,2015,Contracts Expression,autocracy
+157,Kazakhstan_2016_01,121,kazakhstan,2016,Contracts Expression,autocracy
+158,Kazakhstan_2017_01,121,kazakhstan,2017,Contracts Expression,autocracy
+159,Kazakhstan_2019_01,121,kazakhstan,2019,Expands Expression,autocracy
+160,Kenya_2011_01,40,kenya,2011,Expands Expression,autocracy
+161,Kenya_2013_01,40,kenya,2013,Mixed Outcome,democracy
+162,Kenya_2014_01,40,kenya,2014,Expands Expression,democracy
+163,Kenya_2015_02,40,kenya,2015,Expands Expression,democracy
+164,Kenya_2016_01,40,kenya,2016,Expands Expression,democracy
+165,Kenya_2017_03,40,kenya,2017,Expands Expression,autocracy
+166,Kenya_2018_02,40,kenya,2018,Expands Expression,autocracy
+167,Kenya_2019_01,40,kenya,2019,Contracts Expression,autocracy
+168,Kenya_2020_02,40,kenya,2020,Contracts Expression,autocracy
+169,Kenya_2024_01,40,kenya,2024,Expands Expression,democracy
+170,Kenya_2025_01,40,kenya,2025,Expands Expression,democracy
+171,Lesotho_2003_01,85,lesotho,2003,Expands Expression,democracy
+172,Lesotho_2005_01,85,lesotho,2005,Mixed Outcome,democracy
+173,Lesotho_2008_01,85,lesotho,2008,Mixed Outcome,democracy
+174,Lesotho_2018_01,85,lesotho,2018,Expands Expression,democracy
+175,Malawi_2002_01,87,malawi,2002,Expands Expression,autocracy
+176,Malawi_2019_01,87,malawi,2019,Expands Expression,autocracy
+177,Malawi_2020_01,87,malawi,2020,Expands Expression,democracy
+178,Malaysia_2014_01,177,malaysia,2014,Expands Expression,autocracy
+180,Malaysia_2016_01,177,malaysia,2016,Contracts Expression,autocracy
+181,Malaysia_2018_01,177,malaysia,2018,Contracts Expression,autocracy
+182,Malaysia_2021_01,177,malaysia,2021,Contracts Expression,autocracy
+183,Malta_2015_01,178,malta,2015,Contracts Expression,democracy
+184,Malta_2017_01,178,malta,2017,Expands Expression,democracy
+186,Malta_2019_01,178,malta,2019,Expands Expression,democracy
+187,Malta_2020_01,178,malta,2020,Expands Expression,democracy
+188,Myanmar_2014_01,10,myanmar,2014,Contracts Expression,autocracy
+189,Myanmar_2015_03,10,myanmar,2015,Contracts Expression,autocracy
+190,Myanmar_2016_02,10,myanmar,2016,Contracts Expression,autocracy
+192,Namibia_1986_01,127,namibia,1986,Expands Expression,autocracy
+193,Namibia_2010_01,127,namibia,2010,Expands Expression,democracy
+194,Namibia_2015_01,127,namibia,2015,Expands Expression,democracy
+195,Namibia_2019_01,127,namibia,2019,Expands Expression,democracy
+197,Nepal_2024_01,58,nepal,2024,Contracts Expression,democracy
+200,Nigeria_2012_02,45,nigeria,2012,Expands Expression,democracy
+201,Nigeria_2013_01,45,nigeria,2013,Expands Expression,democracy
+202,Nigeria_2016_01,45,nigeria,2016,Expands Expression,democracy
+204,Nigeria_2019_01,45,nigeria,2019,Contracts Expression,democracy
+205,Nigeria_2020_01,45,nigeria,2020,Contracts Expression,democracy
+207,Nigeria_2022_03,45,nigeria,2022,Contracts Expression,autocracy
+210,Pakistan_2002_01,29,pakistan,2002,Expands Expression,autocracy
+211,Pakistan_2010_01,29,pakistan,2010,Contracts Expression,autocracy
+212,Pakistan_2013_01,29,pakistan,2013,Expands Expression,autocracy
+213,Pakistan_2014_03,29,pakistan,2014,Contracts Expression,autocracy
+214,Pakistan_2015_01,29,pakistan,2015,Contracts Expression,autocracy
+215,Pakistan_2018_02,29,pakistan,2018,Contracts Expression,autocracy
+216,Pakistan_2019_01,29,pakistan,2019,Expands Expression,autocracy
+217,Pakistan_2020_01,29,pakistan,2020,Contracts Expression,autocracy
+220,Philippines_1987_01,46,philippines,1987,Expands Expression,autocracy
+221,Philippines_1989_01,46,philippines,1989,Expands Expression,democracy
+222,Philippines_2007_01,46,philippines,2007,Expands Expression,autocracy
+223,Philippines_2014_02,46,philippines,2014,Contracts Expression,democracy
+224,Philippines_2017_01,46,philippines,2017,Mixed Outcome,autocracy
+225,Philippines_2019_01,46,philippines,2019,Expands Expression,autocracy
+226,Philippines_2020_01,46,philippines,2020,Contracts Expression,autocracy
+227,Philippines_2023_02,46,philippines,2023,Expands Expression,autocracy
+234,Poland_2016_02,17,poland,2016,Mixed Outcome,democracy
+236,Poland_2018_01,17,poland,2018,Expands Expression,democracy
+242,Rwanda_2012_01,129,rwanda,2012,Contracts Expression,autocracy
+245,Singapore_2014_02,200,singapore,2014,Contracts Expression,autocracy
+246,Singapore_2015_01,200,singapore,2015,Contracts Expression,autocracy
+247,Singapore_2016_01,200,singapore,2016,Contracts Expression,autocracy
+248,Singapore_2020_01,200,singapore,2020,Contracts Expression,autocracy
+249,Singapore_2021_01,200,singapore,2021,Contracts Expression,autocracy
+251,South Africa_1995_01,8,south africa,1995,Expands Expression,democracy
+252,South Africa_1998_01,8,south africa,1998,Expands Expression,democracy
+253,South Africa_2000_01,8,south africa,2000,Expands Expression,democracy
+254,South Africa_2001_01,8,south africa,2001,Mixed Outcome,democracy
+255,South Africa_2002_01,8,south africa,2002,Mixed Outcome,democracy
+256,South Africa_2004_01,8,south africa,2004,Mixed Outcome,democracy
+257,South Africa_2005_06,8,south africa,2005,Expands Expression,democracy
+258,South Africa_2006_01,8,south africa,2006,Expands Expression,democracy
+259,South Africa_2007_02,8,south africa,2007,Mixed Outcome,democracy
+260,South Africa_2008_01,8,south africa,2008,Contracts Expression,democracy
+261,South Africa_2009_02,8,south africa,2009,Expands Expression,democracy
+262,South Africa_2010_01,8,south africa,2010,Expands Expression,democracy
+263,South Africa_2011_02,8,south africa,2011,Expands Expression,democracy
+264,South Africa_2012_01,8,south africa,2012,Expands Expression,democracy
+265,South Africa_2013_01,8,south africa,2013,Expands Expression,democracy
+266,South Africa_2014_04,8,south africa,2014,Expands Expression,democracy
+267,South Africa_2015_01,8,south africa,2015,Expands Expression,democracy
+268,South Africa_2016_03,8,south africa,2016,Expands Expression,democracy
+269,South Africa_2017_01,8,south africa,2017,Expands Expression,democracy
+270,South Africa_2018_01,8,south africa,2018,Expands Expression,democracy
+271,South Africa_2019_04,8,south africa,2019,Expands Expression,democracy
+272,South Africa_2020_02,8,south africa,2020,Mixed Outcome,democracy
+273,South Africa_2021_04,8,south africa,2021,Expands Expression,democracy
+274,South Africa_2022_05,8,south africa,2022,Mixed Outcome,democracy
+275,South Africa_2023_02,8,south africa,2023,Expands Expression,democracy
+277,Sri Lanka_2005_01,131,sri lanka,2005,Expands Expression,autocracy
+278,Sri Lanka_2018_01,131,sri lanka,2018,Expands Expression,democracy
+280,Sri Lanka_2024_01,131,sri lanka,2024,Expands Expression,democracy
+281,Tajikistan_2015_01,133,tajikistan,2015,Contracts Expression,autocracy
+282,Tajikistan_2018_01,133,tajikistan,2018,Contracts Expression,autocracy
+286,Thailand_2011_01,49,thailand,2011,Contracts Expression,autocracy
+287,Thailand_2013_02,49,thailand,2013,Contracts Expression,autocracy
+288,Thailand_2014_01,49,thailand,2014,Contracts Expression,autocracy
+289,Thailand_2015_11,49,thailand,2015,Contracts Expression,autocracy
+290,Thailand_2017_02,49,thailand,2017,Contracts Expression,autocracy
+291,Thailand_2018_01,49,thailand,2018,Expands Expression,autocracy
+292,Thailand_2021_01,49,thailand,2021,Contracts Expression,autocracy
+306,Turkey_2016_03,99,turkey,2016,Contracts Expression,autocracy
+309,Turkey_2019_04,99,turkey,2019,Expands Expression,autocracy
+313,Turkey_2023_03,99,turkey,2023,Expands Expression,autocracy
+315,Uganda_2002_01,50,uganda,2002,Expands Expression,autocracy
+316,Uganda_2009_01,50,uganda,2009,Contracts Expression,autocracy
+317,Uganda_2010_02,50,uganda,2010,Expands Expression,autocracy
+318,Uganda_2014_03,50,uganda,2014,Expands Expression,autocracy
+320,Uganda_2019_01,50,uganda,2019,Contracts Expression,autocracy
+321,Uganda_2020_01,50,uganda,2020,Expands Expression,autocracy
+322,Uganda_2021_03,50,uganda,2021,Mixed Outcome,autocracy
+323,United States_1927_01,20,united states,1927,Mixed Outcome,democracy
+324,United States_1936_01,20,united states,1936,Contracts Expression,democracy
+325,United States_1940_01,20,united states,1940,Contracts Expression,democracy
+326,United States_1942_01,20,united states,1942,Contracts Expression,democracy
+327,United States_1951_01,20,united states,1951,Contracts Expression,democracy
+328,United States_1952_01,20,united states,1952,Contracts Expression,democracy
+329,United States_1963_01,20,united states,1963,Mixed Outcome,democracy
+330,United States_1964_03,20,united states,1964,Expands Expression,democracy
+331,United States_1965_01,20,united states,1965,Expands Expression,democracy
+332,United States_1966_01,20,united states,1966,Expands Expression,democracy
+333,United States_1967_01,20,united states,1967,Expands Expression,democracy
+334,United States_1968_01,20,united states,1968,Contracts Expression,democracy
+335,United States_1969_01,20,united states,1969,Expands Expression,democracy
+336,United States_1971_02,20,united states,1971,Expands Expression,democracy
+337,United States_1972_01,20,united states,1972,Contracts Expression,democracy
+338,United States_1975_01,20,united states,1975,Expands Expression,democracy
+339,United States_1976_01,20,united states,1976,Contracts Expression,democracy
+340,United States_1977_01,20,united states,1977,Expands Expression,democracy
+341,United States_1978_01,20,united states,1978,Contracts Expression,democracy
+342,United States_1979_01,20,united states,1979,Mixed Outcome,democracy
+343,United States_1980_02,20,united states,1980,Expands Expression,democracy
+344,United States_1982_02,20,united states,1982,Expands Expression,democracy
+345,United States_1986_01,20,united states,1986,Expands Expression,democracy
+346,United States_1987_02,20,united states,1987,Expands Expression,democracy
+347,United States_1988_01,20,united states,1988,Expands Expression,democracy
+348,United States_1989_01,20,united states,1989,Expands Expression,democracy
+349,United States_1990_01,20,united states,1990,Expands Expression,democracy
+350,United States_1991_01,20,united states,1991,Contracts Expression,democracy
+351,United States_1992_02,20,united states,1992,Expands Expression,democracy
+352,United States_1993_01,20,united states,1993,Mixed Outcome,democracy
+353,United States_1994_01,20,united states,1994,Contracts Expression,democracy
+354,United States_1995_01,20,united states,1995,Expands Expression,democracy
+355,United States_1996_01,20,united states,1996,Mixed Outcome,democracy
+356,United States_1997_02,20,united states,1997,Expands Expression,democracy
+357,United States_1998_01,20,united states,1998,Mixed Outcome,democracy
+358,United States_1999_01,20,united states,1999,Mixed Outcome,democracy
+359,United States_2000_01,20,united states,2000,Mixed Outcome,democracy
+360,United States_2001_01,20,united states,2001,Mixed Outcome,democracy
+361,United States_2002_02,20,united states,2002,Expands Expression,democracy
+362,United States_2003_01,20,united states,2003,Expands Expression,democracy
+363,United States_2005_01,20,united states,2005,Expands Expression,democracy
+364,United States_2007_02,20,united states,2007,Expands Expression,democracy
+365,United States_2008_01,20,united states,2008,Expands Expression,democracy
+366,United States_2009_01,20,united states,2009,Expands Expression,democracy
+367,United States_2010_01,20,united states,2010,Mixed Outcome,democracy
+368,United States_2011_01,20,united states,2011,Expands Expression,democracy
+369,United States_2012_03,20,united states,2012,Mixed Outcome,democracy
+370,United States_2013_02,20,united states,2013,Contracts Expression,democracy
+371,United States_2014_01,20,united states,2014,Contracts Expression,democracy
+372,United States_2015_18,20,united states,2015,Mixed Outcome,democracy
+373,United States_2016_08,20,united states,2016,Expands Expression,democracy
+374,United States_2017_05,20,united states,2017,Expands Expression,democracy
+375,United States_2018_15,20,united states,2018,Contracts Expression,democracy
+376,United States_2019_30,20,united states,2019,Expands Expression,democracy
+377,United States_2020_40,20,united states,2020,Expands Expression,democracy
+378,United States_2021_04,20,united states,2021,Contracts Expression,democracy
+379,United States_2022_02,20,united states,2022,Expands Expression,democracy
+382,United States_2025_06,20,united states,2025,Expands Expression,democracy
+383,Uruguay_2013_01,102,uruguay,2013,Expands Expression,democracy
+384,Uruguay_2021_01,102,uruguay,2021,Contracts Expression,democracy
+385,Uruguay_2022_01,102,uruguay,2022,Expands Expression,democracy
+386,Uruguay_2024_01,102,uruguay,2024,Expands Expression,democracy
+389,Venezuela_2010_01,51,venezuela,2010,Contracts Expression,autocracy
+394,Vietnam_2012_01,34,vietnam,2012,Contracts Expression,autocracy
+395,Vietnam_2014_01,34,vietnam,2014,Contracts Expression,autocracy
+396,Vietnam_2015_01,34,vietnam,2015,Contracts Expression,autocracy
+397,Vietnam_2016_01,34,vietnam,2016,Contracts Expression,autocracy
+398,Vietnam_2017_01,34,vietnam,2017,Contracts Expression,autocracy
+400,Zambia_2008_01,61,zambia,2008,Mixed Outcome,democracy
+401,Zambia_2014_01,61,zambia,2014,Expands Expression,autocracy
+402,Zambia_2015_01,61,zambia,2015,Expands Expression,autocracy
+403,Zambia_2021_01,61,zambia,2021,Expands Expression,autocracy
+404,Zimbabwe_2000_01,62,zimbabwe,2000,Expands Expression,autocracy
+405,Zimbabwe_2004_01,62,zimbabwe,2004,Expands Expression,autocracy
+408,Zimbabwe_2014_02,62,zimbabwe,2014,Expands Expression,autocracy
+409,Zimbabwe_2015_01,62,zimbabwe,2015,Contracts Expression,autocracy
+410,Zimbabwe_2016_02,62,zimbabwe,2016,Expands Expression,autocracy
+411,Zimbabwe_2017_01,62,zimbabwe,2017,Expands Expression,autocracy
+412,Zimbabwe_2018_01,62,zimbabwe,2018,Expands Expression,autocracy
+414,Australia_2013_02,67,australia,2013,Mixed Outcome,democracy
+415,Australia_2014_05,67,australia,2014,Expands Expression,democracy
+416,Australia_2014_01,67,australia,2014,Mixed Outcome,democracy
+417,Australia_2014_02,67,australia,2014,Mixed Outcome,democracy
+418,Australia_2014_04,67,australia,2014,Mixed Outcome,democracy
+419,Australia_2015_01,67,australia,2015,Expands Expression,democracy
+420,Australia_2017_02,67,australia,2017,Contracts Expression,democracy
+421,Australia_2017_04,67,australia,2017,Contracts Expression,democracy
+422,Australia_2017_01,67,australia,2017,Contracts Expression,democracy
+423,Australia_2018_01,67,australia,2018,Contracts Expression,democracy
+424,Australia_2018_02,67,australia,2018,Mixed Outcome,democracy
+425,Australia_2019_04,67,australia,2019,Contracts Expression,democracy
+426,Australia_2019_01,67,australia,2019,Contracts Expression,democracy
+427,Australia_2019_02,67,australia,2019,Expands Expression,democracy
+428,Australia_2020_02,67,australia,2020,Mixed Outcome,democracy
+432,Bangladesh_2019_01,24,bangladesh,2019,Expands Expression,autocracy
+434,Botswana_2011_01,68,botswana,2011,Mixed Outcome,democracy
+435,Canada_1989_01,66,canada,1989,Mixed Outcome,democracy
+436,Canada_1998_02,66,canada,1998,Contracts Expression,democracy
+437,Canada_2001_02,66,canada,2001,Mixed Outcome,democracy
+438,Canada_2002_02,66,canada,2002,Expands Expression,democracy
+439,Canada_2005_01,66,canada,2005,Expands Expression,democracy
+440,Canada_2006_01,66,canada,2006,Contracts Expression,democracy
+441,Canada_2007_02,66,canada,2007,Expands Expression,democracy
+442,Canada_2010_02,66,canada,2010,Mixed Outcome,democracy
+443,Canada_2010_01,66,canada,2010,Mixed Outcome,democracy
+444,Canada_2011_04,66,canada,2011,Expands Expression,democracy
+445,Canada_2011_01,66,canada,2011,Expands Expression,democracy
+446,Canada_2011_03,66,canada,2011,Mixed Outcome,democracy
+447,Canada_2012_02,66,canada,2012,Mixed Outcome,democracy
+448,Canada_2012_01,66,canada,2012,Mixed Outcome,democracy
+449,Canada_2012_03,66,canada,2012,Mixed Outcome,democracy
+450,Canada_2013_01,66,canada,2013,Mixed Outcome,democracy
+451,Canada_2014_03,66,canada,2014,Expands Expression,democracy
+452,Canada_2014_01,66,canada,2014,Mixed Outcome,democracy
+453,Canada_2014_04,66,canada,2014,Mixed Outcome,democracy
+454,Canada_2014_02,66,canada,2014,Contracts Expression,democracy
+455,Canada_2014_05,66,canada,2014,Mixed Outcome,democracy
+456,Canada_2015_03,66,canada,2015,Expands Expression,democracy
+457,Canada_2015_02,66,canada,2015,Expands Expression,democracy
+458,Canada_2015_04,66,canada,2015,Mixed Outcome,democracy
+459,Canada_2016_02,66,canada,2016,Expands Expression,democracy
+460,Canada_2016_03,66,canada,2016,Contracts Expression,democracy
+461,Canada_2017_01,66,canada,2017,Expands Expression,democracy
+462,Canada_2017_03,66,canada,2017,Contracts Expression,democracy
+463,Canada_2018_04,66,canada,2018,Expands Expression,democracy
+464,Canada_2018_01,66,canada,2018,Contracts Expression,democracy
+465,Canada_2018_05,66,canada,2018,Contracts Expression,democracy
+466,Canada_2018_02,66,canada,2018,Expands Expression,democracy
+467,Canada_2019_01,66,canada,2019,Mixed Outcome,democracy
+468,Canada_2019_02,66,canada,2019,Contracts Expression,democracy
+469,Canada_2020_03,66,canada,2020,Mixed Outcome,democracy
+470,Canada_2020_01,66,canada,2020,Expands Expression,democracy
+471,Canada_2020_04,66,canada,2020,Expands Expression,democracy
+472,Canada_2021_03,66,canada,2021,Expands Expression,democracy
+473,Canada_2021_01,66,canada,2021,Expands Expression,democracy
+474,Chile_2005_02,72,chile,2005,Expands Expression,democracy
+475,Chile_2016_02,72,chile,2016,Mixed Outcome,democracy
+478,Chile_2019_01,72,chile,2019,Expands Expression,democracy
+480,Chile_2020_01,72,chile,2020,Contracts Expression,democracy
+481,Chile_2020_04,72,chile,2020,Expands Expression,democracy
+482,Chile_2020_02,72,chile,2020,Expands Expression,democracy
+483,Chile_2021_05,72,chile,2021,Expands Expression,democracy
+484,Chile_2021_04,72,chile,2021,Expands Expression,democracy
+485,Chile_2021_02,72,chile,2021,Expands Expression,democracy
+486,Chile_2021_06,72,chile,2021,Expands Expression,democracy
+487,Chile_2021_01,72,chile,2021,Mixed Outcome,democracy
+488,Chile_2021_03,72,chile,2021,Expands Expression,democracy
+489,Chile_2021_07,72,chile,2021,Expands Expression,democracy
+491,Chile_2022_05,72,chile,2022,Mixed Outcome,democracy
+492,Chile_2022_01,72,chile,2022,Expands Expression,democracy
+493,Chile_2022_02,72,chile,2022,Expands Expression,democracy
+494,El Salvador_2014_02,22,el salvador,2014,Expands Expression,democracy
+495,El Salvador_2016_01,22,el salvador,2016,Expands Expression,democracy
+496,Eswatini_2014_02,132,eswatini,2014,Mixed Outcome,autocracy
+497,Ethiopia_2015_01,38,ethiopia,2015,Contracts Expression,autocracy
+502,France_2014_04,76,france,2014,Contracts Expression,democracy
+504,France_2014_06,76,france,2014,Mixed Outcome,democracy
+505,France_2014_01,76,france,2014,Mixed Outcome,democracy
+507,France_2015_01,76,france,2015,Contracts Expression,democracy
+509,France_2015_03,76,france,2015,Expands Expression,democracy
+511,France_2016_03,76,france,2016,Expands Expression,democracy
+512,France_2016_02,76,france,2016,Contracts Expression,democracy
+514,France_2016_07,76,france,2016,Expands Expression,democracy
+516,France_2016_05,76,france,2016,Expands Expression,democracy
+518,France_2017_01,76,france,2017,Expands Expression,democracy
+519,France_2018_02,76,france,2018,Expands Expression,democracy
+521,France_2020_01,76,france,2020,Expands Expression,democracy
+525,France_2021_03,76,france,2021,Mixed Outcome,democracy
+526,France_2021_06,76,france,2021,Mixed Outcome,democracy
+527,France_2022_01,76,france,2022,Mixed Outcome,democracy
+529,France_2022_04,76,france,2022,Mixed Outcome,democracy
+543,Hungary_2014_01,210,hungary,2014,Contracts Expression,democracy
+546,Hungary_2014_04,210,hungary,2014,Contracts Expression,democracy
+553,Hungary_2018_03,210,hungary,2018,Expands Expression,autocracy
+554,Hungary_2019_02,210,hungary,2019,Expands Expression,autocracy
+557,Hungary_2022_02,210,hungary,2022,Expands Expression,autocracy
+560,Hungary_2024_01,210,hungary,2024,Mixed Outcome,autocracy
+561,Kazakhstan_2014_01,121,kazakhstan,2014,Contracts Expression,autocracy
+562,Kazakhstan_2015_05,121,kazakhstan,2015,Expands Expression,autocracy
+563,Kazakhstan_2015_04,121,kazakhstan,2015,Contracts Expression,autocracy
+564,Kazakhstan_2015_01,121,kazakhstan,2015,Contracts Expression,autocracy
+565,Kazakhstan_2015_03,121,kazakhstan,2015,Contracts Expression,autocracy
+566,Kazakhstan_2016_02,121,kazakhstan,2016,Contracts Expression,autocracy
+567,Kenya_2015_03,40,kenya,2015,Expands Expression,democracy
+568,Kenya_2015_01,40,kenya,2015,Expands Expression,democracy
+569,Kenya_2017_02,40,kenya,2017,Expands Expression,autocracy
+570,Kenya_2017_01,40,kenya,2017,Expands Expression,autocracy
+571,Kenya_2018_01,40,kenya,2018,Expands Expression,autocracy
+572,Kenya_2019_02,40,kenya,2019,Expands Expression,autocracy
+573,Kenya_2020_01,40,kenya,2020,Expands Expression,autocracy
+574,Malawi_2020_02,87,malawi,2020,Expands Expression,democracy
+575,Malaysia_2015_02,177,malaysia,2015,Contracts Expression,autocracy
+576,Malaysia_2015_01,177,malaysia,2015,Contracts Expression,autocracy
+577,Malaysia_2016_04,177,malaysia,2016,Expands Expression,autocracy
+578,Malaysia_2016_02,177,malaysia,2016,Contracts Expression,autocracy
+579,Malaysia_2016_03,177,malaysia,2016,Contracts Expression,autocracy
+580,Malta_2017_02,178,malta,2017,Expands Expression,democracy
+582,Myanmar_2014_02,10,myanmar,2014,Contracts Expression,autocracy
+583,Myanmar_2015_09,10,myanmar,2015,Contracts Expression,autocracy
+584,Myanmar_2015_06,10,myanmar,2015,Contracts Expression,autocracy
+585,Myanmar_2015_08,10,myanmar,2015,Contracts Expression,autocracy
+586,Myanmar_2015_10,10,myanmar,2015,Contracts Expression,autocracy
+587,Myanmar_2015_04,10,myanmar,2015,Contracts Expression,autocracy
+588,Myanmar_2015_07,10,myanmar,2015,Contracts Expression,autocracy
+589,Myanmar_2015_01,10,myanmar,2015,Contracts Expression,autocracy
+590,Myanmar_2015_05,10,myanmar,2015,Contracts Expression,autocracy
+591,Myanmar_2015_02,10,myanmar,2015,Contracts Expression,autocracy
+592,Myanmar_2016_01,10,myanmar,2016,Contracts Expression,autocracy
+596,Nigeria_2012_03,45,nigeria,2012,Expands Expression,democracy
+597,Nigeria_2012_01,45,nigeria,2012,Contracts Expression,democracy
+598,Nigeria_2013_02,45,nigeria,2013,Expands Expression,democracy
+599,Nigeria_2016_02,45,nigeria,2016,Contracts Expression,democracy
+600,Nigeria_2018_01,45,nigeria,2018,Expands Expression,democracy
+601,Nigeria_2018_02,45,nigeria,2018,Contracts Expression,democracy
+604,Nigeria_2022_01,45,nigeria,2022,Contracts Expression,autocracy
+606,Nigeria_2023_01,45,nigeria,2023,Expands Expression,autocracy
+608,Pakistan_2013_02,29,pakistan,2013,Mixed Outcome,autocracy
+609,Pakistan_2014_02,29,pakistan,2014,Expands Expression,autocracy
+610,Pakistan_2014_01,29,pakistan,2014,Expands Expression,autocracy
+611,Pakistan_2018_01,29,pakistan,2018,Mixed Outcome,autocracy
+612,Pakistan_2020_02,29,pakistan,2020,Expands Expression,autocracy
+613,Pakistan_2020_03,29,pakistan,2020,Expands Expression,autocracy
+615,Philippines_2014_01,46,philippines,2014,Expands Expression,democracy
+616,Philippines_2014_03,46,philippines,2014,Mixed Outcome,democracy
+617,Philippines_2023_01,46,philippines,2023,Mixed Outcome,autocracy
+620,Poland_2019_01,17,poland,2019,Mixed Outcome,democracy
+621,Poland_2022_01,17,poland,2022,Expands Expression,democracy
+623,Poland_2023_03,17,poland,2023,Mixed Outcome,democracy
+625,Singapore_2014_01,200,singapore,2014,Expands Expression,autocracy
+626,Singapore_2015_02,200,singapore,2015,Mixed Outcome,autocracy
+627,Singapore_2020_02,200,singapore,2020,Contracts Expression,autocracy
+628,Singapore_2020_03,200,singapore,2020,Contracts Expression,autocracy
+629,Singapore_2020_04,200,singapore,2020,Contracts Expression,autocracy
+631,South Africa_2005_05,8,south africa,2005,Expands Expression,democracy
+632,South Africa_2005_02,8,south africa,2005,Contracts Expression,democracy
+633,South Africa_2005_04,8,south africa,2005,Mixed Outcome,democracy
+634,South Africa_2005_01,8,south africa,2005,Expands Expression,democracy
+635,South Africa_2005_03,8,south africa,2005,Contracts Expression,democracy
+636,South Africa_2006_02,8,south africa,2006,Expands Expression,democracy
+637,South Africa_2007_01,8,south africa,2007,Mixed Outcome,democracy
+638,South Africa_2009_01,8,south africa,2009,Expands Expression,democracy
+639,South Africa_2010_02,8,south africa,2010,Expands Expression,democracy
+640,South Africa_2011_03,8,south africa,2011,Contracts Expression,democracy
+641,South Africa_2011_05,8,south africa,2011,Mixed Outcome,democracy
+642,South Africa_2011_01,8,south africa,2011,Expands Expression,democracy
+643,South Africa_2011_04,8,south africa,2011,Expands Expression,democracy
+644,South Africa_2012_02,8,south africa,2012,Expands Expression,democracy
+645,South Africa_2014_01,8,south africa,2014,Expands Expression,democracy
+646,South Africa_2014_03,8,south africa,2014,Expands Expression,democracy
+647,South Africa_2014_02,8,south africa,2014,Expands Expression,democracy
+648,South Africa_2014_05,8,south africa,2014,Expands Expression,democracy
+649,South Africa_2015_03,8,south africa,2015,Expands Expression,democracy
+650,South Africa_2015_02,8,south africa,2015,Expands Expression,democracy
+651,South Africa_2016_04,8,south africa,2016,Expands Expression,democracy
+652,South Africa_2016_02,8,south africa,2016,Expands Expression,democracy
+653,South Africa_2016_01,8,south africa,2016,Expands Expression,democracy
+654,South Africa_2017_02,8,south africa,2017,Mixed Outcome,democracy
+655,South Africa_2018_04,8,south africa,2018,Expands Expression,democracy
+656,South Africa_2018_02,8,south africa,2018,Expands Expression,democracy
+657,South Africa_2018_03,8,south africa,2018,Mixed Outcome,democracy
+658,South Africa_2019_01,8,south africa,2019,Mixed Outcome,democracy
+659,South Africa_2019_02,8,south africa,2019,Expands Expression,democracy
+660,South Africa_2019_03,8,south africa,2019,Expands Expression,democracy
+661,South Africa_2020_03,8,south africa,2020,Expands Expression,democracy
+662,South Africa_2020_05,8,south africa,2020,Mixed Outcome,democracy
+663,South Africa_2020_06,8,south africa,2020,Expands Expression,democracy
+664,South Africa_2020_04,8,south africa,2020,Expands Expression,democracy
+665,South Africa_2020_01,8,south africa,2020,Mixed Outcome,democracy
+666,South Africa_2021_02,8,south africa,2021,Mixed Outcome,democracy
+667,South Africa_2021_01,8,south africa,2021,Expands Expression,democracy
+669,South Africa_2021_05,8,south africa,2021,Expands Expression,democracy
+670,South Africa_2021_03,8,south africa,2021,Mixed Outcome,democracy
+671,South Africa_2022_02,8,south africa,2022,Expands Expression,democracy
+672,South Africa_2022_03,8,south africa,2022,Expands Expression,democracy
+673,South Africa_2022_01,8,south africa,2022,Expands Expression,democracy
+674,South Africa_2022_04,8,south africa,2022,Expands Expression,democracy
+675,South Africa_2023_03,8,south africa,2023,Expands Expression,democracy
+676,South Africa_2023_01,8,south africa,2023,Contracts Expression,democracy
+677,South Africa_2023_04,8,south africa,2023,Expands Expression,democracy
+678,Thailand_2013_01,49,thailand,2013,Contracts Expression,autocracy
+679,Thailand_2015_03,49,thailand,2015,Contracts Expression,autocracy
+680,Thailand_2015_02,49,thailand,2015,Contracts Expression,autocracy
+681,Thailand_2015_05,49,thailand,2015,Contracts Expression,autocracy
+682,Thailand_2015_08,49,thailand,2015,Contracts Expression,autocracy
+683,Thailand_2015_10,49,thailand,2015,Contracts Expression,autocracy
+684,Thailand_2015_04,49,thailand,2015,Contracts Expression,autocracy
+685,Thailand_2015_06,49,thailand,2015,Contracts Expression,autocracy
+686,Thailand_2015_01,49,thailand,2015,Contracts Expression,autocracy
+687,Thailand_2015_07,49,thailand,2015,Contracts Expression,autocracy
+688,Thailand_2015_13,49,thailand,2015,Contracts Expression,autocracy
+689,Thailand_2015_12,49,thailand,2015,Contracts Expression,autocracy
+690,Thailand_2015_09,49,thailand,2015,Expands Expression,autocracy
+691,Thailand_2017_01,49,thailand,2017,Contracts Expression,autocracy
+692,Thailand_2018_02,49,thailand,2018,Expands Expression,autocracy
+714,Turkey_2014_02,99,turkey,2014,Expands Expression,autocracy
+715,Turkey_2014_04,99,turkey,2014,Expands Expression,autocracy
+716,Turkey_2014_07,99,turkey,2014,Mixed Outcome,autocracy
+720,Turkey_2015_03,99,turkey,2015,Expands Expression,autocracy
+722,Turkey_2015_02,99,turkey,2015,Mixed Outcome,autocracy
+723,Turkey_2015_10,99,turkey,2015,Expands Expression,autocracy
+724,Turkey_2015_06,99,turkey,2015,Expands Expression,autocracy
+725,Turkey_2015_05,99,turkey,2015,Expands Expression,autocracy
+727,Turkey_2015_01,99,turkey,2015,Expands Expression,autocracy
+728,Turkey_2016_04,99,turkey,2016,Contracts Expression,autocracy
+729,Turkey_2016_05,99,turkey,2016,Contracts Expression,autocracy
+731,Turkey_2016_02,99,turkey,2016,Contracts Expression,autocracy
+736,Turkey_2019_03,99,turkey,2019,Expands Expression,autocracy
+737,Turkey_2019_01,99,turkey,2019,Expands Expression,autocracy
+739,Turkey_2021_06,99,turkey,2021,Expands Expression,autocracy
+744,Turkey_2023_01,99,turkey,2023,Expands Expression,autocracy
+746,Turkey_2023_02,99,turkey,2023,Mixed Outcome,autocracy
+747,Turkey_2023_06,99,turkey,2023,Expands Expression,autocracy
+749,Uganda_2010_01,50,uganda,2010,Contracts Expression,autocracy
+750,Uganda_2014_02,50,uganda,2014,Mixed Outcome,autocracy
+751,Uganda_2014_01,50,uganda,2014,Contracts Expression,autocracy
+752,Uganda_2014_04,50,uganda,2014,Contracts Expression,autocracy
+753,Uganda_2021_02,50,uganda,2021,Expands Expression,autocracy
+754,Uganda_2021_01,50,uganda,2021,Expands Expression,autocracy
+755,United States_1940_02,20,united states,1940,Expands Expression,democracy
+756,United States_1964_01,20,united states,1964,Expands Expression,democracy
+757,United States_1964_02,20,united states,1964,Expands Expression,democracy
+758,United States_1971_03,20,united states,1971,Expands Expression,democracy
+759,United States_1971_01,20,united states,1971,Expands Expression,democracy
+760,United States_1972_02,20,united states,1972,Contracts Expression,democracy
+761,United States_1976_02,20,united states,1976,Expands Expression,democracy
+762,United States_1977_02,20,united states,1977,Expands Expression,democracy
+763,United States_1979_02,20,united states,1979,Mixed Outcome,democracy
+764,United States_1980_01,20,united states,1980,Expands Expression,democracy
+765,United States_1982_01,20,united states,1982,Expands Expression,democracy
+766,United States_1987_01,20,united states,1987,Expands Expression,democracy
+767,United States_1989_02,20,united states,1989,Expands Expression,democracy
+768,United States_1992_01,20,united states,1992,Expands Expression,democracy
+769,United States_1994_02,20,united states,1994,Mixed Outcome,democracy
+770,United States_1996_02,20,united states,1996,Expands Expression,democracy
+771,United States_1997_01,20,united states,1997,Expands Expression,democracy
+772,United States_2002_01,20,united states,2002,Expands Expression,democracy
+773,United States_2003_02,20,united states,2003,Mixed Outcome,democracy
+774,United States_2003_03,20,united states,2003,Expands Expression,democracy
+775,United States_2007_01,20,united states,2007,Expands Expression,democracy
+776,United States_2010_02,20,united states,2010,Mixed Outcome,democracy
+777,United States_2011_02,20,united states,2011,Mixed Outcome,democracy
+778,United States_2012_01,20,united states,2012,Expands Expression,democracy
+779,United States_2012_04,20,united states,2012,Expands Expression,democracy
+780,United States_2012_02,20,united states,2012,Expands Expression,democracy
+781,United States_2013_03,20,united states,2013,Contracts Expression,democracy
+782,United States_2013_04,20,united states,2013,Mixed Outcome,democracy
+783,United States_2013_01,20,united states,2013,Contracts Expression,democracy
+784,United States_2014_24,20,united states,2014,Expands Expression,democracy
+785,United States_2014_29,20,united states,2014,Expands Expression,democracy
+786,United States_2014_25,20,united states,2014,Expands Expression,democracy
+787,United States_2014_07,20,united states,2014,Expands Expression,democracy
+788,United States_2014_14,20,united states,2014,Mixed Outcome,democracy
+789,United States_2014_21,20,united states,2014,Mixed Outcome,democracy
+790,United States_2014_13,20,united states,2014,Contracts Expression,democracy
+791,United States_2014_03,20,united states,2014,Mixed Outcome,democracy
+792,United States_2014_06,20,united states,2014,Mixed Outcome,democracy
+793,United States_2014_23,20,united states,2014,Expands Expression,democracy
+794,United States_2014_09,20,united states,2014,Expands Expression,democracy
+795,United States_2014_15,20,united states,2014,Contracts Expression,democracy
+796,United States_2014_20,20,united states,2014,Expands Expression,democracy
+797,United States_2014_17,20,united states,2014,Mixed Outcome,democracy
+798,United States_2014_02,20,united states,2014,Mixed Outcome,democracy
+799,United States_2014_08,20,united states,2014,Expands Expression,democracy
+800,United States_2014_16,20,united states,2014,Expands Expression,democracy
+801,United States_2014_28,20,united states,2014,Contracts Expression,democracy
+802,United States_2014_30,20,united states,2014,Mixed Outcome,democracy
+803,United States_2014_12,20,united states,2014,Mixed Outcome,democracy
+804,United States_2014_10,20,united states,2014,Expands Expression,democracy
+805,United States_2014_18,20,united states,2014,Mixed Outcome,democracy
+806,United States_2014_04,20,united states,2014,Expands Expression,democracy
+807,United States_2014_11,20,united states,2014,Expands Expression,democracy
+808,United States_2014_19,20,united states,2014,Expands Expression,democracy
+809,United States_2014_05,20,united states,2014,Expands Expression,democracy
+810,United States_2014_27,20,united states,2014,Expands Expression,democracy
+811,United States_2014_22,20,united states,2014,Expands Expression,democracy
+812,United States_2014_26,20,united states,2014,Contracts Expression,democracy
+813,United States_2015_44,20,united states,2015,Expands Expression,democracy
+814,United States_2015_43,20,united states,2015,Contracts Expression,democracy
+815,United States_2015_42,20,united states,2015,Expands Expression,democracy
+816,United States_2015_20,20,united states,2015,Expands Expression,democracy
+817,United States_2015_13,20,united states,2015,Expands Expression,democracy
+818,United States_2015_36,20,united states,2015,Expands Expression,democracy
+819,United States_2015_30,20,united states,2015,Expands Expression,democracy
+820,United States_2015_33,20,united states,2015,Contracts Expression,democracy
+821,United States_2015_37,20,united states,2015,Mixed Outcome,democracy
+822,United States_2015_34,20,united states,2015,Expands Expression,democracy
+823,United States_2015_09,20,united states,2015,Expands Expression,democracy
+824,United States_2015_29,20,united states,2015,Expands Expression,democracy
+825,United States_2015_48,20,united states,2015,Expands Expression,democracy
+826,United States_2015_41,20,united states,2015,Expands Expression,democracy
+827,United States_2015_40,20,united states,2015,Expands Expression,democracy
+828,United States_2015_05,20,united states,2015,Contracts Expression,democracy
+829,United States_2015_07,20,united states,2015,Expands Expression,democracy
+830,United States_2015_10,20,united states,2015,Expands Expression,democracy
+831,United States_2015_28,20,united states,2015,Expands Expression,democracy
+832,United States_2015_46,20,united states,2015,Expands Expression,democracy
+833,United States_2015_06,20,united states,2015,Mixed Outcome,democracy
+834,United States_2015_04,20,united states,2015,Expands Expression,democracy
+835,United States_2015_08,20,united states,2015,Contracts Expression,democracy
+836,United States_2015_12,20,united states,2015,Expands Expression,democracy
+837,United States_2015_39,20,united states,2015,Mixed Outcome,democracy
+838,United States_2015_14,20,united states,2015,Expands Expression,democracy
+839,United States_2015_31,20,united states,2015,Contracts Expression,democracy
+840,United States_2015_25,20,united states,2015,Mixed Outcome,democracy
+841,United States_2015_26,20,united states,2015,Expands Expression,democracy
+842,United States_2015_45,20,united states,2015,Mixed Outcome,democracy
+843,United States_2015_32,20,united states,2015,Mixed Outcome,democracy
+844,United States_2015_15,20,united states,2015,Contracts Expression,democracy
+845,United States_2015_02,20,united states,2015,Mixed Outcome,democracy
+846,United States_2015_49,20,united states,2015,Expands Expression,democracy
+847,United States_2015_35,20,united states,2015,Expands Expression,democracy
+848,United States_2015_03,20,united states,2015,Expands Expression,democracy
+849,United States_2015_17,20,united states,2015,Expands Expression,democracy
+850,United States_2015_23,20,united states,2015,Mixed Outcome,democracy
+851,United States_2015_47,20,united states,2015,Expands Expression,democracy
+852,United States_2015_21,20,united states,2015,Expands Expression,democracy
+853,United States_2015_11,20,united states,2015,Mixed Outcome,democracy
+854,United States_2015_24,20,united states,2015,Mixed Outcome,democracy
+855,United States_2015_38,20,united states,2015,Expands Expression,democracy
+856,United States_2015_01,20,united states,2015,Mixed Outcome,democracy
+857,United States_2015_16,20,united states,2015,Expands Expression,democracy
+858,United States_2015_19,20,united states,2015,Mixed Outcome,democracy
+859,United States_2015_22,20,united states,2015,Mixed Outcome,democracy
+860,United States_2015_27,20,united states,2015,Expands Expression,democracy
+861,United States_2016_05,20,united states,2016,Contracts Expression,democracy
+862,United States_2016_03,20,united states,2016,Contracts Expression,democracy
+863,United States_2016_06,20,united states,2016,Expands Expression,democracy
+864,United States_2016_10,20,united states,2016,Expands Expression,democracy
+865,United States_2016_04,20,united states,2016,Contracts Expression,democracy
+866,United States_2016_11,20,united states,2016,Expands Expression,democracy
+867,United States_2016_02,20,united states,2016,Mixed Outcome,democracy
+868,United States_2016_09,20,united states,2016,Contracts Expression,democracy
+869,United States_2016_12,20,united states,2016,Contracts Expression,democracy
+870,United States_2016_07,20,united states,2016,Mixed Outcome,democracy
+871,United States_2016_01,20,united states,2016,Expands Expression,democracy
+872,United States_2017_14,20,united states,2017,Mixed Outcome,democracy
+873,United States_2017_23,20,united states,2017,Expands Expression,democracy
+874,United States_2017_03,20,united states,2017,Expands Expression,democracy
+875,United States_2017_16,20,united states,2017,Mixed Outcome,democracy
+876,United States_2017_25,20,united states,2017,Contracts Expression,democracy
+877,United States_2017_08,20,united states,2017,Expands Expression,democracy
+878,United States_2017_02,20,united states,2017,Contracts Expression,democracy
+879,United States_2017_18,20,united states,2017,Expands Expression,democracy
+880,United States_2017_10,20,united states,2017,Mixed Outcome,democracy
+881,United States_2017_09,20,united states,2017,Mixed Outcome,democracy
+882,United States_2017_24,20,united states,2017,Expands Expression,democracy
+883,United States_2017_15,20,united states,2017,Expands Expression,democracy
+884,United States_2017_04,20,united states,2017,Mixed Outcome,democracy
+885,United States_2017_21,20,united states,2017,Expands Expression,democracy
+886,United States_2017_06,20,united states,2017,Mixed Outcome,democracy
+887,United States_2017_13,20,united states,2017,Contracts Expression,democracy
+888,United States_2017_19,20,united states,2017,Expands Expression,democracy
+889,United States_2017_17,20,united states,2017,Expands Expression,democracy
+890,United States_2017_01,20,united states,2017,Contracts Expression,democracy
+891,United States_2017_11,20,united states,2017,Contracts Expression,democracy
+892,United States_2017_20,20,united states,2017,Mixed Outcome,democracy
+893,United States_2017_22,20,united states,2017,Expands Expression,democracy
+894,United States_2017_12,20,united states,2017,Contracts Expression,democracy
+895,United States_2017_07,20,united states,2017,Expands Expression,democracy
+896,United States_2018_02,20,united states,2018,Expands Expression,democracy
+897,United States_2018_09,20,united states,2018,Expands Expression,democracy
+898,United States_2018_06,20,united states,2018,Contracts Expression,democracy
+899,United States_2018_03,20,united states,2018,Mixed Outcome,democracy
+900,United States_2018_11,20,united states,2018,Contracts Expression,democracy
+901,United States_2018_13,20,united states,2018,Expands Expression,democracy
+902,United States_2018_10,20,united states,2018,Expands Expression,democracy
+903,United States_2018_16,20,united states,2018,Mixed Outcome,democracy
+904,United States_2018_05,20,united states,2018,Expands Expression,democracy
+905,United States_2018_08,20,united states,2018,Mixed Outcome,democracy
+906,United States_2018_12,20,united states,2018,Mixed Outcome,democracy
+908,United States_2018_01,20,united states,2018,Expands Expression,democracy
+909,United States_2018_07,20,united states,2018,Expands Expression,democracy
+910,United States_2018_04,20,united states,2018,Expands Expression,democracy
+911,United States_2019_15,20,united states,2019,Contracts Expression,democracy
+912,United States_2019_26,20,united states,2019,Expands Expression,democracy
+913,United States_2019_22,20,united states,2019,Expands Expression,democracy
+914,United States_2019_04,20,united states,2019,Expands Expression,democracy
+915,United States_2019_34,20,united states,2019,Expands Expression,democracy
+916,United States_2019_23,20,united states,2019,Expands Expression,democracy
+917,United States_2019_16,20,united states,2019,Contracts Expression,democracy
+918,United States_2019_08,20,united states,2019,Expands Expression,democracy
+919,United States_2019_19,20,united states,2019,Mixed Outcome,democracy
+920,United States_2019_29,20,united states,2019,Mixed Outcome,democracy
+921,United States_2019_18,20,united states,2019,Contracts Expression,democracy
+922,United States_2019_25,20,united states,2019,Expands Expression,democracy
+923,United States_2019_01,20,united states,2019,Expands Expression,democracy
+924,United States_2019_20,20,united states,2019,Contracts Expression,democracy
+925,United States_2019_07,20,united states,2019,Expands Expression,democracy
+926,United States_2019_05,20,united states,2019,Mixed Outcome,democracy
+927,United States_2019_36,20,united states,2019,Contracts Expression,democracy
+928,United States_2019_13,20,united states,2019,Expands Expression,democracy
+929,United States_2019_10,20,united states,2019,Expands Expression,democracy
+930,United States_2019_21,20,united states,2019,Expands Expression,democracy
+931,United States_2019_35,20,united states,2019,Mixed Outcome,democracy
+932,United States_2019_24,20,united states,2019,Contracts Expression,democracy
+933,United States_2019_03,20,united states,2019,Contracts Expression,democracy
+934,United States_2019_12,20,united states,2019,Expands Expression,democracy
+935,United States_2019_09,20,united states,2019,Expands Expression,democracy
+936,United States_2019_37,20,united states,2019,Mixed Outcome,democracy
+937,United States_2019_02,20,united states,2019,Expands Expression,democracy
+938,United States_2019_31,20,united states,2019,Contracts Expression,democracy
+939,United States_2019_32,20,united states,2019,Mixed Outcome,democracy
+940,United States_2019_14,20,united states,2019,Mixed Outcome,democracy
+941,United States_2019_17,20,united states,2019,Contracts Expression,democracy
+942,United States_2019_33,20,united states,2019,Expands Expression,democracy
+943,United States_2019_27,20,united states,2019,Mixed Outcome,democracy
+944,United States_2019_06,20,united states,2019,Contracts Expression,democracy
+945,United States_2019_11,20,united states,2019,Expands Expression,democracy
+946,United States_2019_28,20,united states,2019,Expands Expression,democracy
+947,United States_2020_32,20,united states,2020,Mixed Outcome,democracy
+948,United States_2020_33,20,united states,2020,Contracts Expression,democracy
+949,United States_2020_41,20,united states,2020,Mixed Outcome,democracy
+950,United States_2020_09,20,united states,2020,Expands Expression,democracy
+951,United States_2020_34,20,united states,2020,Expands Expression,democracy
+952,United States_2020_08,20,united states,2020,Contracts Expression,democracy
+953,United States_2020_05,20,united states,2020,Expands Expression,democracy
+954,United States_2020_18,20,united states,2020,Expands Expression,democracy
+955,United States_2020_01,20,united states,2020,Mixed Outcome,democracy
+956,United States_2020_44,20,united states,2020,Expands Expression,democracy
+957,United States_2020_43,20,united states,2020,Expands Expression,democracy
+958,United States_2020_45,20,united states,2020,Expands Expression,democracy
+959,United States_2020_21,20,united states,2020,Contracts Expression,democracy
+960,United States_2020_20,20,united states,2020,Expands Expression,democracy
+961,United States_2020_22,20,united states,2020,Mixed Outcome,democracy
+962,United States_2020_30,20,united states,2020,Expands Expression,democracy
+963,United States_2020_47,20,united states,2020,Mixed Outcome,democracy
+964,United States_2020_14,20,united states,2020,Expands Expression,democracy
+965,United States_2020_38,20,united states,2020,Expands Expression,democracy
+966,United States_2020_15,20,united states,2020,Expands Expression,democracy
+967,United States_2020_42,20,united states,2020,Expands Expression,democracy
+968,United States_2020_23,20,united states,2020,Expands Expression,democracy
+969,United States_2020_13,20,united states,2020,Mixed Outcome,democracy
+970,United States_2020_02,20,united states,2020,Contracts Expression,democracy
+971,United States_2020_27,20,united states,2020,Expands Expression,democracy
+972,United States_2020_03,20,united states,2020,Expands Expression,democracy
+973,United States_2020_04,20,united states,2020,Mixed Outcome,democracy
+974,United States_2020_24,20,united states,2020,Mixed Outcome,democracy
+975,United States_2020_25,20,united states,2020,Mixed Outcome,democracy
+976,United States_2020_10,20,united states,2020,Expands Expression,democracy
+977,United States_2020_11,20,united states,2020,Expands Expression,democracy
+978,United States_2020_37,20,united states,2020,Mixed Outcome,democracy
+979,United States_2020_29,20,united states,2020,Expands Expression,democracy
+980,United States_2020_12,20,united states,2020,Expands Expression,democracy
+981,United States_2020_31,20,united states,2020,Contracts Expression,democracy
+982,United States_2020_06,20,united states,2020,Mixed Outcome,democracy
+983,United States_2020_07,20,united states,2020,Expands Expression,democracy
+984,United States_2020_39,20,united states,2020,Expands Expression,democracy
+985,United States_2020_16,20,united states,2020,Contracts Expression,democracy
+986,United States_2020_17,20,united states,2020,Expands Expression,democracy
+987,United States_2020_46,20,united states,2020,Expands Expression,democracy
+988,United States_2020_35,20,united states,2020,Contracts Expression,democracy
+989,United States_2020_36,20,united states,2020,Contracts Expression,democracy
+990,United States_2020_26,20,united states,2020,Mixed Outcome,democracy
+991,United States_2020_28,20,united states,2020,Expands Expression,democracy
+992,United States_2020_19,20,united states,2020,Mixed Outcome,democracy
+993,United States_2021_13,20,united states,2021,Expands Expression,democracy
+994,United States_2021_06,20,united states,2021,Mixed Outcome,democracy
+995,United States_2021_26,20,united states,2021,Mixed Outcome,democracy
+996,United States_2021_02,20,united states,2021,Contracts Expression,democracy
+997,United States_2021_24,20,united states,2021,Expands Expression,democracy
+998,United States_2021_12,20,united states,2021,Expands Expression,democracy
+999,United States_2021_25,20,united states,2021,Mixed Outcome,democracy
+1000,United States_2021_01,20,united states,2021,Expands Expression,democracy
+1001,United States_2021_10,20,united states,2021,Expands Expression,democracy
+1002,United States_2021_07,20,united states,2021,Expands Expression,democracy
+1003,United States_2021_11,20,united states,2021,Expands Expression,democracy
+1004,United States_2021_18,20,united states,2021,Expands Expression,democracy
+1005,United States_2021_08,20,united states,2021,Expands Expression,democracy
+1006,United States_2021_20,20,united states,2021,Mixed Outcome,democracy
+1007,United States_2021_19,20,united states,2021,Expands Expression,democracy
+1009,United States_2021_03,20,united states,2021,Contracts Expression,democracy
+1010,United States_2021_09,20,united states,2021,Mixed Outcome,democracy
+1011,United States_2021_21,20,united states,2021,Contracts Expression,democracy
+1012,United States_2021_16,20,united states,2021,Mixed Outcome,democracy
+1014,United States_2021_22,20,united states,2021,Expands Expression,democracy
+1016,United States_2021_17,20,united states,2021,Contracts Expression,democracy
+1017,United States_2021_23,20,united states,2021,Contracts Expression,democracy
+1018,United States_2022_06,20,united states,2022,Expands Expression,democracy
+1019,United States_2022_04,20,united states,2022,Mixed Outcome,democracy
+1021,United States_2022_12,20,united states,2022,Mixed Outcome,democracy
+1022,United States_2022_01,20,united states,2022,Mixed Outcome,democracy
+1023,United States_2022_05,20,united states,2022,Contracts Expression,democracy
+1024,United States_2022_08,20,united states,2022,Mixed Outcome,democracy
+1025,United States_2022_10,20,united states,2022,Expands Expression,democracy
+1026,United States_2022_11,20,united states,2022,Mixed Outcome,democracy
+1027,United States_2022_07,20,united states,2022,Mixed Outcome,democracy
+1028,United States_2022_09,20,united states,2022,Contracts Expression,democracy
+1029,United States_2023_04,20,united states,2023,Expands Expression,democracy
+1031,United States_2023_06,20,united states,2023,Mixed Outcome,democracy
+1033,United States_2023_09,20,united states,2023,Expands Expression,democracy
+1036,United States_2023_03,20,united states,2023,Expands Expression,democracy
+1038,United States_2023_05,20,united states,2023,Expands Expression,democracy
+1039,United States_2023_10,20,united states,2023,Mixed Outcome,democracy
+1041,United States_2023_13,20,united states,2023,Expands Expression,democracy
+1043,United States_2023_02,20,united states,2023,Contracts Expression,democracy
+1045,United States_2024_11,20,united states,2024,Expands Expression,democracy
+1049,United States_2024_12,20,united states,2024,Expands Expression,democracy
+1051,United States_2024_08,20,united states,2024,Mixed Outcome,democracy
+1052,United States_2024_03,20,united states,2024,Expands Expression,democracy
+1055,United States_2025_02,20,united states,2025,Contracts Expression,democracy
+1056,United States_2025_04,20,united states,2025,Expands Expression,democracy
+1058,United States_2025_03,20,united states,2025,Expands Expression,democracy
+1059,United States_2025_01,20,united states,2025,Mixed Outcome,democracy
+1060,Uruguay_2013_02,102,uruguay,2013,Expands Expression,democracy
+1063,Venezuela_2015_02,51,venezuela,2015,Contracts Expression,autocracy
+1064,Vietnam_2012_03,34,vietnam,2012,Contracts Expression,autocracy
+1065,Vietnam_2012_02,34,vietnam,2012,Contracts Expression,autocracy
+1067,Vietnam_2015_03,34,vietnam,2015,Contracts Expression,autocracy
+1068,Zimbabwe_2000_02,62,zimbabwe,2000,Contracts Expression,autocracy
+1071,Zimbabwe_2014_01,62,zimbabwe,2014,Expands Expression,autocracy
+1072,Zimbabwe_2015_02,62,zimbabwe,2015,Contracts Expression,autocracy
+1073,Zimbabwe_2016_01,62,zimbabwe,2016,Expands Expression,autocracy
+1075,Zimbabwe_2021_01,62,zimbabwe,2021,Expands Expression,autocracy

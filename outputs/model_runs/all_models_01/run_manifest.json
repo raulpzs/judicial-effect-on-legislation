@@ -1,0 +1,859 @@
+{
+  "schema_version": 1,
+  "run_name": "all_models_01",
+  "status": "completed",
+  "fits": [
+    {
+      "model": "indep1",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "indep1",
+        "focal_predictors": [
+          "court_independence_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "c828279defc7a46160d0ba73c82457b1fa985b0072a3ccd12df1e96f4474e77e",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 220,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 825,
+        "countries": 43
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/indep1__all.npz",
+      "state_sha256": "48619539b71e6bb86cc6cf8e994d64d51ebe8e3743d9a4ebda179699e206238b",
+      "membership": "fits/indep1__all__sample.csv",
+      "membership_sha256": "75eeb0524db75030c7ab4b6771723f385a83fe9eeb91ac22d4e36450de7decf1",
+      "diagnostics": "fits/indep1__all__diagnostics.json",
+      "diagnostics_sha256": "169f715ce4c292e620ffb4b94a6c3e482aa4be9fff4f7a0610827ba8591125c2"
+    },
+    {
+      "model": "indep2",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "indep2",
+        "focal_predictors": [
+          "court_independence_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "62209d569bb6a7c0b2d3c06f938da421087fbf97abad223a89daeb0c880e667e",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 220,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 825,
+        "countries": 43
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/indep2__all.npz",
+      "state_sha256": "7bf9615872d14aa307d4330118bc0aeaa53727d50f2757e24b24e81f5f12c246",
+      "membership": "fits/indep2__all__sample.csv",
+      "membership_sha256": "75eeb0524db75030c7ab4b6771723f385a83fe9eeb91ac22d4e36450de7decf1",
+      "diagnostics": "fits/indep2__all__diagnostics.json",
+      "diagnostics_sha256": "24df866bfa665bf8c956244d46cc4ccd64d98c7cb0b0f5e889b02ae12d61610c"
+    },
+    {
+      "model": "attack1",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "attack1",
+        "focal_predictors": [
+          "v2jupoatck_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "d1bdb91295a61b62793798c7b834aa8b4ad0b0ce0be06ed884befb7f2d0beee0",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/attack1__all.npz",
+      "state_sha256": "fac436d0db2f21f0cc152d966867265538da51eb47da2278a0992f3ff093f162",
+      "membership": "fits/attack1__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/attack1__all__diagnostics.json",
+      "diagnostics_sha256": "3625ec03d20e47e3b2a2f6b5cf583be113b3a25bc271cf581e3026f493b60dba"
+    },
+    {
+      "model": "attack2",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "attack2",
+        "focal_predictors": [
+          "v2jupack_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "98ab41b66691d18543b9847b2d487067a91fd538414c779c3d314582aae3638a",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/attack2__all.npz",
+      "state_sha256": "c3903498e667ce9fa916558501a88e45a36c8171365dcb1ccbe7284a130ac997",
+      "membership": "fits/attack2__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/attack2__all__diagnostics.json",
+      "diagnostics_sha256": "58b7d660955cca94c068d73eefcc66763b37f582e39d771ec7ccc4d57e693ecd"
+    },
+    {
+      "model": "attack3",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "attack3",
+        "focal_predictors": [
+          "v2jureform_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "70635306b9b2616f3513ffdeb07d5e22c61acb74ff5804df2cd3fd9c92d6d794",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/attack3__all.npz",
+      "state_sha256": "7b9d52abfe82972be4b09f1d61cc8042d9b6990bef4f9627f9a7a5da01580ef7",
+      "membership": "fits/attack3__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/attack3__all__diagnostics.json",
+      "diagnostics_sha256": "5aebaf92d8d421e24091c2f7fe77c3db28eb53c1533f875647a76399baab561c"
+    },
+    {
+      "model": "attack4",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "attack4",
+        "focal_predictors": [
+          "v2jupurge_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "0f63d1185d8815266a50ccf0b3c565b5d1298f7953c05f5b9e1a58873efb3c65",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/attack4__all.npz",
+      "state_sha256": "769d1e4fe537c8fbc18d300a735259e170673862e281aeac168b0c0705d80634",
+      "membership": "fits/attack4__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/attack4__all__diagnostics.json",
+      "diagnostics_sha256": "7c0ea11a9694dc60157379e6f729855a8503f4ebc4c51061e7e1b0ba2c70654c"
+    },
+    {
+      "model": "attack5",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "attack5",
+        "focal_predictors": [
+          "v2jupurge_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "c1db4da9f0d74645c44e81652c7199dc687b0d58693bb4b016cfddbfdf139354",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/attack5__all.npz",
+      "state_sha256": "c907bc9eb2e4c995c70d1c0055a5ef54b37e41f8fc1f5a3a9c1c18726e75eb50",
+      "membership": "fits/attack5__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/attack5__all__diagnostics.json",
+      "diagnostics_sha256": "c79c335fb820bddeeeb7c9bbba9fd5b027145dcf4657d9bc23f55fdce66a30ab"
+    },
+    {
+      "model": "dejure1",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "dejure1",
+        "focal_predictors": [
+          "wdj_expression_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "4a2b63a837a0d235b5db61847f576410efc27e8c8898ec2728d7010c1f0bf783",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/dejure1__all.npz",
+      "state_sha256": "695e186cdc202e00a4cb1ae3c05b3ffe184910a54eba572e3443e124f0c94158",
+      "membership": "fits/dejure1__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/dejure1__all__diagnostics.json",
+      "diagnostics_sha256": "eb894037df41b30e243ff28c349f271a110c0dcbe4210b76b0a4e56fda26907d"
+    },
+    {
+      "model": "dejure2",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "dejure2",
+        "focal_predictors": [
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "1ea9a78881002f594e707ac47aa35ad14aafd8baeb68054ec474df8977329230",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/dejure2__all.npz",
+      "state_sha256": "5c52f42e468f01f6eca72cc3fcde2b52ffc08cb16825a185d9997aec761a2d8a",
+      "membership": "fits/dejure2__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/dejure2__all__diagnostics.json",
+      "diagnostics_sha256": "bed8639f9c00d500543604308896ece75308d34aac4c6cb9e80cd823d2ddb632"
+    },
+    {
+      "model": "dejure3",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "dejure3",
+        "focal_predictors": [
+          "wdj_press_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "3a2be82183e0da3737de5cb74b1af94d27ed073b168dfb5aa0bba85462931207",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/dejure3__all.npz",
+      "state_sha256": "bacef5e8880815a183ac25f7ee67f185d2874605709513c0e72a8191366cfe6f",
+      "membership": "fits/dejure3__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/dejure3__all__diagnostics.json",
+      "diagnostics_sha256": "50648b78ebb406aa4093e4b611c2e88634275975c66bb6a3406bde4febc0b91d"
+    },
+    {
+      "model": "dejure4",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "dejure4",
+        "focal_predictors": [
+          "wdj_press_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "1d2ff969980ceb67b0042cbf3881d5df84e53e0b71bfb5eb8cb742e0a68e38f3",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/dejure4__all.npz",
+      "state_sha256": "3e88fb3142af2fc007fedd80af09bd35090a4cc6e327bc0bc104159abce46839",
+      "membership": "fits/dejure4__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/dejure4__all__diagnostics.json",
+      "diagnostics_sha256": "4f173476fd74e2e089fdcb3a70f72d916ff28abd10e85d1b455f57d7ad984d89"
+    },
+    {
+      "model": "dejure5",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "dejure5",
+        "focal_predictors": [
+          "wdj_citizen_lag1"
+        ],
+        "controls": []
+      },
+      "specification_sha256": "e7d590f2f92c063bfdf247e963cb18ce94836974d715d6c2221a53cbf72298a2",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/dejure5__all.npz",
+      "state_sha256": "ab922d2b392520b56e98d8368617aca4c8ec9cb9dae6c7133642790380ff9f02",
+      "membership": "fits/dejure5__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/dejure5__all__diagnostics.json",
+      "diagnostics_sha256": "d02e010e3de2631c9231e5c126977e64ae658893336c43e0476b12e3ce419e49"
+    },
+    {
+      "model": "dejure6",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "dejure6",
+        "focal_predictors": [
+          "wdj_citizen_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "51e5007ff7242d0dd63e5c39c46323bf18e1a30dbc73cd112a5d220645c1e200",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 241,
+        "Mixed Outcome": 227,
+        "Expands Expression": 606,
+        "cases": 1074,
+        "countries": 47
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/dejure6__all.npz",
+      "state_sha256": "b0b4c84111f6aeebadf93067e3e70917ddcd9bdcbbcf4f3b770e300a4f123b9f",
+      "membership": "fits/dejure6__all__sample.csv",
+      "membership_sha256": "fa021a5b3cbd28b4254870d723954a01fb2337e3c8b188b81371180fc5fec044",
+      "diagnostics": "fits/dejure6__all__diagnostics.json",
+      "diagnostics_sha256": "a0c2398a478eeecb17db4cef0d33e5dbb02782138bb1a726ea22cdd5afa1cee1"
+    },
+    {
+      "model": "full1",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "full1",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "f5f1e8180e40d1ade5666e8f92b6e31f7282924bd4de435b5a885ad3277a5de3",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 220,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 825,
+        "countries": 43
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full1__all.npz",
+      "state_sha256": "4cb55f7e7ef6c08d9b1101d3bbe0875e6bff9675aaa4e545b7b4fc3c6ab19fab",
+      "membership": "fits/full1__all__sample.csv",
+      "membership_sha256": "75eeb0524db75030c7ab4b6771723f385a83fe9eeb91ac22d4e36450de7decf1",
+      "diagnostics": "fits/full1__all__diagnostics.json",
+      "diagnostics_sha256": "a6e4ff79e78d013ee2f095dbd71aa4acca862fc23d3f62ec2b9c5cd7590431c1"
+    },
+    {
+      "model": "full2",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "full2",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_expression_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "2396f02058908df74f24a983d89cb89198b60c47b85cee6aae5ea572a3736916",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 220,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 825,
+        "countries": 43
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full2__all.npz",
+      "state_sha256": "95717017f06ac37205e7314b7c406505fc1544c0c92f340b4b3737ce18130a16",
+      "membership": "fits/full2__all__sample.csv",
+      "membership_sha256": "75eeb0524db75030c7ab4b6771723f385a83fe9eeb91ac22d4e36450de7decf1",
+      "diagnostics": "fits/full2__all__diagnostics.json",
+      "diagnostics_sha256": "843957160f65be4c614efcf20faa23fadbfb0596099f2eb4038461088a2a10a2"
+    },
+    {
+      "model": "full3",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "full3",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_press_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "658207c6747171fcc46dc6f0c37087ba689cf9e03c97ce9c28e5cf26b16ec660",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 220,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 825,
+        "countries": 43
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full3__all.npz",
+      "state_sha256": "b05cb9499f283c1715f1c2b21e3dee15210293eda6dcb7277fd100af1f741582",
+      "membership": "fits/full3__all__sample.csv",
+      "membership_sha256": "75eeb0524db75030c7ab4b6771723f385a83fe9eeb91ac22d4e36450de7decf1",
+      "diagnostics": "fits/full3__all__diagnostics.json",
+      "diagnostics_sha256": "72edb12e67b514b19578cfcc0dcde164b62644a63239c6edd216d01b78d0d04d"
+    },
+    {
+      "model": "full4",
+      "sample": "all",
+      "status": "successful",
+      "successful": true,
+      "specification": {
+        "name": "full4",
+        "focal_predictors": [
+          "court_independence_lag1",
+          "v2jupurge_lag1",
+          "wdj_citizen_lag1"
+        ],
+        "controls": [
+          "lgl_systm",
+          "defendant5",
+          "high_court",
+          "mode_electronic_internet",
+          "mode_press_newspapers",
+          "mode_public_assembly",
+          "mode_public_speech",
+          "mode_non_verbal_expression"
+        ]
+      },
+      "specification_sha256": "e2f7dac3ed520bc8e6628ddaace4b8a74bce49b5b006816d132c4d62081ed541",
+      "prediction_allowed": true,
+      "counts": {
+        "Contracts Expression": 220,
+        "Mixed Outcome": 180,
+        "Expands Expression": 425,
+        "cases": 825,
+        "countries": 43
+      },
+      "prediction_readiness": "Exploratory subset probabilities possible with cluster/sample cautions",
+      "state": "fits/full4__all.npz",
+      "state_sha256": "4fc92e925ff5697f0eb1f1fefa339738c789baee8358d094e8798d15d9e74fb6",
+      "membership": "fits/full4__all__sample.csv",
+      "membership_sha256": "75eeb0524db75030c7ab4b6771723f385a83fe9eeb91ac22d4e36450de7decf1",
+      "diagnostics": "fits/full4__all__diagnostics.json",
+      "diagnostics_sha256": "d288941cb45bc8da7d460cde790e8a470d9fa55971d050311498fb36dc02a4df"
+    }
+  ],
+  "started_at_utc": "2026-10-07T14:52:03.084433+00:00",
+  "command": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python analysis/run_models.py --sample all --run all_models_01",
+  "environment": {
+    "python": "3.12.13",
+    "executable": "/Users/RaulPerez/Documents/Projects/judicial_decisions/.venv/bin/python",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "platform": "macOS-26.5-arm64-arm-64bit"
+  },
+  "sample_policy": "available",
+  "sample_selection": "all",
+  "reference_model": null,
+  "input": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/data/processed/cases_v7_short.csv",
+    "sha256": "f638264a63906fae73cec9991128d16f55737a19a552f3d206b820f1ccb78290"
+  },
+  "config": {
+    "path": "/Users/RaulPerez/Documents/Projects/judicial_decisions/analysis/specifications.py",
+    "sha256": "336037ae7c7617bcc921db84378288d48e996ab900976f38598232bcdbb2986f"
+  },
+  "estimator": {
+    "method": "newton",
+    "maxiter": 100,
+    "tol": 1e-12,
+    "disp": false
+  },
+  "specifications": [
+    {
+      "name": "indep1",
+      "focal_predictors": [
+        "court_independence_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "indep2",
+      "focal_predictors": [
+        "court_independence_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "attack1",
+      "focal_predictors": [
+        "v2jupoatck_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "attack2",
+      "focal_predictors": [
+        "v2jupack_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "attack3",
+      "focal_predictors": [
+        "v2jureform_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "attack4",
+      "focal_predictors": [
+        "v2jupurge_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "attack5",
+      "focal_predictors": [
+        "v2jupurge_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "dejure1",
+      "focal_predictors": [
+        "wdj_expression_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "dejure2",
+      "focal_predictors": [
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "dejure3",
+      "focal_predictors": [
+        "wdj_press_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "dejure4",
+      "focal_predictors": [
+        "wdj_press_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "dejure5",
+      "focal_predictors": [
+        "wdj_citizen_lag1"
+      ],
+      "controls": []
+    },
+    {
+      "name": "dejure6",
+      "focal_predictors": [
+        "wdj_citizen_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "full1",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "full2",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_expression_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "full3",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_press_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    },
+    {
+      "name": "full4",
+      "focal_predictors": [
+        "court_independence_lag1",
+        "v2jupurge_lag1",
+        "wdj_citizen_lag1"
+      ],
+      "controls": [
+        "lgl_systm",
+        "defendant5",
+        "high_court",
+        "mode_electronic_internet",
+        "mode_press_newspapers",
+        "mode_public_assembly",
+        "mode_public_speech",
+        "mode_non_verbal_expression"
+      ]
+    }
+  ],
+  "numeric_storage": "float32",
+  "spline_storage": "float32",
+  "outcome_mapping": {
+    "Mixed Outcome": 0,
+    "Contracts Expression": 1,
+    "Expands Expression": 2
+  },
+  "cluster_variable": "country_id",
+  "spline_knots": [
+    2001,
+    2016,
+    2022
+  ],
+  "diagnostic_thresholds": {
+    "score": 1e-07,
+    "lp_feasibility": 1e-09,
+    "separation_margin": 1e-07,
+    "hessian_condition_warning": 10000000000.0,
+    "large_working_coefficient": 20,
+    "large_raw_categorical_coefficient": 20,
+    "large_working_se": 10,
+    "sparse_cell_count": 5,
+    "few_clusters_warning": 30
+  },
+  "numerical_sources": {
+    "replication/scripts/replicate.py": "b8cea1d9b66da46db43472355464066244c1919f8b9add70ca3eba3ef4cd648f",
+    "replication/scripts/regime_subsets.py": "e87d7bc24b9249440179168694f818bb1aaa7f12f4ef96ee67e332c4bb3451f8"
+  },
+  "workflow_sources": {
+    "analysis/run_models.py": "29d52452a0ea548b79505024a6a801d27a45ff6d573246eadbea3437f59085f5",
+    "analysis/workflow.py": "3a0b7e44eff7db44dadb7c655fd1871642fc970816fdf1679d47b3476daf7f82"
+  },
+  "configuration_sha256": "7b3bd999691367dc16694a07f76962a67310742c7ae2c58be46da05a26a1678f",
+  "finished_at_utc": "2026-10-07T14:52:03.988840+00:00"
+}

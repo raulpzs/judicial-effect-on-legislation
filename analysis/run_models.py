@@ -9,6 +9,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from scipy.stats import norm
 
 import workflow as work
 
@@ -42,6 +43,11 @@ def save_fit(directory, manifest, spec, sample, matrix, names, required, result,
              'status': info['status'], 'inference_valid': info['successful'],
              'estimate_type': 'MLE' if info['successful'] else 'diagnostic_terminal_iterate_only'}
             for i, (equation, term) in enumerate((e, t) for e in work.numerics.EQUATIONS for t in names)]
+    for row in rows:
+        valid = (row['inference_valid'] and np.isfinite(row['coefficient'])
+                 and np.isfinite(row['clustered_se']) and row['clustered_se'] > 0)
+        row['p_value'] = float(2 * norm.sf(abs(row['coefficient'] / row['clustered_se']))) if valid else np.nan
+        row['significant_5pct'] = row['p_value'] < 0.05 if valid else None
     pd.DataFrame(rows).to_csv(directory/'fits'/f'{stem}__coefficients.csv', index=False)
     if info['successful']:
         labels = [e+':'+t for e in work.numerics.EQUATIONS for t in names]
